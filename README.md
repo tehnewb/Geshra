@@ -97,7 +97,7 @@ The framework uses its own Netty listener. `geshra.web.port` controls this liste
 
 Packaged assets share a bounded cache that retains at most the configured payload budget and 256 entries. Original and precompressed gzip bytes count toward that budget; filesystem assets stay live. Set `static-cache-bytes=0` to disable caching. Large files stream in small chunks. WebSocket actions automatically group DOM changes into bounded packets, and slow connections pause input while their output is backpressured.
 
-See [PERFORMANCE.md](PERFORMANCE.md) for measured allocation and timing improvements, ownership rules, and reproducible benchmarks.
+See [PERFORMANCE.md](PERFORMANCE.md) for memory usage, ownership rules, and server tuning.
 
 The UI toolkit includes native form controls, layouts, dialogs, popovers, disclosures, status indicators, media, SVG/canvas, and a bounded virtual list for large datasets. See [UI_GUIDE.md](UI_GUIDE.md) for examples, browser semantics, lifecycle rules, and the full component catalog. The example Spring application includes a gallery at `/components`.
 

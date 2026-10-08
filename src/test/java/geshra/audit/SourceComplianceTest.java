@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Enforces mechanically verifiable AGENTS.md source rules across production code, tests,
- * benchmarks, and the consumer example. Uses the JDK parser without adding a dependency or
+ * and the consumer example. Uses the JDK parser without adding a dependency or
  * loading application classes. Generated build output and external assets are outside this scan.
  * Architectural cohesion, comment accuracy, and performance still require human review.
  */

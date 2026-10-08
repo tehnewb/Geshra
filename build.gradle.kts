@@ -12,9 +12,6 @@ java {
 
 repositories { mavenCentral() }
 
-val jmhSourceSet = sourceSets.create("jmh")
-configurations[jmhSourceSet.implementationConfigurationName].extendsFrom(configurations.implementation.get(), configurations.api.get())
-
 dependencies {
     api("org.springframework.boot:spring-boot-starter:3.4.3")
     api("io.netty:netty-codec-http:4.1.108.Final")
@@ -22,21 +19,6 @@ dependencies {
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor:3.4.3")
     testImplementation("org.springframework.boot:spring-boot-starter-test:3.4.3")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    add(jmhSourceSet.implementationConfigurationName, "org.openjdk.jmh:jmh-core:1.37")
-    add(jmhSourceSet.annotationProcessorConfigurationName, "org.openjdk.jmh:jmh-generator-annprocess:1.37")
-}
-
-jmhSourceSet.compileClasspath += sourceSets.main.get().output
-jmhSourceSet.runtimeClasspath += sourceSets.main.get().output
-
-tasks.register<JavaExec>("jmh") {
-    group = "verification"
-    description = "Measure throughput and allocations; benchmark dependencies are not published."
-    dependsOn(tasks.named(jmhSourceSet.classesTaskName))
-    classpath = jmhSourceSet.runtimeClasspath
-    mainClass.set("org.openjdk.jmh.Main")
-    javaLauncher.set(javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) })
-    args(providers.gradleProperty("jmhArgs").getOrElse("-wi 3 -i 5 -f 2 -prof gc").split(Regex("\\s+")))
 }
 
 tasks.withType<JavaCompile>().configureEach {

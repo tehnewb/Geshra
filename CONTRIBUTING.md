@@ -7,7 +7,7 @@ Geshra is a Java 21 library for Spring Boot applications. Contributions should k
 Install JDK 21, clone the repository, and use the included Gradle wrapper. On Windows, use `gradlew.bat` for the commands below.
 
 ```sh
-./gradlew clean build jmhClasses publishAllPublicationsToBuildRepository publishToMavenLocal
+./gradlew clean build publishAllPublicationsToBuildRepository publishToMavenLocal
 ./gradlew -p examples/spring-app -PuseBuildRepository=true clean test bootJar
 mvn -B -f examples/spring-app/pom.xml clean verify
 ```

@@ -123,7 +123,7 @@ try {
 }
 ```
 
-The group preserves every mutation and sends them together in bounded packets. `executeJS` and navigation flush required DOM changes before sending their control message. DOM serialization uses pooled buffers; callers of `DOMUpdate.encode()` own and must release the returned buffer. Custom encoders extend `writeTo(ByteBuf)` to participate in batch serialization. See [PERFORMANCE.md](PERFORMANCE.md) for measurements and tuning.
+The group preserves every mutation and sends them together in bounded packets. `executeJS` and navigation flush required DOM changes before sending their control message. DOM serialization uses pooled buffers; callers of `DOMUpdate.encode()` own and must release the returned buffer. Custom encoders extend `writeTo(ByteBuf)` to participate in batch serialization. See [PERFORMANCE.md](PERFORMANCE.md) for memory usage and tuning.
 
 The auto-configuration backs off when you supply your own `WebServer`, `RouteRegistry`, `PacketHandlerRegistry`, `Authenticator`, or concrete built-in packet-handler bean. Additional `PacketHandler` beans are collected into the registry; handler IDs must be unique.
 

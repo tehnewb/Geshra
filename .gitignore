@@ -2,6 +2,8 @@
 build/
 target/
 node_modules/
+/benchmarks/
+/src/jmh/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -47,3 +49,37 @@ bin/
 /gradle.properties
 /secret-key.asc
 /data/
+/examples/spring-app/data/
+
+### Local configuration and credentials ###
+.env
+.env.*
+!.env.example
+!.env.sample
+.secrets/
+.credentials/
+application-local.properties
+application-local.yml
+application-local.yaml
+*.local.properties
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*private*.asc
+*.bundle
+
+### Logs, dumps, and temporary files ###
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini

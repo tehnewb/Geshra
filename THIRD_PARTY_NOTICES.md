@@ -16,4 +16,4 @@ These assets are optional browser resources. Geshra's runtime and native Java UI
 
 ## Java dependencies
 
-The published Maven metadata lists the library's Java dependencies. Those dependencies retain their own licenses. Gradle resolves benchmark and browser test dependencies only for development; they are not added to the published Java library dependencies.
+The published Maven metadata lists the library's Java dependencies. Those dependencies retain their own licenses. Browser test dependencies are used only for development and are not added to the published Java library dependencies.
