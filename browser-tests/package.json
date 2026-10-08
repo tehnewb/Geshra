@@ -1,0 +1,10 @@
+{
+  "name": "geshra-ui-browser-tests",
+  "private": true,
+  "scripts": {
+    "test": "node components.cjs && node web-features.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0"
+  }
+}

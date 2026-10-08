@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Product Grid with Search</title>
+    <script src="js/grid-lite.js"></script>
+    <link rel="stylesheet" href="css/grid.css" />
+    <style>
+        #search {
+            margin: 20px auto;
+            display: block;
+            width: 400px;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<label for="search"></label><input type="text" id="search" placeholder="Search products..." />
+
+<div id="container" style="width: 400px; margin: 20px auto;"></div>
+
+<script>
+    // Original data
+    const originalData = {
+        product: ["Apple", "Pear", "Plum", "Banana"],
+        weight: [100, 40, 0.5, 200],
+        price: [1.5, 2.53, 5, 4.5],
+    };
+
+    // Initialize grid with original data
+    const grid = Grid.grid("container", {
+        dataTable: {
+            columns: originalData,
+            columnOrder: ["product", "weight", "price"],
+            columnHeaders: {
+                product: "Product",
+                weight: "Weight (g)",
+                price: "Price ($)",
+            },
+            sortable: true,
+        },
+    });
+
+    // Search input event
+    document.getElementById('search').addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+
+        // Find matching indexes based on the product name
+        const filteredIndexes = originalData.product
+            .map((product, index) => ({ product, index }))
+            .filter(({ product }) => product.toLowerCase().includes(query))
+            .map(({ index }) => index);
+
+        // Build filtered columns
+        const filteredData = {};
+        for (const col in originalData) {
+            filteredData[col] = filteredIndexes.map(i => originalData[col][i]);
+        }
+
+        // Update grid data and re-render
+        grid.dataTable.columns = filteredData;
+        grid.render();
+    });
+</script>
+</body>
+</html>

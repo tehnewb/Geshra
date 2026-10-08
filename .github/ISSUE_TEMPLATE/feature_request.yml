@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose an improvement to Geshra.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Proposed behavior or API
+      description: A short usage example helps explain the proposal.
+    validations:
+      required: true
