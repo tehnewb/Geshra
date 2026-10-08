@@ -143,4 +143,4 @@ mvn package
 java -jar target/geshra-spring-example-1.0.0-SNAPSHOT.jar
 ```
 
-Your packaged application includes the library and its runtime resources. It can run from another directory without this repository. Publishing the library itself is covered in [PUBLISHING.md](PUBLISHING.md).
+Your packaged application includes the library and its runtime resources. It can run from another directory without this repository.

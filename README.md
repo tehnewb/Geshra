@@ -118,7 +118,7 @@ The build produces the library JAR, sources JAR, Javadoc JAR, and Maven metadata
 
 ## Publish to Maven Central
 
-See [PUBLISHING.md](PUBLISHING.md) for namespace verification, signing, credentials, and release commands. The release workflow stages a signed deployment in the Central Portal, where the maintainer publishes it after validation. CI builds the library and tests a separate Spring Boot consumer.
+The release workflow stages a signed deployment in the Central Portal, where the maintainer publishes it after validation. CI builds the library and tests a separate Spring Boot consumer.
 
 ## Contribute and report issues
 
