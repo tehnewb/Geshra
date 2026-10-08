@@ -122,6 +122,6 @@ The release workflow stages a signed deployment in the Central Portal, where the
 
 ## Contribute and report issues
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for builds, browser checks, and pull requests. Use [GitHub issues](https://github.com/tehnewb/Geshra/issues) for bugs and feature requests, and [SECURITY.md](SECURITY.md) for private vulnerability reports.
+Use [GitHub issues](https://github.com/tehnewb/Geshra/issues) for bugs and feature requests, and [SECURITY.md](SECURITY.md) for private vulnerability reports.
 
 Geshra's original code is available under the [MIT license](LICENSE).
