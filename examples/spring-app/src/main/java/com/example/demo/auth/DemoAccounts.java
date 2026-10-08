@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.auth;
 
 import geshra.net.web.auth.DefaultAuthenticator;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +19,9 @@ public class DemoAccounts {
     @Bean
     public DefaultAuthenticator demoAuthenticator(@Value("${demo.password:}") String password) {
         DefaultAuthenticator users = new DefaultAuthenticator();
+
+        // Registration hashes the supplied password and grants the role required by /account.
+        // Without this explicit setting, the example contains no usable demo credentials.
         if (!password.isEmpty()) users.register("demo", password, "member");
         return users;
     }

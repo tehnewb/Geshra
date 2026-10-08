@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Starts the example Spring Boot consumer and discovers its application route alongside the library auto-configuration.
+ * Entry point for the example Spring Boot consumer. Spring discovers routes and account
+ * configuration in the routes and auth subpackages. Geshra supplies its web server through
+ * auto-configuration, so the application needs no manual library package scan or server setup.
  */
 @SpringBootApplication
 public class DemoApplication {

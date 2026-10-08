@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.routes.HomeRoute;
+
 import geshra.net.web.RouteRegistry;
 import geshra.net.web.WebServer;
 import geshra.net.web.ui.DOMUpdateType;

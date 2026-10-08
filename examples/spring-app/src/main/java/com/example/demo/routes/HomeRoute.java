@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.routes;
 
 import geshra.net.web.Route;
 import geshra.net.web.SeoPage;
@@ -10,7 +10,9 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 /**
- * Demonstrates a consumer-owned home route that builds server-driven UI components when the browser navigates to the root path.
+ * Start here for the smallest complete Geshra route: create a heading, attach a Java
+ * click listener, and add the components to the current UI. The empty route path
+ * represents the home page. Public SEO content also works before JavaScript loads.
  */
 @Component
 public class HomeRoute implements Route {
@@ -32,8 +34,12 @@ public class HomeRoute implements Route {
     @Override
     public void load(UI ui) {
         ui.setTitle("Spring Boot example");
+
+        // Route beans are shared by Spring; create mutable UI components inside load.
         H1 heading = new H1("Hello from Spring Boot");
         Button button = new Button("Click me");
+
+        // A browser click invokes this Java callback and sends the changed heading back.
         button.addClickListener(event -> heading.setText("The Java listener handled your click"));
         ui.add(heading);
         ui.add(button);

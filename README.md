@@ -78,7 +78,7 @@ public class HomeRoute implements Route {
 
 Run `./gradlew bootRun` or `mvn spring-boot:run` in your application, then open `http://localhost:4040/`. Java components send UI updates through `/ws`. With no registered routes, the server starts and unknown routes display a 404 message.
 
-For a complete application with both build formats, see [examples/spring-app](examples/spring-app). [TUTORIAL.md](TUTORIAL.md) covers configuration and application assets.
+For a complete application with both build formats, see the [demo walkthrough](examples/spring-app/README.md). [TUTORIAL.md](TUTORIAL.md) covers configuration and application assets.
 
 ## Configure the server
 

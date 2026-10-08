@@ -1,6 +1,6 @@
 # UI components
 
-Add the library dependency, define a Spring `Route`, and construct components inside its `load(UI)` method or an event callback. The runnable [component gallery](examples/spring-app/src/main/java/com/example/demo/ComponentsRoute.java) is available at `http://localhost:4040/components` in the example application.
+Add the library dependency, define a Spring `Route`, and construct components inside its `load(UI)` method or an event callback. The runnable [component gallery](examples/spring-app/src/main/java/com/example/demo/routes/ComponentsRoute.java) is available at `http://localhost:4040/components` in the example application. Its [walkthrough](examples/spring-app/README.md) maps each focused example to its source file.
 
 The toolkit uses actual browser elements. It delegates focus, keyboard interaction, form validation, disclosure behavior, modal dialogs, media playback, and SVG/canvas rendering to the browser. Java callbacks run on the server over WebSocket, so property readback and event handling are asynchronous. It does not emulate synchronous JavaScript execution on the server.
 
