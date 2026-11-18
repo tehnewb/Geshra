@@ -1,0 +1,242 @@
+[
+  {
+    "demo": "TextField",
+    "types": "TextField",
+    "text": "TextField\n\nEditable native control with server callback feedback.\n\nTextField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "NativeTextField",
+    "types": "NativeTextField",
+    "text": "NativeTextField\n\nEditable native control with server callback feedback.\n\nNativeTextField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "InputField",
+    "types": "InputField",
+    "text": "InputField\n\nEditable native control with server callback feedback.\n\nInputField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "SearchField",
+    "types": "SearchField",
+    "text": "SearchField\n\nEditable native control with server callback feedback.\n\nSearchField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "EmailField",
+    "types": "EmailField",
+    "text": "EmailField\n\nEditable native control with server callback feedback.\n\nEmailField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "PasswordField",
+    "types": "PasswordField",
+    "text": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nEdit this control to see update confirmation"
+  },
+  {
+    "demo": "UrlField",
+    "types": "UrlField",
+    "text": "UrlField\n\nEditable native control with server callback feedback.\n\nUrlField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "TelephoneField",
+    "types": "TelephoneField",
+    "text": "TelephoneField\n\nEditable native control with server callback feedback.\n\nTelephoneField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "DateField",
+    "types": "DateField",
+    "text": "DateField\n\nEditable native control with server callback feedback.\n\nDateField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "DateTimeField",
+    "types": "DateTimeField",
+    "text": "DateTimeField\n\nEditable native control with server callback feedback.\n\nDateTimeField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "TimeField",
+    "types": "TimeField",
+    "text": "TimeField\n\nEditable native control with server callback feedback.\n\nTimeField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "MonthField",
+    "types": "MonthField",
+    "text": "MonthField\n\nEditable native control with server callback feedback.\n\nMonthField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "WeekField",
+    "types": "WeekField",
+    "text": "WeekField\n\nEditable native control with server callback feedback.\n\nWeekField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "ColorField",
+    "types": "ColorField",
+    "text": "ColorField\n\nEditable native control with server callback feedback.\n\nColorField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "NumberField",
+    "types": "NumberField",
+    "text": "NumberField\n\nEditable native control with server callback feedback.\n\nNumberField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "RangeField",
+    "types": "RangeField",
+    "text": "RangeField\n\nEditable native control with server callback feedback.\n\nRangeField\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "TextArea",
+    "types": "TextArea",
+    "text": "TextArea\n\nEditable native control with server callback feedback.\n\nTextArea\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "Checkbox",
+    "types": "Checkbox",
+    "text": "Checkbox\n\nEditable native control with server callback feedback.\n\nCheckbox\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "Switch",
+    "types": "Switch",
+    "text": "Switch\n\nEditable native control with server callback feedback.\n\nSwitch\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "Checkbox",
+    "types": "Checkbox",
+    "text": "Checkbox\n\nMixed/indeterminate state; click to choose.\n\nMixed checkbox"
+  },
+  {
+    "demo": "RadioButton",
+    "types": "RadioButton",
+    "text": "RadioButton\n\nOne radio remains checked in the shared native group.\n\nAlphaBeta\n\nSelected: Alpha"
+  },
+  {
+    "demo": "Select",
+    "types": "Select,Option,OptionGroup",
+    "text": "Select,Option,OptionGroup\n\nEditable native control with server callback feedback.\n\nSelect,Option,OptionGroup\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "MultiSelect",
+    "types": "MultiSelect",
+    "text": "MultiSelect\n\nEditable native control with server callback feedback.\n\nMultiSelect\nAlpha\nComma value\nUnicode value\n\nEdit this control to see its Java value"
+  },
+  {
+    "demo": "DataList",
+    "types": "DataList",
+    "text": "DataList\n\nType J to inspect native suggestions.\n\nLanguage suggestion"
+  },
+  {
+    "demo": "HiddenField",
+    "types": "HiddenField",
+    "text": "HiddenField\n\nA nonvisual native input. Read its Java value through the button.\n\nRead hidden value\n\nHiddenField value: hidden-token (intentionally not rendered)"
+  },
+  {
+    "demo": "TextField",
+    "types": "TextField,NativeTextField,EmailField",
+    "text": "TextField,NativeTextField,EmailField\n\nDisabled, read-only and invalid states. Validate email to show native browser feedback.\n\nDisabled textRead-only textInvalid emailValidate email"
+  },
+  {
+    "demo": "Form",
+    "types": "Form,Fieldset,Legend,Output,Label",
+    "text": "Form,Fieldset,Legend,Output,Label\n\nChange the name/check the box and submit. Empty required name invokes native validation.\n\nExample form\nName\nReceive updates\nSubmit showcase form\nNot submitted"
+  },
+  {
+    "demo": "FileUploader",
+    "types": "FileUploader",
+    "text": "FileUploader\n\nChoose a small text file. Contents stay in this demo callback and are not saved.\n\nNo file uploaded"
+  },
+  {
+    "demo": "H1",
+    "types": "H1,H2,H3,H4,H5,H6",
+    "text": "H1,H2,H3,H4,H5,H6\n\nNative heading levels one through six.\n\nHeading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6"
+  },
+  {
+    "demo": "Paragraph",
+    "types": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent",
+    "text": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent\n\nNative text semantics; code and preformatted whitespace remain literal.\n\nParagraph text\n\nInline span Strong Emphasis Small print Marked text new Button(\"Hello\")\nLine 1\n    Indented line 2\nA semantic quotation\n\nConcrete base TextComponent"
+  },
+  {
+    "demo": "Hyperlink",
+    "types": "Hyperlink",
+    "text": "Hyperlink\n\nOpen the existing component gallery in a separate tab.\n\nOriginal component gallery"
+  },
+  {
+    "demo": "DefinitionList",
+    "types": "DefinitionList,DescriptionTerm,DescriptionDetail",
+    "text": "DefinitionList,DescriptionTerm,DescriptionDetail\n\nNative description-list semantics.\n\nGeshra\n\nServer-driven Java UI components"
+  },
+  {
+    "demo": "OrderedList",
+    "types": "OrderedList,UnorderedList,ListItem",
+    "text": "OrderedList,UnorderedList,ListItem\n\nList containers with actual list-item children.\n\nFirst ordered item\nSecond ordered item\nUnordered item"
+  },
+  {
+    "demo": "Main",
+    "types": "Main,Header,Navigation,Article,Section,Aside,Footer,Div",
+    "text": "Main,Header,Navigation,Article,Section,Aside,Footer,Div\n\nSemantic containers have visible outlines in this sample; the names describe their native tags.\n\nHeader\n\nNavigation\n\nArticle\n\nSection\n\nAside\n\nFooter"
+  },
+  {
+    "demo": "HorizontalLayout",
+    "types": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar",
+    "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nToolbar idle"
+  },
+  {
+    "demo": "Badge",
+    "types": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider",
+    "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nReady: 40 percent"
+  },
+  {
+    "demo": "Table",
+    "types": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption",
+    "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nAda\tJava\nLin\tJavaScript\nClear table\nReset table\n\n2 rows; selection policy SINGLE (row selection is not implemented)"
+  },
+  {
+    "demo": "Tabbed",
+    "types": "Tabbed,TabButton",
+    "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nOverview tab content"
+  },
+  {
+    "demo": "Tree",
+    "types": "Tree,TreeNode",
+    "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n+\nProject\nRead tree selection\nRename tree branch\n\nNo selection read yet"
+  },
+  {
+    "demo": "Details",
+    "types": "Details,Summary,Accordion,Dialog,Popover",
+    "text": "Details,Summary,Accordion,Dialog,Popover\n\nNative disclosure and overlay actions with Java state feedback.\n\nDisclosure and overlays\n\nOpen the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover.\n\nDisclosure\n\nDisclosure closed\n\nFirst section\nSecond section\nOpen dialog\nShow popover\n\nNo dialog result"
+  },
+  {
+    "demo": "Tooltip",
+    "types": "Tooltip",
+    "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHide tooltip"
+  },
+  {
+    "demo": "VirtualList",
+    "types": "VirtualList",
+    "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 0\nItem 1\nItem 2\nItem 3\nItem 4\nItem 5\nItem 6\nItem 7\nItem 8\nItem 9\nItem 10\nItem 11"
+  },
+  {
+    "demo": "Image",
+    "types": "Image,Figure",
+    "text": "Image,Figure\n\nImage description accessibility is under test. This fixture is local and reloadable.\n\nLocal SVG illustration in a Figure"
+  },
+  {
+    "demo": "Audio",
+    "types": "Audio,Video",
+    "text": "Audio,Video\n\nUse native playback controls. Pause works through Java callbacks; play may require a direct browser user gesture.\n\nPause audio\nPause video\n\nPlayback idle"
+  },
+  {
+    "demo": "Canvas",
+    "types": "Canvas",
+    "text": "Canvas\n\nBlue rectangle is drawn through Canvas 2D commands; add a green circle or reload to reset.\n\nDraw canvas circle"
+  },
+  {
+    "demo": "Svg",
+    "types": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText",
+    "text": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText\n\nEvery SVG primitive in a native SVG namespace.\n\nSVG text"
+  },
+  {
+    "demo": "Script",
+    "types": "Script,Link",
+    "text": "Script,Link\n\nResource elements have no visible widget. Link loads this showcase stylesheet; Script is deliberately empty and executes no arbitrary code."
+  },
+  {
+    "demo": "Button",
+    "types": "Button,TextField",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 0"
+  }
+]

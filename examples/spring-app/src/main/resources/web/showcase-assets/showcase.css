@@ -1,0 +1,20 @@
+.showcase {max-width:1120px;margin:24px auto;padding:16px;font:16px/1.5 system-ui,sans-serif;color:#172033;background:#f5f7fb}
+.showcase>section {margin:28px 0;padding:20px;background:white;border:1px solid #d9dfeb;border-radius:12px;min-width:0}
+.showcase-sample {margin:18px 0;padding:18px;border:1px solid #cbd5e1;border-radius:8px;min-width:0;overflow-wrap:anywhere}
+.showcase-sample h3 {margin:0 0 8px;font:600 17px/1.4 system-ui,sans-serif;color:#1747a6}
+.showcase-sample p {margin:8px 0}
+.showcase input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),.showcase textarea,.showcase select {box-sizing:border-box;max-width:100%;padding:7px;border:1px solid #94a3b8;border-radius:5px;font:inherit}
+.showcase label {display:inline-block;margin:6px 10px 6px 0}
+.showcase button {margin:5px;padding:8px 12px;border:1px solid #64748b;border-radius:6px;background:#eef4ff;color:#123269;font:inherit;cursor:pointer}
+.showcase button:disabled {opacity:.5;cursor:default}
+.showcase :focus-visible {outline:3px solid #2563eb;outline-offset:3px}
+.showcase .geshra-horizontal,.showcase .geshra-button-bar,.showcase .geshra-toolbar {flex-wrap:wrap}
+.showcase table {border-collapse:collapse;max-width:100%}
+.showcase th,.showcase td {padding:8px 14px;border:1px solid #94a3b8;text-align:left}
+.showcase .tab-selected {background:#1747a6;color:white}
+.showcase pre {white-space:pre-wrap}
+.showcase svg,.showcase canvas,.showcase video,.showcase audio {max-width:100%}
+.showcase dialog {max-width:min(90vw,540px);border-radius:10px;padding:24px}
+.showcase dialog::backdrop {background:#17203388}
+.showcase header,.showcase nav,.showcase article,.showcase aside,.showcase footer,.showcase main {padding:8px;border:1px dashed #a3b0c6;margin:5px}
+@media(max-width:600px) {.showcase {margin:0;padding:8px}.showcase>section {padding:12px}.showcase-sample {padding:12px}.showcase .geshra-grid {grid-template-columns:1fr}}

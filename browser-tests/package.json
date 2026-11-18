@@ -2,9 +2,20 @@
   "name": "geshra-ui-browser-tests",
   "private": true,
   "scripts": {
-    "test": "node components.cjs && node web-features.cjs"
+    "build:runtime": "node build-runtime.cjs",
+    "check:runtime": "node build-runtime.cjs --check",
+    "check:source": "node source-check.cjs && prettier --config .prettierrc.json --check ../src/main/resources/web/js/runtime/*.js *.cjs",
+    "benchmark": "node performance.cjs",
+    "benchmark:compare": "node compare-performance.cjs",
+    "lab:matrix": "node browser-lab.cjs",
+    "lab:diagnostics": "node lab-diagnostics.cjs",
+    "lab:firefox": "node lab-firefox.cjs",
+    "lab:report": "node lab-report.cjs",
+    "test": "npm run check:source && node build-runtime.cjs --check && node protocol.cjs && node components.cjs && node web-features.cjs && node optimizer-protocol.cjs"
   },
   "devDependencies": {
-    "playwright": "1.64.0"
+    "esbuild": "0.25.12",
+    "playwright": "1.64.0",
+    "prettier": "3.6.2"
   }
 }

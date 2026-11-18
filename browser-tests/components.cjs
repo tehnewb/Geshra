@@ -11,20 +11,26 @@ const {chromium, firefox, webkit} = require('playwright');
     const errors = [];
     const viewportPackets = [];
     let inputPackets = 0;
-    page.on('pageerror', error => errors.push(error.message));
-    page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-    page.on('websocket', socket => socket.on('framesent', event => {
-        const bytes = event.payload;
-        if (Buffer.isBuffer(bytes) && bytes[0] === 4) inputPackets++;
-        if (Buffer.isBuffer(bytes) && bytes[0] === 8) viewportPackets.push(bytes);
-    }));
+    page.on('pageerror', (error) => errors.push(error.message));
+    page.on('console', (message) => {
+        if (message.type() === 'error') errors.push(message.text());
+    });
+    page.on('websocket', (socket) =>
+        socket.on('framesent', (event) => {
+            const bytes = event.payload;
+            if (!Buffer.isBuffer(bytes)) return;
+            const opcode = bytes[0] === 12 ? bytes[1] : bytes[0];
+            if (opcode === 4) inputPackets++;
+            if (opcode === 8) viewportPackets.push(bytes);
+        })
+    );
     // The library has no favicon, so avoid unrelated browser favicon requests in these checks.
-    await page.route('**/favicon.ico', route => route.fulfill({status: 204}));
+    await page.route('**/favicon.ico', (route) => route.fulfill({status: 204}));
     try {
         await page.goto((process.env.BASE_URL || 'http://localhost:4040') + '/components');
         await page.getByRole('heading', {name: 'Component gallery', exact: true}).waitFor();
         await page.waitForFunction(() => document.querySelectorAll('.geshra-virtual-row').length === 12);
-        const button = name => page.getByRole('button', {name, exact: true});
+        const button = (name) => page.getByRole('button', {name, exact: true});
         const read = async () => {
             await button('Read Java values').click();
             await page.waitForFunction(() => document.querySelector('[aria-label="Java values"]').textContent.startsWith('range='));
@@ -62,15 +68,18 @@ const {chromium, firefox, webkit} = require('playwright');
 
         const input = page.getByLabel('Retained input');
         await input.fill('native state');
-        await input.evaluate(element => {window.retainedNode = element; element.setSelectionRange(2, 5);});
+        await input.evaluate((element) => {
+            window.retainedNode = element;
+            element.setSelectionRange(2, 5);
+        });
         await button('Move input').click();
-        assert.equal(await input.evaluate(element => element === window.retainedNode), true);
+        assert.equal(await input.evaluate((element) => element === window.retainedNode), true);
         await button('Detach input').click();
         await input.waitFor({state: 'detached'});
         await button('Restore input').click();
         await input.waitFor();
         assert.equal(await input.inputValue(), 'native state');
-        assert.equal(await input.evaluate(element => element === window.retainedNode), true);
+        assert.equal(await input.evaluate((element) => element === window.retainedNode), true);
         await button('Dispose input').click();
         await input.waitFor({state: 'detached'});
         const beforeDisposedInput = inputPackets;
@@ -86,28 +95,45 @@ const {chromium, firefox, webkit} = require('playwright');
 
         const list = page.getByLabel('Virtual dataset');
         const firstRow = await list.locator('.geshra-virtual-row').first().getAttribute('id');
-        await list.evaluate(element => {window.overlap = element.querySelectorAll('.geshra-virtual-row')[5]; element.scrollTop = 64;});
+        await list.evaluate((element) => {
+            window.overlap = element.querySelectorAll('.geshra-virtual-row')[5];
+            element.scrollTop = 64;
+        });
         await page.waitForFunction(() => document.querySelector('.geshra-virtual-row').getAttribute('aria-posinset') === '5');
-        assert.ok(await list.locator('.geshra-virtual-row').count() <= 18);
-        assert.equal(await list.evaluate(element => Array.from(element.querySelectorAll('.geshra-virtual-row')).includes(window.overlap)), true);
+        assert.ok((await list.locator('.geshra-virtual-row').count()) <= 18);
+        assert.equal(await list.evaluate((element) => Array.from(element.querySelectorAll('.geshra-virtual-row')).includes(window.overlap)), true);
         await button('Jump to last item').click();
         await list.getByText('Item 999999', {exact: true}).waitFor();
-        assert.ok(await list.locator('.geshra-virtual-row').count() <= 16);
-        assert.ok(await list.evaluate(element => element.scrollHeight) <= 8000001);
-        assert.ok(await list.getByText('Item 999999', {exact: true}).evaluate(element => {
-            const row = element.getBoundingClientRect();
-            const viewport = element.closest('.geshra-virtual-list').getBoundingClientRect();
-            return row.top >= viewport.top - 1 && row.bottom <= viewport.bottom + 1;
-        }));
+        assert.ok((await list.locator('.geshra-virtual-row').count()) <= 16);
+        assert.ok((await list.evaluate((element) => element.scrollHeight)) <= 8000001);
+        assert.ok(
+            await list.getByText('Item 999999', {exact: true}).evaluate((element) => {
+                const row = element.getBoundingClientRect();
+                const viewport = element.closest('.geshra-virtual-list').getBoundingClientRect();
+                return row.top >= viewport.top - 1 && row.bottom <= viewport.bottom + 1;
+            })
+        );
         await button('Refresh virtual list').click();
         await list.getByText('Item 999999', {exact: true}).waitFor();
-        assert.ok(await list.locator('.geshra-virtual-row').count() <= 16);
+        assert.ok((await list.locator('.geshra-virtual-row').count()) <= 16);
         assert.ok(viewportPackets.length < 20, 'unchanged windows must not continuously send packets');
-        assert.equal(await page.getByLabel('SVG example').evaluate(element => element.firstElementChild.namespaceURI), 'http://www.w3.org/2000/svg');
-        assert.deepEqual(await page.getByLabel('Canvas example').evaluate(element => Array.from(element.getContext('2d').getImageData(15, 15, 1, 1).data)), [21, 101, 192, 255]);
+        assert.equal(await page.getByLabel('SVG example').evaluate((element) => element.firstElementChild.namespaceURI), 'http://www.w3.org/2000/svg');
+        assert.deepEqual(await page.getByLabel('Canvas example').evaluate((element) => Array.from(element.getContext('2d').getImageData(15, 15, 1, 1).data)), [21, 101, 192, 255]);
         assert.deepEqual(errors, []);
-        console.log(JSON.stringify({passed: true, browser: process.env.BROWSER || 'chromium', virtualItems: 1000000, liveRows: await list.locator('.geshra-virtual-row').count(), viewportPackets: viewportPackets.length, initialFirstRow: firstRow}));
+        console.log(
+            JSON.stringify({
+                passed: true,
+                browser: process.env.BROWSER || 'chromium',
+                virtualItems: 1000000,
+                liveRows: await list.locator('.geshra-virtual-row').count(),
+                viewportPackets: viewportPackets.length,
+                initialFirstRow: firstRow
+            })
+        );
     } finally {
         await browser.close();
     }
-})().catch(error => {console.error(error); process.exitCode = 1;});
+})().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

@@ -1,0 +1,43 @@
+Geshra visual testing plan — 2026-11-18
+
+Readiness: waiting for root to provide the exhaustive showcase URL and stable build. No visual approvals or product defect claims have been made.
+
+Source inventory: coverage.csv contains 114 public component classes, including the abstract ValueComponent base. Package-private VirtualRow and Tab, callback interfaces, and selection enums are supporting APIs rather than standalone rendered elements. Public Component and UI lifecycle/style APIs require representative demonstrations in addition to these rows. HiddenField, Script and Link need visible-effect/absence verification, not fabricated screenshots of invisible controls.
+
+Execution matrix:
+- Chrome desktop 1440x1000 and narrow 390x844; Firefox desktop/mobile-sized viewport where supported. Record actual engine/version and viewport with each capture. Mobile-sized desktop-browser testing does not establish real mobile-device support.
+- Default rendering for every public concrete component, with empty/populated and long content where meaningful; verify text hierarchy, spacing, alignment, clipping and document overflow.
+- Interactive controls: hover, visible keyboard focus, disabled, changed/selected, empty, read-only, required/invalid, native picker/open states where supported. Checkbox mixed state; radio group exclusivity; MultiSelect multiple selected and option groups.
+- Details/Accordion closed/open/group behavior. Dialog nonmodal/modal/close/Escape, backdrop, long content and focus. Popover show/hide/toggle/Escape/light dismiss; Tooltip actual visibility behavior and clipping.
+- Table and Tree NONE/SINGLE/MULTIPLE modes; empty data, selection changes, long labels, tree expanded/collapsed branches and leaf states. Tabs initial/switch/insert with long labels and narrow widths.
+- VirtualList initial/middle/end/empty/refreshed content, jump controls, resized height/row height/viewport, row boundaries and blank gaps. No performance benchmarks.
+- Graphics: every SVG primitive, Canvas initial drawing and redraw, Image loaded/alternative text. Audio/Video visible controls, ready/playing/paused/muted/seek and unavailable source if demo permits.
+- Layouts at desktop/narrow width; grid columns, toolbar/button bar wrapping and spacer behavior. Status values at limits, determinate/indeterminate progress, meter thresholds, spinner/reduced motion. Light/dark color schemes if enabled by CSS.
+- Component mutations: add/insert/remove/clear/detach/reinsert/dispose, text/HTML/property/class/style changes and disabled state. Screenshot visible before/after outcomes.
+
+Evidence requirements: each tested state receives browser, viewport, exact route, interaction steps, capture path and direct visual inspection result. Split rows into individual state records during execution. Group overview images cannot approve states hidden outside the image. DOM assertions support, but do not replace, image inspection.
+
+Bug record format: ID; severity; PRODUCT DEFECT or DEMO GAP; source component; route; browser/version; viewport; exact steps; expected; actual; screenshot; fix/retest status. Unsupported and blocked coverage stay explicit.
+
+Files owned by VISUAL TESTER: visual-test-results only. Existing production/demo/benchmark changes remain untouched.
+
+Showcase coordination update:
+- Planned test route: /showcase. Keep /components untouched for benchmark-gallery compatibility.
+- Expected implementation areas: showcase/*.java, routes/ShowcaseRoute.java, showcase resources, SHOWCASE.md.
+- Map coverage rows to stable data-types and data-demo samples once source exists; record callback output visibly before/after each action.
+- Expected groups: forms; text/semantics; layouts/status; overlays; tables/tabs/tree/lists; graphics/media; lifecycle/nonvisual.
+- Do not count containment of a class name in data-types as visual approval of that element or all its states.
+
+Source-only hypotheses to reproduce (not confirmed browser findings):
+S-001 Image.create writes src and description, without alt. Reproduce with a failed image URL and inspect fallback text plus accessible name. Expected constructor description to provide useful image description. Need capture on Chrome/Firefox and distinguish loaded-image appearance from fallback/accessibility effect.
+S-002 TreeNode.setValue dispatches SET_TEXT against this node, while create renders the label into its separate text Span. Reproduce on an expanded branch with at least one child: change label, then inspect caret, descendants, selection and subsequent toggle. Expected label change preserving branch controls and children. Need before/after screenshots and runtime dispatch confirmation.
+
+Additional demo requirements exposed by source:
+- Component and UI base APIs need representative lifecycle/style coverage beyond the 114-class inventory.
+- ValueComponent is abstract: demonstrate through actual subclasses.
+- NativeTextField, InputField and TextComponent are public concrete types: include explicit representative samples rather than only subclass examples.
+- HiddenField, Script, Link need observable outcomes or absence checks.
+- Table and Tree each expose all three selection modes; showcase should make each reachable.
+- No actual native/mobile browser support is inferred from a narrow desktop viewport.
+
+Status: ready to begin actual visual testing when root supplies the ready URL. No showcase files existed at this inspection. No production/demo changes made.

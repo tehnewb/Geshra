@@ -161,7 +161,11 @@ public enum DOMUpdateType {
     /**
      * Replaces managed document metadata after navigation.
      */
-    SET_SEO(35);
+    SET_SEO(35),
+    /**
+     * Resolves an untouched native single-select default after its option subtree is constructed.
+     */
+    INITIAL_SELECT(36, Integer.MAX_VALUE);
 
     /**
      * Explicit wire-code index built once, avoiding per-lookup enum-array cloning.

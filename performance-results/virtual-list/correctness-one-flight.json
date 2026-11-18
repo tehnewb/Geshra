@@ -1,0 +1,58 @@
+[
+  {
+    "browser": "chrome",
+    "deterministic": {
+      "packets": 7,
+      "failureEvents": 4,
+      "passed": true
+    },
+    "real": {
+      "passed": true,
+      "overlapSelection": true,
+      "focusHandoff": true,
+      "reconnect": true,
+      "durableEdit": true,
+      "disposal": true
+    },
+    "compatibility": [
+      {
+        "oldClient": true,
+        "oldServer": false,
+        "passed": true
+      },
+      {
+        "oldClient": false,
+        "oldServer": true,
+        "passed": true
+      }
+    ]
+  },
+  {
+    "browser": "firefox",
+    "deterministic": {
+      "packets": 7,
+      "failureEvents": 4,
+      "passed": true
+    },
+    "real": {
+      "passed": true,
+      "overlapSelection": true,
+      "focusHandoff": true,
+      "reconnect": true,
+      "durableEdit": true,
+      "disposal": true
+    },
+    "compatibility": [
+      {
+        "oldClient": true,
+        "oldServer": false,
+        "passed": true
+      },
+      {
+        "oldClient": false,
+        "oldServer": true,
+        "passed": true
+      }
+    ]
+  }
+]

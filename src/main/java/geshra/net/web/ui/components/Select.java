@@ -1,7 +1,7 @@
 package geshra.net.web.ui.components;
 
-
-
+import geshra.net.web.ui.DOMUpdateType;
+import geshra.net.web.ui.DOMUpdateParam;
 /**
  * Native single selection dropdown. Values remain strings, including empty values and punctuation.
  * An untouched select lets the browser select its first option. Explicit setValue follows the native
@@ -33,6 +33,9 @@ public class Select extends ValueComponent<String> {
     public void setValue(String value) { assigned = true; super.setValue(value); }
 
     @Override
-    protected void create() { if (assigned) super.create(); }
+    protected void create() {
+        if (assigned) super.create();
+        else queueForDispatch(DOMUpdateType.INITIAL_SELECT, DOMUpdateParam.VALUE, construct(getValue()));
+    }
 
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "engine": "chrome",
+    "entryFocus": "<button id=\"189\">Read tree selection</button>",
+    "tabStops": 0,
+    "treeTabindex": "-1"
+  },
+  {
+    "engine": "firefox",
+    "entryFocus": "<button id=\"189\">Read tree selection</button>",
+    "tabStops": 0,
+    "treeTabindex": "-1"
+  }
+]

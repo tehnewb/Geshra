@@ -1,0 +1,76 @@
+{
+  "range": {
+    "value": "100",
+    "feedback": "Java value: 100.0"
+  },
+  "multi": "Java value: [a,b, 日本語]",
+  "emptySelect": "Java value:",
+  "canvas": [
+    22,
+    163,
+    74,
+    255
+  ],
+  "svg": [
+    {
+      "tag": "g",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "rect",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "circle",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "line",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "polyline",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "polygon",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "path",
+      "namespace": "http://www.w3.org/2000/svg"
+    },
+    {
+      "tag": "text",
+      "namespace": "http://www.w3.org/2000/svg"
+    }
+  ],
+  "media": [
+    {
+      "tag": "AUDIO",
+      "ready": 0,
+      "error": "PipelineStatus::DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed"
+    },
+    {
+      "tag": "VIDEO",
+      "ready": 0,
+      "error": "PipelineStatus::DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed"
+    }
+  ],
+  "progress": 100,
+  "progressReset": 40,
+  "tabSemantics": [
+    {
+      "text": "Overview",
+      "role": null,
+      "tabIndex": 0,
+      "selected": null
+    },
+    {
+      "text": "Settings",
+      "role": null,
+      "tabIndex": 0,
+      "selected": null
+    }
+  ]
+}

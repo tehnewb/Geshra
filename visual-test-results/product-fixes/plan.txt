@@ -1,0 +1,44 @@
+FOCUSED PRODUCT-FIX VISUAL PLAN — 2026-11-18
+
+Status: SOURCE REVIEW/PLANNING ONLY. Current4050 build8004 is old and has not been browser-tested for these new fixes. Wait for explicit new PID/JAR SHA/readiness. Preserve all original/corrected/final evidence. No production/demo changes by VISUAL TESTER.
+
+Source review findings:
+- Select documents native untouched first-option selection and silent explicit setValue. Current Select.create skips superclass unless assigned, so child insertion/option property ordering must be validated rather than merely asserting configured value.
+- Option separates constructor value and label and sets selected through native Boolean property. OptionGroup contains nested options. Need distinguish constructor/property mutation ordering from text rendering.
+- Current Tree/TreeNode use div/span click targets and no tree/treeitem roles, roving tabindex, expanded/selected ARIA or keyboard handlers. Previous Tab skip is confirmed evidence. New fix must provide visible keyboard focus and state synchronization, not only DOM roles.
+- Existing selection modes NONE/SINGLE/MULTIPLE and Ctrl/Shift pointer semantics must remain understandable. Current mode changes retain prior selection; assert new documented policy, not an invented clearing guarantee.
+- Tree current docs describe a generic rotating-caret list that source does not implement. Coder/auditor should synchronize documentation if touched.
+
+New-build test matrix: Chrome157 and Firefox157,1440x1000 and390x844. Record actual engine version, new PID/hash, route/selector/action, visual screenshot inspection, functional/DOM supporting observations and limitations. Use fresh sessions for untouched defaults.
+
+Select source-backed variants required in real Java fixtures (no browser DOM substitution):
+S1 untouched flat options; S2 untouched nested OptionGroup followed by direct empty option (original bug); S3 groups only/multiple groups with distinct labels/values; S4 first option disabled; S5 first group disabled; S6 explicitly selected later direct/grouped option; S7 explicit setValue before attachment; S8 explicit empty-string value; S9 absent value/no matching option; S10 completely empty select; S11 dynamic option/group insertion or selected/disabled change if implemented/in scope.
+For each: inspect visible displayed label after settled initial attachment, after blur/focus and resize; record value, selectedIndex, selected flags, Java readout and callback count separately. Untouched defaults and silent programmatic assignments must not fabricate input/change callbacks. For disabled cases compare expected native semantics with an equivalent native HTML reference fixture where ambiguous. Never relabel explicit setValue('java') as native-default product fix. Keyboard opening/Arrow selection/Enter/Tab, pointer selection, option group headings and disabled appearance; selected value remains visible at narrow width. Firefox native popup capture limitation persists until successfully observed.
+
+Tree meaningful visible/accessible states:
+T1 initial root collapsed, visible focus on Tab entry, exactly one visible enabled treeitem in roving Tab order; tree accessible name and role; leaf has no false expandable indicator.
+T2 ArrowRight expands closed branch then enters child; ArrowLeft collapses open branch or returns to parent. aria-expanded and caret/children agree. No focus on hidden descendants.
+T3 ArrowUp/ArrowDown traverse visible nodes only; Home/End first/last visible; Tab/ShiftTab leave/enter tree as documented without keyboard trap.
+T4 Enter/Space select/toggle according to documented policy, selected highlight and aria-selected agree, focus and selection remain visually distinct. Prevent arrow/Space page scrolling while handled.
+T5 SINGLE/MULTIPLE/NONE keyboard selection and modifier behavior; pointer selection still works. Confirm actual implementation contract for Ctrl/Shift and focus-only navigation before asserting every shortcut.
+T6 Collapse ancestor while descendant has focus via pointer/programmatic toggle: focus returns to visible ancestor; roving tabindex stays unique, next arrow works. This is mandatory collapse handoff regression.
+T7 Rename expanded/focused/selected branch retains subtree, accessible name, caret, focus and selection. Root/branch/leaf labels remain correct.
+T8 Empty tree has coherent focus behavior and no invisible Tab stop. Disabled tree/node behavior if supported. Narrow long labels/focus ring must remain contained. Resize desktop/narrow with expanded tree and selected focused leaf.
+T9 Confirm screen-reader-facing role/group/name/expanded/selected DOM state as supporting evidence; actual screen reader speech is not claimed without testing.
+
+Cross-check small smoke: untouched form defaults, checkbox label activation, radio immediate peer feedback, non-secret password status, title, image alt/loaded, local media ready/play/pause, modal/Escape and viewport overflow. Retain prior broad113-type coverage for unchanged classes, clearly tied to earlier build.
+
+Evidence outputs owned here: product-fixes/build-identity.json, per-browser/viewport screenshots, results/state matrix, bug dispositions and final report. No browser work before new readiness. No benchmarks, server restarts or simultaneous demo edits.
+
+Fixtures/readiness needed from coder: stable sample selectors and visible Java readout/callback count for unassigned grouped Select variants, actual enabled/disabled/selected/empty variants, tree accessible name and documented key contract, expanded branch with descendants plus external collapse control for focused-child handoff. Missing fixture states will be explicit demo gaps, not passed from source or DOM-only assertions.
+
+Staged implementation update (not live/tested):
+- Main /showcase Select will remove explicit setValue workaround; default ordering fix must be verified against actual untouched initial state.
+- /showcase-regressions will supply10Select cases, visible Java value/readout and callback counts, same Tree and emptyTree. Bind exact selectors after source/readiness stabilizes.
+- Tree documented keys: Right/Left/arrows/Home/End; Space toggles inMULTIPLE, Enter exclusive selection. Verify role=tree/treeitem/group; aria-expanded/selected; unique visible rovingtabindex; focus visually separate from selection; collapse handoff. Do not assert allTree MULTIPLE Ctrl/Shift semantics if not promised; preserve existing pointer modifier behavior.
+- Tabbed additional product fix: inspect tablist/tab/tabpanel roles and aria-controls/aria-labelledby matching stable IDs; selected tab aria-selected=true, panel visibility agrees. Exactly one tabbable selectedTab. ArrowLeft/Right/Home/End automatic activation and visible focus; wrapping first/last if documented; Tab exits to active panel/control without visiting hidden panels; pointer selection and insertion still preserve correct association. Test at390px with focus outlines visible/contained and1440px both engines. Add empty/single tab if regressionfixtures support. Long label wrapping/resizing if accessible sample.
+- UI.setTitle ordering barrier: /showcase-regressions has noSeo override. Verify document.title after initial assembly, settled connection and reload equals route-set title; cross-route navigation title replacement if fixture provides. Title check is DOM/browserchrome metadata evidence, not a rendered card screenshot approval.
+- Small smoke includes password non-secret count, radio peers, form defaults, image/media, modalEscape, zero document overflow. Updated product coverage must not relabel prior explicitJava finalbuild as general native-default fix.
+- Focus-visible screenshots required at tree entry, focused selected and unselected leaves, collapsed ancestor handoff, selectedTab after Arrow/Home/End, narrow active controls. Keyboard moves should not scroll document unexpectedly. Native focus can be tested from a previousTab stop usingTab rather than only programmaticfocus.
+
+Status remains waiting for audited newPID/hash/URL readiness. No browsers launched for staged code.

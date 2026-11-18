@@ -14,6 +14,8 @@ import java.util.concurrent.RejectedExecutionException;
  * Issues HttpOnly session cookies before WebSocket upgrade and implements same-origin HTTP
  * session actions. Identity changes run on the session's UI thread; credential work is bounded
  * and offloaded. This handler owns one connection's pending handshake cookie.
+ * Optional initial-route query data is bounded and accepted only after the same-origin boundary;
+ * it contains no credentials or session state. The normal upgrade URI is restored for Netty.
  */
 final class SessionHttpHandler extends ChannelDuplexHandler {
     private final SessionService sessions; // Shared server-owned session operations.
@@ -55,6 +57,37 @@ final class SessionHttpHandler extends ChannelDuplexHandler {
         }
         SessionContext session = sessions.find(ctx, request.headers());
         if (upgrade) {
+            ctx.channel()
+                    .attr(Wire.BOOTSTRAP_ROUTE)
+                    .set(null);
+            ctx.channel()
+                    .attr(Wire.BOOTSTRAP_COMPACT)
+                    .set(false);
+            try {
+                if (request.uri().indexOf('?') >= 0) {
+                    if (request.uri().length() > 2200) throw new IllegalArgumentException("Bootstrap URI too long");
+                    Map<String, List<String>> parameters = new QueryStringDecoder(request.uri())
+                            .parameters();
+                    List<String> paths = parameters.get("geshra-bootstrap");
+                    if (paths != null) {
+                        String route = paths.size() == 1 ? paths.getFirst() : "";
+                        if (route.isEmpty() || route.length() > 2048 || route.charAt(0) != '/' || route.indexOf('\0') >= 0 || route.indexOf('\\') >= 0) throw new IllegalArgumentException("Invalid bootstrap route");
+                        List<String> protocols = parameters.get("geshra-protocol");
+                        boolean compact = protocols != null && protocols.size() == 1 && protocols.getFirst().equals("2");
+                        ctx.channel()
+                                .attr(Wire.BOOTSTRAP_ROUTE)
+                                .set(route);
+                        ctx.channel()
+                                .attr(Wire.BOOTSTRAP_COMPACT)
+                                .set(compact);
+                        request.setUri("/ws");
+                    }
+                }
+            } catch (IllegalArgumentException invalidBootstrap) {
+                reply(ctx, request, HttpResponseStatus.BAD_REQUEST, "{\"error\":\"Invalid bootstrap request\"}");
+                ReferenceCountUtil.release(request);
+                return;
+            }
             if (session == null) {
                 session = sessions.create(ctx);
             }

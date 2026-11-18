@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.ui.Component;
 import geshra.net.web.ui.Key;
@@ -16,22 +17,26 @@ import java.nio.charset.StandardCharsets;
 public class KeyUpPacketHandler implements PacketHandler {
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        int componentID = packet.readInt();
+        int componentID = PacketInput.integer(context, packet);
         UI ui = context.getUI();
         Component component = ui.get(componentID);
 
         if (component == null)
             return;
 
-        boolean repeated = packet.readUnsignedByte() == 1;
-        int modifiers = packet.readUnsignedByte();
-        int length = packet.readUnsignedShort();
+        int flags = packet.readUnsignedByte();
+        boolean repeated = context.isCompactInput() ? (flags & 16) != 0 : flags == 1;
+        int modifiers = context.isCompactInput() ? flags & 15 : packet.readUnsignedByte();
+        int length = PacketInput.length(context, packet);
         String keyName = packet.readCharSequence(length, StandardCharsets.UTF_8)
                 .toString();
         Key key = Key.fromName(keyName);
 
         component.publish(new KeyUpEvent(key, repeated, modifiers));
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == KeyUpPacketHandler.class; }
 
     @Override
     public int getID() {

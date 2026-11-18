@@ -1,0 +1,68 @@
+[
+  {
+    "engine": "chrome",
+    "tag": "audio",
+    "play": {
+      "paused": false,
+      "time": 0.182553,
+      "duration": 2
+    },
+    "pause": {
+      "paused": true,
+      "time": 0.20926
+    },
+    "feedback": "Audio,Video\n\nUse native playback controls. Pause works through Java callbacks; play may require a direct browser user gesture.\n\nPause audio\nPause video\n\nAudio paused"
+  },
+  {
+    "engine": "chrome",
+    "tag": "video",
+    "play": {
+      "paused": true,
+      "time": 0,
+      "duration": 2.37229
+    },
+    "pause": {
+      "paused": true,
+      "time": 0
+    },
+    "feedback": "Audio,Video\n\nUse native playback controls. Pause works through Java callbacks; play may require a direct browser user gesture.\n\nPause audio\nPause video\n\nAudio paused"
+  },
+  {
+    "engine": "chrome",
+    "checkboxLabelChecked": true,
+    "title": "Geshra UI showcase"
+  },
+  {
+    "engine": "firefox",
+    "tag": "audio",
+    "play": {
+      "paused": false,
+      "time": 0.144083,
+      "duration": 2
+    },
+    "pause": {
+      "paused": true,
+      "time": 0.18475
+    },
+    "feedback": "Audio,Video\n\nUse native playback controls. Pause works through Java callbacks; play may require a direct browser user gesture.\n\nPause audio\nPause video\n\nAudio paused"
+  },
+  {
+    "engine": "firefox",
+    "tag": "video",
+    "play": {
+      "paused": false,
+      "time": 0.203814,
+      "duration": 2.37229
+    },
+    "pause": {
+      "paused": true,
+      "time": 0.243877
+    },
+    "feedback": "Audio,Video\n\nUse native playback controls. Pause works through Java callbacks; play may require a direct browser user gesture.\n\nPause audio\nPause video\n\nVideo paused"
+  },
+  {
+    "engine": "firefox",
+    "checkboxLabelChecked": true,
+    "title": "Geshra UI showcase"
+  }
+]

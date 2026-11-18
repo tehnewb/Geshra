@@ -1,0 +1,58 @@
+[
+  {
+    "engine": "chrome",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/repro-explicit-existing.png",
+    "value": "javascript",
+    "text": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/repro-explicit-empty.png",
+    "value": "",
+    "text": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/repro-all-disabled.png",
+    "value": "",
+    "text": "Java value: disabled; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/repro-explicit-property.png",
+    "value": "",
+    "text": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/repro-explicit-existing.png",
+    "value": "javascript",
+    "text": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/repro-explicit-empty.png",
+    "value": "",
+    "text": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/repro-all-disabled.png",
+    "value": "",
+    "text": "Java value: disabled; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/repro-explicit-property.png",
+    "value": "",
+    "text": "Java value: ; callbacks: 0"
+  }
+]

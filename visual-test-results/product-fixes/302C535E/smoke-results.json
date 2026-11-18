@@ -1,0 +1,54 @@
+[
+  {
+    "engine": "chrome",
+    "title": "Geshra UI showcase",
+    "untouchedMainSelect": "java",
+    "cards": 48,
+    "width": 390,
+    "image": {
+      "loaded": true,
+      "alt": "Blue Geshra sample illustration"
+    },
+    "media": [
+      {
+        "tag": "AUDIO",
+        "ready": 4
+      },
+      {
+        "tag": "VIDEO",
+        "ready": 4
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "reloadTitle": "Geshra UI showcase",
+    "formName": "Ada"
+  },
+  {
+    "engine": "firefox",
+    "title": "Geshra UI showcase",
+    "untouchedMainSelect": "java",
+    "cards": 48,
+    "width": 390,
+    "image": {
+      "loaded": true,
+      "alt": "Blue Geshra sample illustration"
+    },
+    "media": [
+      {
+        "tag": "AUDIO",
+        "ready": 4
+      },
+      {
+        "tag": "VIDEO",
+        "ready": 4
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "reloadTitle": "Geshra UI showcase",
+    "formName": "Ada"
+  }
+]

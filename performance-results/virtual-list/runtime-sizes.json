@@ -1,0 +1,12 @@
+{
+  "before": {
+    "raw": 21683,
+    "gzip": 8030,
+    "sha256": "ffdc29cdc5f7558aaad4d2b14256a665345725323510b27bb5c37ab8f58f28b1"
+  },
+  "after": {
+    "raw": 23658,
+    "gzip": 8620,
+    "sha256": "69c11ad8f71cae5a2c95cb1787dbae2c4a1d7bd30f6640ab1e8d6a1083e007cb"
+  }
+}

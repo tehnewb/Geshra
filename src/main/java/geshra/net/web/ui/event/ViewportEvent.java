@@ -12,6 +12,7 @@ public final class ViewportEvent extends Event {
     private final int revision; // Dataset/configuration generation.
     private final int first; // Inclusive visible-buffer range start.
     private final int end; // Exclusive visible-buffer range end.
+    private final int token; // Optional browser request identity; zero denotes an older client.
 
     /**
      * Creates an indexed viewport request.
@@ -19,7 +20,16 @@ public final class ViewportEvent extends Event {
      * @param first inclusive start
      * @param end exclusive end
      */
-    public ViewportEvent(int revision, int first, int end) { super(EventTypes.VIEWPORT); this.revision = revision; this.first = first; this.end = end; }
+    public ViewportEvent(int revision, int first, int end) { this(revision, first, end, 0); }
+
+    /**
+     * Creates a request with an identity preserved across reconnects and range resubmissions.
+     * @param revision configuration generation
+     * @param first inclusive start
+     * @param end exclusive end
+     * @param token non-negative request identity, or zero for older clients
+     */
+    public ViewportEvent(int revision, int first, int end, int token) { super(EventTypes.VIEWPORT); this.revision = revision; this.first = first; this.end = end; this.token = token; }
 
     /**
      * Returns the configuration generation.
@@ -38,4 +48,10 @@ public final class ViewportEvent extends Event {
      * @return end index
      */
     public int getEnd() { return end; }
+
+    /**
+     * Returns the request identity echoed by a request-aware server.
+     * @return request token, or zero for an older client
+     */
+    public int getToken() { return token; }
 }

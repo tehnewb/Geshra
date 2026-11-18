@@ -44,21 +44,24 @@ ui.add(choices);
 ## Virtual lists
 
 ```java
-VirtualList<String> list = new VirtualList<>(
-    1_000_000,
-    index -> "Item " + index,
-    item -> new Span(item)
-);
-list.setHeightPixels(320);
-list.setRowHeight(32);
-list.setOverscan(4);
+VirtualList<String> list = new VirtualList<>(1_000_000, index -> "Item " + index, Span::new)
+        .setHeightPixels(320)
+        .setRowHeight(32)
+        .setOverscan(4)
+        .setMaximumPendingRequests(32);
 ui.add(list);
 list.scrollToIndex(900_000);
 ```
 
 The indexed provider runs only for newly rendered rows. No million-item array or component tree is allocated. The alternative `new VirtualList<>(items, renderer)` retains your indexed List without copying it; use an ArrayList or another constant-time indexed list. Call `refresh()` after changing that retained list, or `setItems(newItems)` to replace it.
 
+Use `setDataProvider(count, provider)` to replace a lazy source without copying it. Optional `setKeyProvider(provider)` supplies non-null logical keys of at most 1,024 characters; duplicate keys are checked within the live window. Default keys are dataset indices. Logical keys do not reuse stale components across refresh or reorder: the renderer creates current content and callbacks again.
+
 Rows have fixed heights. A renderer must return a fresh unattached component for each row. Overlapping windows preserve native nodes, component IDs, and callbacks; rows leaving the window are disposed. Scroll/resize notifications are coalesced to one animation-frame request and unchanged windows send no extra requests. The normal live count is approximately `ceil(viewportHeight / rowHeight) + 2 * overscan + 1`. Requests are capped at 4,096 rows and stale configuration generations are rejected. Large datasets scale native scroll coordinates into a maximum eight-million-pixel extent.
+
+The default pipeline sends changed ranges immediately up to 32 outstanding requests per list, then retains only the latest desired range until a slot opens. `setMaximumPendingRequests(1)` through `(32)` selects the bound. Lower values save intermediate work but can add waiting after a jump. The ceiling bounds client request records per list, not all server work under arbitrary networks or concurrent users. Request tokens reject stale acknowledgments after reconnect or repeated ranges. Older servers retain the compatible one-request path.
+
+An evicting request moves focus from an outgoing row to the list root before sending and makes affected rows inert until committed responses arrive. Keep durable edits and selection in the application model; overlapping rows retain native selection, while evicted rows are disposed. A failed range is retried once; repeated failure emits the native `geshra-virtual-error` event until the desired range/configuration changes.
 
 Keep provider and renderer functions fast: they run on the session dispatch thread. Refresh rebuilds the current window and retains the browser's scroll position, which is clamped if the dataset shrinks. Variable-height rows, remote data fetching, and grid virtualization are separate concerns.
 

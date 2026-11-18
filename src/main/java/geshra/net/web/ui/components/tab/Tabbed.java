@@ -2,12 +2,17 @@ package geshra.net.web.ui.components.tab;
 
 import geshra.net.web.ui.Component;
 import geshra.net.web.ui.components.Div;
+import geshra.net.web.ui.event.KeyDownEvent;
 import geshra.net.web.ui.css.*;
 
 import java.util.ArrayList;
 
 /**
- * Coordinates a row of tab buttons and a container of tab content. Each tab owns a wrapper whose visibility follows the selected index; no tab is selected initially. Add and select tabs on the owning session event loop after binding the component to a UI.
+ * Coordinates a horizontal ARIA tablist and linked tab panels. Each tab owns a wrapper whose visibility
+ * follows the selected index; no tab is selected initially. One enabled button is a keyboard tab stop.
+ * Left/Right/Home/End move focus and activate the corresponding enabled tab; native Enter/Space and
+ * pointer activation retain button behavior. All panels are already present, so activation never
+ * fetches remote content. Add, insert and select on the owning session event loop.
  */
 public class Tabbed extends Div {
 
@@ -23,6 +28,8 @@ public class Tabbed extends Div {
     public Tabbed() {
         super();
         this.buttonContainer = new Div();
+        this.buttonContainer.attribute("role", "tablist");
+        this.buttonContainer.ariaLabel("Tabs");
         this.contentContainer = new Div();
     }
 
@@ -41,13 +48,16 @@ public class Tabbed extends Div {
                 .display(Display.NONE)
                 .overflow(Overflow.AUTO);
         wrapper.add(component);
+        configureTab(button, wrapper);
 
         buttonContainer.add(button);
         contentContainer.add(wrapper);
 
         Tab tab = new Tab(button, wrapper);
-        tab.button().tabbed = this;
+        tab.button()
+                .tabbed = this;
         tabs.add(tab);
+        updateTabStops();
         return this;
     }
 
@@ -70,17 +80,22 @@ public class Tabbed extends Div {
                 .display(Display.NONE)
                 .overflow(Overflow.AUTO);
         wrapper.add(component);
+        configureTab(button, wrapper);
 
         contentContainer.add(wrapper);
         buttonContainer.insertBefore(tabs.get(index).button(), button);
 
         Tab tab = new Tab(button, wrapper);
-        tab.button().tabbed = this;
+        tab.button()
+                .tabbed = this;
         tabs.add(index, tab);
         if (selectedTab >= index) selectedTab++;
 
         for (int i = index + 1; i < tabs.size(); i++)
-            tabs.get(i).button().index = i;
+            tabs.get(i)
+                    .button()
+                    .index = i;
+        updateTabStops();
         return this;
     }
 
@@ -97,6 +112,8 @@ public class Tabbed extends Div {
 
         for (int i = 0; i < tabs.size(); i++) {
             Tab tab = tabs.get(i);
+            tab.button()
+                    .attribute("aria-selected", String.valueOf(i == index));
             if (i == index) {
                 tab.button()
                         .addClassName("tab-selected");
@@ -118,6 +135,64 @@ public class Tabbed extends Div {
                     .removeClassName("tab-selected");
         }
         this.selectedTab = index;
+        updateTabStops();
+    }
+
+    /**
+     * Links one real tab button and panel without depending on their DOM attachment order.
+     * @param button tab selector
+     * @param panel owned content wrapper
+     */
+    private void configureTab(TabButton button, Div panel) {
+        button.attribute("role", "tab");
+        button.attribute("aria-selected", "false");
+        button.attribute("aria-controls", Integer.toString(panel.getComponentID()));
+        panel.attribute("role", "tabpanel");
+        panel.attribute("aria-labelledby", Integer.toString(button.getComponentID()));
+        panel.attribute("tabindex", "0");
+    }
+
+    /**
+     * Maintains one enabled tab stop after insertion or selection, including the no-selection state.
+     */
+    void updateTabStops() {
+        int focus = selectedTab;
+        if (focus < 0 || !tabs.get(focus).button().isEnabled()) {
+            focus = -1;
+            for (int index = 0; index < tabs.size(); index++) if (tabs.get(index).button().isEnabled()) { focus = index; break; }
+        }
+        for (int index = 0; index < tabs.size(); index++) tabs.get(index)
+                .button()
+                .attribute("tabindex", index == focus ? "0" : "-1");
+    }
+
+    /**
+     * Activates adjacent enabled tabs on navigation keys without trapping Tab or browser shortcuts.
+     * @param button event target
+     * @param event typed browser key event
+     */
+    void keyDown(TabButton button, KeyDownEvent event) {
+        if (event.getKey() == null || event.isAltPressed() || event.isMetaPressed() || tabs.isEmpty()) return;
+        int direction;
+        int target;
+        switch (event.getKey()) {
+            case ARROW_LEFT -> { direction = -1; target = button.index - 1; }
+            case ARROW_RIGHT -> { direction = 1; target = button.index + 1; }
+            case HOME -> { direction = 1; target = 0; }
+            case END -> { direction = -1; target = tabs.size() - 1; }
+            default -> { return; }
+        }
+        for (int count = 0; count < tabs.size(); count++) {
+            target = Math.floorMod(target, tabs.size());
+            TabButton next = tabs.get(target)
+                    .button();
+            if (next.isEnabled()) {
+                selectTab(target);
+                next.callMethod("focus");
+                return;
+            }
+            target += direction;
+        }
     }
 
     /**

@@ -35,6 +35,8 @@ import java.nio.charset.StandardCharsets;
  * Assets larger than one MiB stream in small chunks through Netty's ChunkedWriteHandler, respecting
  * channel backpressure rather than allocating a byte array for the complete file. HEAD requests
  * use metadata without opening the content stream. Mutable cache state is concurrency-safe.
+ * Retained non-HTML assets support browser-private weak ETag validation without hashing on hits.
+ * Browser caches must revalidate; live files, HTML, errors and streamed responses remain no-store.
  */
 @ChannelHandler.Sharable
 public class StaticFileHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
@@ -169,7 +171,56 @@ public class StaticFileHandler extends SimpleChannelInboundHandler<FullHttpReque
      */
     private void sendAsset(ChannelHandlerContext ctx, FullHttpRequest request, CachedAsset asset) {
         boolean gzip = asset.gzipContent() != null && acceptsGzip(request.headers().get(HttpHeaderNames.ACCEPT_ENCODING));
+        String entityTag = asset.contentType().startsWith("text/html") ? null : asset.entityTag();
+        if (entityTag != null) {
+            boolean unchanged = matchesEntityTag(request.headers().get(HttpHeaderNames.IF_NONE_MATCH), entityTag);
+            byte[] content = gzip ? asset.gzipContent() : asset.content();
+            FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, unchanged ? HttpResponseStatus.NOT_MODIFIED : HttpResponseStatus.OK, unchanged || request.method().equals(HttpMethod.HEAD) ? Unpooled.EMPTY_BUFFER : Unpooled.wrappedBuffer(content));
+            response.headers()
+                    .set(HttpHeaderNames.ETAG, entityTag);
+            response.headers()
+                    .set(HttpHeaderNames.CACHE_CONTROL, "private, no-cache");
+            response.headers()
+                    .set(HttpHeaderNames.VARY, HttpHeaderNames.ACCEPT_ENCODING);
+            response.headers()
+                    .set(HttpHeaderNames.CONTENT_TYPE, asset.contentType());
+            if (gzip) response.headers()
+                    .set(HttpHeaderNames.CONTENT_ENCODING, HttpHeaderValues.GZIP);
+            if (!unchanged) response.headers()
+                    .setInt(HttpHeaderNames.CONTENT_LENGTH, content.length);
+            finish(ctx, request, response);
+            return;
+        }
         send(ctx, request, HttpResponseStatus.OK, asset.contentType(), gzip ? asset.gzipContent() : asset.content(), gzip);
+    }
+
+    /**
+     * Applies the required weak If-None-Match comparison, including lists and wildcard. Quoted
+     * tags may contain commas, so separators are recognized only outside a quoted entity tag.
+     * @param header client validator list, or null
+     * @param entityTag retained weak validator
+     * @return whether a cached representation is still current
+     */
+    private boolean matchesEntityTag(String header, String entityTag) {
+        if (header == null) return false;
+        if (header.equals(entityTag) || header.equals("*")) return true;
+        boolean quoted = false;
+        int start = 0;
+        for (int index = 0; index <= header.length(); index++) {
+            if (index < header.length()) {
+                char character = header.charAt(index);
+                if (character == '"') quoted = !quoted;
+                if (character != ',' || quoted) continue;
+            }
+            int end = index;
+            while (start < end && header.charAt(start) <= ' ') start++;
+            while (end > start && header.charAt(end - 1) <= ' ') end--;
+            if (end - start == 1 && header.charAt(start) == '*') return true;
+            if (end - start >= 2 && header.charAt(start) == 'W' && header.charAt(start + 1) == '/') start += 2;
+            if (end - start == entityTag.length() - 2 && entityTag.regionMatches(2, header, start, end - start)) return true;
+            start = index + 1;
+        }
+        return false;
     }
 
     /**
@@ -231,6 +282,8 @@ public class StaticFileHandler extends SimpleChannelInboundHandler<FullHttpReque
                 .setInt(HttpHeaderNames.CONTENT_LENGTH, content.length);
         response.headers()
                 .set(HttpHeaderNames.VARY, HttpHeaderNames.ACCEPT_ENCODING);
+        response.headers()
+                    .set(HttpHeaderNames.CACHE_CONTROL, "no-store");
         if (gzip) response.headers()
                 .set(HttpHeaderNames.CONTENT_ENCODING, HttpHeaderValues.GZIP);
         finish(ctx, request, response);
@@ -243,6 +296,8 @@ public class StaticFileHandler extends SimpleChannelInboundHandler<FullHttpReque
      * @param response response message
      */
     private void finish(ChannelHandlerContext ctx, FullHttpRequest request, FullHttpResponse response) {
+        if (!response.headers().contains(HttpHeaderNames.CACHE_CONTROL)) response.headers()
+                    .set(HttpHeaderNames.CACHE_CONTROL, "no-store");
         boolean keepAlive = HttpUtil.isKeepAlive(request);
         HttpUtil.setKeepAlive(response, keepAlive);
         ChannelFuture sent = ctx.writeAndFlush(response);
@@ -261,6 +316,8 @@ public class StaticFileHandler extends SimpleChannelInboundHandler<FullHttpReque
     private void stream(ChannelHandlerContext ctx, FullHttpRequest request, Resource resource, String mime, long length) throws IOException {
         InputStream input = resource.getInputStream();
         HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
+        response.headers()
+                    .set(HttpHeaderNames.CACHE_CONTROL, "no-store");
         response.headers()
                 .set(HttpHeaderNames.CONTENT_TYPE, mime);
         if (length >= 0) response.headers()

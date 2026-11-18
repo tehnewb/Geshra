@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.ui.components.ValueComponent;
 import io.netty.buffer.ByteBuf;
@@ -14,12 +15,15 @@ import java.nio.charset.StandardCharsets;
 public final class ValueSyncPacketHandler implements PacketHandler {
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        int id = packet.readInt();
-        int length = packet.readUnsignedShort();
+        int id = PacketInput.integer(context, packet);
+        int length = PacketInput.length(context, packet);
         String value = packet.readCharSequence(length, StandardCharsets.UTF_8)
                 .toString();
         if (context.getUI().get(id) instanceof ValueComponent component) component.synchronizeValue(component.deconstruct(value));
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == ValueSyncPacketHandler.class; }
 
     @Override
     public int getID() { return 10; }

@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Move input",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-0.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 0",
+    "inputCount": 1
+  },
+  {
+    "label": "Detach input",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-1.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 0",
+    "inputCount": 0
+  },
+  {
+    "label": "Restore input",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-2.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 0",
+    "inputCount": 1
+  },
+  {
+    "label": "Removable listener",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-3.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 1",
+    "inputCount": 1
+  },
+  {
+    "label": "Remove listener",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-4.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 1",
+    "inputCount": 1
+  },
+  {
+    "label": "Removable listener",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-5.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 1",
+    "inputCount": 1
+  },
+  {
+    "label": "Dispose input",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/lifecycle-6.png",
+    "text": "Button,TextField\n\nMove, detach, restore, dispose and unsubscribe real retained components. Reload resets disposed examples.\n\nRetained nodes\n\nMove or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback.\n\nMove input\nDetach input\nRestore input\nDispose input\nRemovable listener\nRemove listener\n\nNative calls: 1",
+    "inputCount": 0
+  }
+]

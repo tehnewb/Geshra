@@ -1,0 +1,24 @@
+{
+  "before": {
+    "artifact": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\build\\virtual-list-before.jar",
+    "sha256": "fa1986f0abb115c827c33bda4c79f23c474241772f84b7e72a7506988e6baa12",
+    "entries": {
+      "BOOT-INF/classes/virtualbench/VirtualApplication.class": "bf8747bfaf959f49b82630a8e2fee556a19aa6b9180c2895063094fe79d6558c",
+      "BOOT-INF/classes/virtualbench/VirtualRoute.class": "e2a6dbfe850cd366955b12e5c860688945a9046067398596e97e1b0d1d489556",
+      "BOOT-INF/classes/virtualbench/VirtualState.class": "d42ff04b003a4671c178dbff68564fa5bc0f7d4eb497579f7bcb7527d814f54e",
+      "BOOT-INF/classes/web/index.html": "2a6e8cca2384aac63faff10ffab8f854669cc4ca9af6f7f98ad667f344cbf5ab",
+      "BOOT-INF/classes/web/virtual.css": "1932a44860f852506c75dd474409801191206b10e636422721f53406d3dcb67f"
+    }
+  },
+  "after": {
+    "artifact": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\build\\virtual-list-after.jar",
+    "sha256": "6661e7453b9e76c36d4cd578eaafd2eaec2a03ffc92d0b03879204f722f9b780",
+    "entries": {
+      "BOOT-INF/classes/virtualbench/VirtualApplication.class": "bf8747bfaf959f49b82630a8e2fee556a19aa6b9180c2895063094fe79d6558c",
+      "BOOT-INF/classes/virtualbench/VirtualRoute.class": "e2a6dbfe850cd366955b12e5c860688945a9046067398596e97e1b0d1d489556",
+      "BOOT-INF/classes/virtualbench/VirtualState.class": "d42ff04b003a4671c178dbff68564fa5bc0f7d4eb497579f7bcb7527d814f54e",
+      "BOOT-INF/classes/web/index.html": "2a6e8cca2384aac63faff10ffab8f854669cc4ca9af6f7f98ad667f344cbf5ab",
+      "BOOT-INF/classes/web/virtual.css": "1932a44860f852506c75dd474409801191206b10e636422721f53406d3dcb67f"
+    }
+  }
+}

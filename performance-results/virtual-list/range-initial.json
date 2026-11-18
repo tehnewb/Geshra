@@ -1,0 +1,981 @@
+{
+  "recordedAt": "2026-11-18T02:29:50.052Z",
+  "package": "@tanstack/virtual-core@3.19.11",
+  "kind": "range-subsystem-only",
+  "candidates": [
+    {
+      "name": "fixed",
+      "bytes": 660,
+      "gzipBytes": 389,
+      "sha256": "8eafffceb151fd0a948f9fe25a4144b13fdd41578086652d756e5ff42f55f2cd"
+    },
+    {
+      "name": "tanstack",
+      "bytes": 32297,
+      "gzipBytes": 9705,
+      "sha256": "9a02e1f77dc5f8024794fab57971f3fe18f3d1d378af3cf8952209329ce703a1"
+    }
+  ],
+  "samples": [
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0.7999999523162842,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 41.30000001192093,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.800000011920929,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 40.30000001192093,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0.800000011920929,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.6000000238418579,
+        "loopMs": 41.5,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.5,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 40.89999997615814,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0.7999999523162842,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 0.09999996423721313,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 39.19999998807907,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 40.5,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -36108
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0.699999988079071,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0.9000000357627869,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0.10000002384185791,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.5999999642372131,
+        "loopMs": 68.10000002384186,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 324272
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3.099999964237213,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.399999976158142,
+        "loopMs": 66.80000001192093,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 329268
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1.0999999642372131,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3.5,
+        "loopMs": 0.10000002384185791,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.899999976158142,
+        "loopMs": 75,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 324272
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.4000000357627869,
+        "loopMs": 61.5,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 324272
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1.0999999642372131,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2.899999976158142,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 63.59999996423721,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 324708
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 3.300000011920929,
+        "loopMs": 60.40000003576279,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": 329268
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": -15256
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 30,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 31,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 2,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 22,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 2,
+        "loopMs": 21,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 23,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 22,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 199848484
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 34,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 2,
+        "loopMs": 36,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 1,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 2,
+        "loopMs": 40,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 3,
+        "loopMs": 35,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 31,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 3,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 2,
+        "loopMs": 32,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 20000,
+        "checksum": 1980962164
+      },
+      "retainedHeapDelta": null
+    }
+  ]
+}

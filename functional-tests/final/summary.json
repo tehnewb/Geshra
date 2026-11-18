@@ -1,0 +1,34 @@
+[
+  {
+    "Engine": "chromium",
+    "Suite": "showcase-results.json",
+    "PID": 8004,
+    "SHA256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "Pass": 28,
+    "Fail": 0
+  },
+  {
+    "Engine": "chromium",
+    "Suite": "extended-results.json",
+    "PID": 8004,
+    "SHA256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "Pass": 11,
+    "Fail": 0
+  },
+  {
+    "Engine": "firefox",
+    "Suite": "showcase-results.json",
+    "PID": 8004,
+    "SHA256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "Pass": 28,
+    "Fail": 0
+  },
+  {
+    "Engine": "firefox",
+    "Suite": "extended-results.json",
+    "PID": 8004,
+    "SHA256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "Pass": 11,
+    "Fail": 0
+  }
+]

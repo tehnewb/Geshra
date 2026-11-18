@@ -1,0 +1,1767 @@
+{
+  "recordedAt": "2026-11-18T00:13:30.091Z",
+  "browser": "157.0",
+  "engine": "firefox",
+  "conditions": "unthrottled, fresh context, desktop user agent, viewport size only",
+  "source": {
+    "head": "4cb01d23b71fac5a3c8a3c2c36d94256d0550361",
+    "sourceSha256": "358999f00beaced227a0b0ee24d8ae1783e2e02c2d0a26085d81dcd25ac1ad16",
+    "files": 296
+  },
+  "samples": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "repeat": 1,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 965,
+        "navigation": {
+          "ttfbMs": 24,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 125,
+          "loadMs": 127,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 129,
+        "lcpMs": 129,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 86,
+            "durationMs": 34,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 86,
+            "durationMs": 35,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 89,
+            "durationMs": 48,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 129,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 129,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1213,
+        "navigation": {
+          "ttfbMs": 24,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 125,
+          "loadMs": 127,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 129,
+        "lcpMs": 129,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 1,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 86,
+            "durationMs": 34,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 86,
+            "durationMs": 35,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 89,
+            "durationMs": 48,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 129,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 129,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 980
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 18
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "repeat": 2,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 809,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 21,
+          "loadMs": 22,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 24,
+        "lcpMs": 24,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 5,
+            "durationMs": 10,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 5,
+            "durationMs": 10,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 13,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 24,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1043,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 21,
+          "loadMs": 22,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 24,
+        "lcpMs": 24,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 1,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 5,
+            "durationMs": 10,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 5,
+            "durationMs": 10,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 13,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 24,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 825
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 10
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "repeat": 1,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 815,
+        "navigation": {
+          "ttfbMs": 5,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 27,
+          "loadMs": 28,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 29,
+        "lcpMs": 29,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 8,
+            "durationMs": 14,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 8,
+            "durationMs": 14,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 11,
+            "durationMs": 22,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 29,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 29,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1047,
+        "navigation": {
+          "ttfbMs": 5,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 27,
+          "loadMs": 28,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 29,
+        "lcpMs": 29,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 1,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 8,
+            "durationMs": 14,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 8,
+            "durationMs": 14,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 11,
+            "durationMs": 22,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 29,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 29,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 828
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 11
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "repeat": 2,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 818,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 26,
+          "loadMs": 27,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 31,
+        "lcpMs": 31,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 5,
+            "durationMs": 16,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 5,
+            "durationMs": 16,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 19,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 31,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 31,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1064,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 26,
+          "loadMs": 27,
+          "transferBytes": 761,
+          "encodedBytes": 461,
+          "decodedBytes": 1220
+        },
+        "fpMs": null,
+        "fcpMs": 31,
+        "lcpMs": 31,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 1,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 5,
+            "durationMs": 16,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 5,
+            "durationMs": 16,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 19,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 31,
+              "size": 2233,
+              "tag": "MAIN"
+            },
+            {
+              "startTime": 31,
+              "size": 11886,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 832
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 10
+      },
+      "errors": []
+    },
+    {
+      "route": "/components",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "repeat": 1,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 864,
+        "navigation": {
+          "ttfbMs": 4,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 24,
+          "loadMs": 24,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 71,
+        "lcpMs": 71,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 18,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 71,
+              "size": 816,
+              "tag": "OPTION"
+            },
+            {
+              "startTime": 71,
+              "size": 1787,
+              "tag": "SUMMARY"
+            },
+            {
+              "startTime": 71,
+              "size": 12087,
+              "tag": "P"
+            },
+            {
+              "startTime": 71,
+              "size": 18635,
+              "tag": "P"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1379,
+        "navigation": {
+          "ttfbMs": 4,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 24,
+          "loadMs": 24,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 71,
+        "lcpMs": 71,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 7,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 9,
+            "durationMs": 18,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 71,
+              "size": 816,
+              "tag": "OPTION"
+            },
+            {
+              "startTime": 71,
+              "size": 1787,
+              "tag": "SUMMARY"
+            },
+            {
+              "startTime": 71,
+              "size": 12087,
+              "tag": "P"
+            },
+            {
+              "startTime": 71,
+              "size": 18635,
+              "tag": "P"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 898
+            },
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 940
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 946
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 991
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1037
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1084
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1130
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 10
+      },
+      "errors": []
+    },
+    {
+      "route": "/components",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "repeat": 2,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 868,
+        "navigation": {
+          "ttfbMs": 7,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 33,
+          "loadMs": 33,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 82,
+        "lcpMs": 82,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 12,
+            "durationMs": 16,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 12,
+            "durationMs": 16,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 16,
+            "durationMs": 23,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 82,
+              "size": 8490,
+              "tag": "H2"
+            },
+            {
+              "startTime": 82,
+              "size": 12087,
+              "tag": "P"
+            },
+            {
+              "startTime": 82,
+              "size": 18635,
+              "tag": "P"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1324,
+        "navigation": {
+          "ttfbMs": 7,
+          "requestTtfbMs": 1,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 33,
+          "loadMs": 33,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 82,
+        "lcpMs": 82,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 7,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 12,
+            "durationMs": 16,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 12,
+            "durationMs": 16,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 16,
+            "durationMs": 23,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 82,
+              "size": 8490,
+              "tag": "H2"
+            },
+            {
+              "startTime": 82,
+              "size": 12087,
+              "tag": "P"
+            },
+            {
+              "startTime": 82,
+              "size": 18635,
+              "tag": "P"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 901
+            },
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 943
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 951
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 992
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1024
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1055
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1088
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 11
+      },
+      "errors": []
+    },
+    {
+      "route": "/components",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "repeat": 1,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 897,
+        "navigation": {
+          "ttfbMs": 2,
+          "requestTtfbMs": 0,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 34,
+          "loadMs": 34,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 95,
+        "lcpMs": 95,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 9,
+            "durationMs": 19,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 10,
+            "durationMs": 18,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 13,
+            "durationMs": 27,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 95,
+              "size": 775,
+              "tag": "OPTION"
+            },
+            {
+              "startTime": 95,
+              "size": 5052,
+              "tag": "H2"
+            },
+            {
+              "startTime": 95,
+              "size": 7470,
+              "tag": "P"
+            },
+            {
+              "startTime": 95,
+              "size": 12490,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1523,
+        "navigation": {
+          "ttfbMs": 2,
+          "requestTtfbMs": 0,
+          "dnsMs": 0,
+          "connectMs": 0,
+          "tlsMs": 0,
+          "domContentLoadedMs": 34,
+          "loadMs": 34,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 95,
+        "lcpMs": 95,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 7,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 9,
+            "durationMs": 19,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 10,
+            "durationMs": 18,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 13,
+            "durationMs": 27,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 95,
+              "size": 775,
+              "tag": "OPTION"
+            },
+            {
+              "startTime": 95,
+              "size": 5052,
+              "tag": "H2"
+            },
+            {
+              "startTime": 95,
+              "size": 7470,
+              "tag": "P"
+            },
+            {
+              "startTime": 95,
+              "size": 12490,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 1068
+            },
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 1109
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1120
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1162
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1194
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1226
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1273
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 10
+      },
+      "errors": []
+    },
+    {
+      "route": "/components",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "repeat": 2,
+      "status": "passed",
+      "load": {
+        "observedUntilMs": 856,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 0,
+          "dnsMs": 0,
+          "connectMs": 1,
+          "tlsMs": 0,
+          "domContentLoadedMs": 22,
+          "loadMs": 23,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 69,
+        "lcpMs": 69,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 0,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 10,
+            "durationMs": 19,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 69,
+              "size": 5052,
+              "tag": "H2"
+            },
+            {
+              "startTime": 69,
+              "size": 7470,
+              "tag": "P"
+            },
+            {
+              "startTime": 69,
+              "size": 12490,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [],
+          "visibility": []
+        }
+      },
+      "metrics": {
+        "observedUntilMs": 1323,
+        "navigation": {
+          "ttfbMs": 3,
+          "requestTtfbMs": 0,
+          "dnsMs": 0,
+          "connectMs": 1,
+          "tlsMs": 0,
+          "domContentLoadedMs": 22,
+          "loadMs": 23,
+          "transferBytes": 538,
+          "encodedBytes": 238,
+          "decodedBytes": 313
+        },
+        "fpMs": null,
+        "fcpMs": 69,
+        "lcpMs": 69,
+        "cls": null,
+        "labInpMs": null,
+        "interactionCount": 7,
+        "observedInteractionIds": 0,
+        "inpStatus": "no qualifying Event Timing entries; below threshold or unobserved",
+        "longTaskCount": null,
+        "longTaskStatus": "unsupported",
+        "observedBlockingMs": null,
+        "fcpToDclBlockingMs": null,
+        "resources": [
+          {
+            "name": "http://localhost:4040/css/components.css",
+            "type": "link",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 1000,
+            "encodedBytes": 700,
+            "decodedBytes": 1564,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/js/runtime.js",
+            "type": "script",
+            "startMs": 7,
+            "durationMs": 12,
+            "transferBytes": 8122,
+            "encodedBytes": 7822,
+            "decodedBytes": 21204,
+            "protocol": "http/1.1"
+          },
+          {
+            "name": "http://localhost:4040/favicon.ico",
+            "type": "other",
+            "startMs": 10,
+            "durationMs": 19,
+            "transferBytes": 300,
+            "encodedBytes": 0,
+            "decodedBytes": 0,
+            "protocol": "http/1.1"
+          }
+        ],
+        "raw": {
+          "supported": [
+            "event",
+            "first-input",
+            "largest-contentful-paint",
+            "mark",
+            "measure",
+            "navigation",
+            "paint",
+            "resource"
+          ],
+          "lcp": [
+            {
+              "startTime": 69,
+              "size": 5052,
+              "tag": "H2"
+            },
+            {
+              "startTime": 69,
+              "size": 7470,
+              "tag": "P"
+            },
+            {
+              "startTime": 69,
+              "size": 12490,
+              "tag": "H1"
+            }
+          ],
+          "shifts": [],
+          "events": [],
+          "tasks": [],
+          "errors": [],
+          "trustedInputs": [
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 881
+            },
+            {
+              "name": "pointerdown",
+              "trusted": true,
+              "at": 922
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 929
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 965
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 997
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1042
+            },
+            {
+              "name": "keydown",
+              "trusted": true,
+              "at": 1075
+            }
+          ],
+          "visibility": []
+        }
+      },
+      "callback": {
+        "mutationMs": 1,
+        "visualProxyMs": 10
+      },
+      "errors": []
+    }
+  ]
+}

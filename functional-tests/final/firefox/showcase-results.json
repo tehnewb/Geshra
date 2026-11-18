@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-18T18:34:17.035Z",
+  "base": "http://localhost:4050",
+  "identity": {
+    "pid": 8004,
+    "sha256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "url": "http://localhost:4050/showcase",
+    "jar": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\examples\\spring-app\\build\\libs\\geshra-spring-example.jar"
+  },
+  "engine": "firefox",
+  "browser": "157.0",
+  "results": [
+    {
+      "name": "correct document title",
+      "status": "PASS"
+    },
+    {
+      "name": "source inventory coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "image constructor accessible description",
+      "status": "PASS"
+    },
+    {
+      "name": "tree expansion selection and rename retains descendants",
+      "status": "PASS"
+    },
+    {
+      "name": "field TextField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field NativeTextField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field InputField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field SearchField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field EmailField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field PasswordField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field UrlField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field TelephoneField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field DateField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field DateTimeField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field TimeField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field MonthField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field WeekField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field ColorField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field NumberField trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "field TextArea trusted edit and Java callback",
+      "status": "PASS"
+    },
+    {
+      "name": "checkbox switch radio range and multiselect",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled readonly invalid and form submit validation",
+      "status": "PASS"
+    },
+    {
+      "name": "file uploader server callback",
+      "status": "PASS"
+    },
+    {
+      "name": "table clear reset and tab switching",
+      "status": "PASS"
+    },
+    {
+      "name": "disclosure modal popover tooltip",
+      "status": "PASS"
+    },
+    {
+      "name": "progress toolbar canvas svg and media load",
+      "status": "PASS"
+    },
+    {
+      "name": "virtual list last refresh trusted wheel",
+      "status": "PASS"
+    },
+    {
+      "name": "retained component move detach restore dispose",
+      "status": "PASS"
+    }
+  ],
+  "diagnostics": []
+}

@@ -8,7 +8,7 @@ import geshra.net.web.ui.Component;
 public class Image extends Component {
 
     private final String src; // Image resource URL passed to the browser.
-    private final String description; // Descriptive text associated with the image.
+    private final String description; // Native alternative text exposed when the image cannot be perceived.
 
     /**
      * Creates an unattached image component; attachment and DOM updates are owned by its session UI.
@@ -25,7 +25,7 @@ public class Image extends Component {
     @Override
     protected void create() {
         this.setAttribute("src", src);
-        this.setAttribute("description", description);
+        this.setAttribute("alt", description == null ? "" : description);
     }
 
     @Override

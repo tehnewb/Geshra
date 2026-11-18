@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.ui.components.FileUploader;
 import geshra.net.web.ui.components.FileUploadHandler;
@@ -16,11 +17,11 @@ public class FileUploadPacketHandler implements PacketHandler {
 
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        if (packet.readableBytes() < 10)
+        if (packet.readableBytes() < (context != null && context.isCompactInput() ? 3 : 10))
             throw new IllegalArgumentException("Incomplete upload header");
-        int componentID = packet.readInt();
-        int fileNameLength = packet.readUnsignedShort();
-        int fileLength = packet.readInt();
+        int componentID = PacketInput.integer(context, packet);
+        int fileNameLength = PacketInput.length(context, packet);
+        int fileLength = PacketInput.integer(context, packet);
         if (fileLength < 0 || fileNameLength > packet.readableBytes() || fileLength != packet.readableBytes() - fileNameLength)
             throw new IllegalArgumentException("Upload length does not match its payload");
         String fileName = packet.readCharSequence(fileNameLength, StandardCharsets.UTF_8)
@@ -34,6 +35,9 @@ public class FileUploadPacketHandler implements PacketHandler {
             handler.handle(fileName, data);
         }
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == FileUploadPacketHandler.class; }
 
     @Override
     public int getID() {

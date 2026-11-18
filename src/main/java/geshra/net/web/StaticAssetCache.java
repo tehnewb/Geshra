@@ -2,6 +2,9 @@ package geshra.net.web;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.HexFormat;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.zip.GZIPOutputStream;
 
@@ -10,6 +13,7 @@ import java.util.zip.GZIPOutputStream;
  * no resource lookup, disk access, byte-array copy, or compression is required. Cold insertions are
  * serialized to enforce both a byte budget and an entry limit. Gzip bytes count against the same
  * budget as originals. File resources are intentionally excluded by the caller to preserve editing.
+ * SHA-256 validators are computed only on insertion and remain bounded by the entry limit.
  */
 final class StaticAssetCache {
     /**
@@ -58,10 +62,26 @@ final class StaticAssetCache {
             }
             if (compressed.size() < content.length && compressed.size() <= maxBytes - cachedBytes - content.length) gzip = compressed.toByteArray();
         }
-        CachedAsset asset = new CachedAsset(content, mime, gzip);
+        CachedAsset asset = new CachedAsset(content, mime, gzip, entityTag(content));
         cachedBytes += content.length + (gzip == null ? 0 : gzip.length);
         assets.put(path, asset);
         return asset;
+    }
+
+    /**
+     * Computes one deployment-safe validator on cold insertion, never on cache hits. A weak
+     * validator identifies equivalent original/gzip content without promising identical encoding.
+     * @param content immutable original bytes
+     * @return quoted weak SHA-256 validator
+     */
+    private String entityTag(byte[] content) {
+        try {
+            byte[] digest = MessageDigest.getInstance("SHA-256")
+                    .digest(content);
+            return "W/\"" + HexFormat.of().formatHex(digest) + "\"";
+        } catch (NoSuchAlgorithmException unavailable) {
+            throw new IllegalStateException("The JVM must provide SHA-256", unavailable);
+        }
     }
 
     /**

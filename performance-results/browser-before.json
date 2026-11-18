@@ -1,0 +1,38 @@
+{
+  "revision": "4cb01d2-legacy",
+  "recordedAt": "2026-11-17T23:37:55.093Z",
+  "environment": {
+    "node": "v24.14.0",
+    "browser": "157.0.8103.80",
+    "platform": "win32",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 9 7945HX with Radeon Graphics        "
+  },
+  "gallery": {
+    "serverBytes": 10775,
+    "clientBytes": 74,
+    "serverFrames": 4,
+    "clientFrames": 6
+  },
+  "callbacks": {
+    "samples": 50,
+    "medianMs": 0.5,
+    "p95Ms": 1.100000023841858,
+    "serverBytes": 7320,
+    "clientBytes": 1200
+  },
+  "runtime": {
+    "bytes": 51955,
+    "gzipBytes": 12164
+  },
+  "dom": {
+    "legacy": {
+      "mutationsPerSample": 1000,
+      "samples": 100,
+      "payloadBytes": 18003,
+      "medianMs": 0.800000011920929,
+      "p95Ms": 1.199999988079071
+    }
+  },
+  "encoding": null
+}

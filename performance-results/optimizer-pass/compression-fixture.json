@@ -1,0 +1,16 @@
+{
+  "source": "isolated retained JMH setup output",
+  "rows": 1000,
+  "levels": {
+    "1": {
+      "frames": 1,
+      "originalBytes": 53495,
+      "compressedBytes": 17347
+    },
+    "6": {
+      "frames": 1,
+      "originalBytes": 53495,
+      "compressedBytes": 14873
+    }
+  }
+}

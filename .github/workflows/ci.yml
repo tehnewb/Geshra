@@ -14,22 +14,27 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
-      - name: Build and publish locally
-        run: bash ./gradlew clean build publishAllPublicationsToBuildRepository publishToMavenLocal --console=plain
-      - name: Test Gradle consumer
-        run: bash ./gradlew -p examples/spring-app -PuseBuildRepository=true clean test bootJar --console=plain
-      - name: Test Maven consumer
-        run: mvn -B -f examples/spring-app/pom.xml clean verify
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
           cache-dependency-path: browser-tests/package-lock.json
-      - name: Install test browsers
+      - name: Install browser dependencies and check runtime bundle
         working-directory: browser-tests
         run: |
           npm ci
-          npx playwright install --with-deps chromium firefox
+          npm run check:runtime
+      - name: Build and publish locally
+        run: bash ./gradlew clean build publishAllPublicationsToBuildRepository publishToMavenLocal --console=plain
+      - name: Smoke test JVM benchmarks
+        run: bash ./gradlew benchmark -PbenchmarkSmoke --console=plain
+      - name: Test Gradle consumer
+        run: bash ./gradlew -p examples/spring-app -PuseBuildRepository=true clean test bootJar --console=plain
+      - name: Test Maven consumer
+        run: mvn -B -f examples/spring-app/pom.xml clean verify
+      - name: Install test browsers
+        working-directory: browser-tests
+        run: npx playwright install --with-deps chromium firefox
       - name: Check native UI in browsers
         run: |
           java -jar examples/spring-app/build/libs/geshra-spring-example.jar --demo.password=browser-test-password > build/browser-example.log 2>&1 &
@@ -41,3 +46,10 @@ jobs:
           done
           npm --prefix browser-tests test
           BROWSER=firefox npm --prefix browser-tests test
+          BENCHMARK_OUTPUT=../build/reports/benchmarks/browser.json npm --prefix browser-tests run benchmark
+      - name: Upload benchmark reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-reports
+          path: build/reports/benchmarks

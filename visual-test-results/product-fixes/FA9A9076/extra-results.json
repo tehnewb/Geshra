@@ -1,0 +1,56 @@
+[
+  {
+    "engine": "chrome",
+    "end": {
+      "focus": "Row 99",
+      "box": {
+        "x": 41,
+        "y": 639.046875,
+        "width": 340,
+        "height": 26,
+        "top": 639.046875,
+        "right": 381,
+        "bottom": 665.046875,
+        "left": 41
+      }
+    },
+    "home": "Long root",
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "emptyInserted": "Select\n\nempty-then-insert\n\nempty-then-insert\nJava\nJavaScript\nEmpty value\nRead empty-then-insert\n\nJava value: java; callbacks: 0\n\nPopulate empty select",
+    "later": "Select\n\nlater-insertion\n\nlater-insertion\nJava\nJavaScript\nEmpty value\nLater option\nRead later-insertion\n\nJava value: javascript; callbacks: 0\n\nAppend another optionAssign JavaScript silently",
+    "title": "Geshra UI regression fixtures",
+    "width": 390
+  },
+  {
+    "engine": "firefox",
+    "end": {
+      "focus": "Row 99",
+      "box": {
+        "x": 41,
+        "y": 636.63330078125,
+        "width": 340,
+        "height": 26.5,
+        "top": 636.63330078125,
+        "right": 381,
+        "bottom": 663.13330078125,
+        "left": 41
+      }
+    },
+    "home": "Long root",
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "emptyInserted": "Select\n\nempty-then-insert\n\nempty-then-insertRead empty-then-insert\n\nJava value: java; callbacks: 0\n\nPopulate empty select",
+    "later": "Select\n\nlater-insertion\n\nlater-insertionRead later-insertion\n\nJava value: javascript; callbacks: 0\n\nAppend another optionAssign JavaScript silently",
+    "title": "Geshra UI regression fixtures",
+    "width": 390
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "TextField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/TextField-changed.png",
+    "feedback": "Java value: Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample> Long text 日本語 & <sample>"
+  },
+  {
+    "id": "NativeTextField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/NativeTextField-changed.png",
+    "feedback": "Java value: Changed native"
+  },
+  {
+    "id": "InputField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/InputField-changed.png",
+    "feedback": "Edit this control to see its Java value"
+  },
+  {
+    "id": "SearchField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/SearchField-changed.png",
+    "feedback": "Java value: Java"
+  },
+  {
+    "id": "EmailField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/EmailField-changed.png",
+    "feedback": "Java value: tester@example.com"
+  },
+  {
+    "id": "PasswordField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/PasswordField-changed.png",
+    "feedback": "Java value: demo-secret"
+  },
+  {
+    "id": "UrlField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/UrlField-changed.png",
+    "feedback": "Java value: https://example.com/path"
+  },
+  {
+    "id": "TelephoneField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/TelephoneField-changed.png",
+    "feedback": "Java value: +1 555 0199"
+  },
+  {
+    "id": "DateField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/DateField-changed.png",
+    "feedback": "Java value: 2026-12-25"
+  },
+  {
+    "id": "DateTimeField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/DateTimeField-changed.png",
+    "feedback": "Java value: 2026-12-25T16:45"
+  },
+  {
+    "id": "TimeField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/TimeField-changed.png",
+    "feedback": "Java value: 16:45"
+  },
+  {
+    "id": "MonthField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/MonthField-changed.png",
+    "feedback": "Java value: 2026-12"
+  },
+  {
+    "id": "WeekField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/WeekField-changed.png",
+    "feedback": "Java value: 2026-W50"
+  },
+  {
+    "id": "ColorField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/ColorField-changed.png",
+    "feedback": "Java value: #ff0000"
+  },
+  {
+    "id": "NumberField",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/NumberField-changed.png",
+    "feedback": "Java value: 9.25"
+  },
+  {
+    "id": "TextArea",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/TextArea-changed.png",
+    "feedback": "Java value: Long first line Long first line Long first line Long first line Long first line Long first line Long first line Long first line Long first line Long first line Long first line Long first line Second 日本語 line"
+  }
+]

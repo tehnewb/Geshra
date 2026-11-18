@@ -1,0 +1,37 @@
+FOCUSED VISUAL VERIFICATION REPORT — 2026-11-18
+
+Result: PASS for tested product-fix states; no new confirmed product visual defects in this sweep. All test-created browser sessions closed. Evidence persisted; shared server unchanged. Ready for final audit/root coordination. This is not a claim that every API/platform state was tested.
+
+Actual identity:
+SHA256302C535EC25D97EA266627B1A6F36EC8B2CA0F243703CCD9B75E0BE823D5A92A
+PID20008, port4050; build-identity.json copied from actual build metadata.
+Routes /showcase-regressions and /showcase, Chrome157.0.8103.80/Firefox157.0 onWindows,1440x1000 and390x844 desktop-engine viewports. No actual phone approval. No benchmark/performance runs.
+
+Closed prior findings:
+- Original groupedSelect native-default bug: actual untouched grouped fixture and unassigned main showcase select showJava/valuejava; Java readoutjava,callbacks0. This is now a PRODUCT FIX verification, distinct from the old explicitJava workaround. Old failing evidence remains in first-build/corrected and FA9A9076 folders.
+- FA9A Select explicit-existing JavaScript/display/readout mismatch: now bothjavascript; explicit-empty correctlyEmptyvalue/nativeempty/Javaempty; all-disabled nativeblank/index-1/Javaempty; explicit-property visiblyJavaScript/nativejavascript/Javajavascript. Allcallbacks0. Disabled-first/group chooseEnabled; selected-option choosesJavaScript; explicitmissing remains unselected; listbox/multiple untouched defaults remain unselected. Multiple-property/index selectJavaScript; genericSelect Java readout preserves protocol formvjavascript as authored; typed MultiSelect behavior is not inferred from these generic fixtures.
+- SplitSelect/Number deterministic separate-batch normalization: empty/Javaempty ornull, then delayedinitialvalues restoreJavaScript/42 and Javajavascript/42.0,callbacks0. Both engines. split-lifecycle-results.json and split-*-final.png.
+- Initial Tree Tabentry: Project starts tabindex0, allothernodes-1; everyselectablenode aria-selectedfalse; branches aria-expandedfalse; leaves omitexpanded. Tab from modeSelect reachesProject withvisiblefocus inbothengines/sizes. Previous zero-tabstop defect closed.
+- Prior tree keyboard accessibility issue: arrowsnavigatevisiblepreorder, Right expands/enters,Leftparent/collapse,Home/End endpoints. Focusoutline and selectedbluehighlight independentlyvisible. MULTIPLE Space createsMain.java+README.md selection withone rovingfocus; SINGLEEnter selectsREADME only; NONEclearsselectionandremovesaria-selected whilekeepingnavigation. Exact settledassertions/readoutscreenshots inselection-verified.json andmode-verified.json.
+- Collapse handoff: focusMain.java,clickProjectcaret; focusednode becomesProject beforedescendants disappear. Rename preservesdescendants/name; detachrestoreleaf andA/B/Csiblings preserveorder; leaf/branch/wholetreedisposal removes renderednodes anddisablesassociateddemoactions. Readoutparagraph is manualRead feedback, notauto-refreshed afterdisposal.
+- Longtree140px End focusesvisibleRow99, Home focusesvisibleLongroot. Firefox addsanative scroll-containerTabstop beforeLongroot; initialoneTabattempthitwrapper andwasNOTtreeevidence. Supersededbyfirefox-*/long-end-verified.png,long-home-verified.png aftersecondTab. Bothfocusoutlineandrowvisibilitydirectlyinspected. Prior Firefoxlongfocusunverifiedstate nowclosed fornewbuild.
+- Tabbed: tablist/tab/tabpanel roles,aria-controls/aria-labelledby IDs and selectedvisibility agree. NativeTabentry+Left/Right/Home/Endactivation/wrap work; oneenabledrovingtabstop; disabledselectedtab yieldsenabledalternative stop,alldisablednone,re-enable restoresselectedstop. Visiblefocus atdesktop+narrowverified in tabs-focus-verified.png. Disabledtabappearanceandswitchingpanelsdirectlyinspected.
+- UI.setTitle: noSeo regressionroute settlesGeshra UI regressionfixtures; mainroute settlesGeshra UI showcase acrossnewnavigation/reload. TitleDOMobservationsinsmoke-results.json.
+
+Visual inspection scope/evidence:
+64 Select initial captures =16 controls(including split-select) x2engines x2sizes, select-results.json. Narrow anddesktopcontact sheetsreadatnativecontent size; desktopreview sheetscrop unusedrightblankspace, originalsretained. AllSelectvariantlabels/readoutstates inspected.
+Tree initial/focusedleaf/selectedleaf/multipleselection/collapsed/renamed/modes, longHome/End, tabfocus/disabledcycles inspected throughnativePNGs. Desktopandnarrowfocusimagesverified; no pageoverflow390or1440 inrecordedoutcomes. coverage.csv indexes114 selectedvisualstate records; other supportingcaptures/JSONalsoincluded. Countdescribesrecordedevidence, notallAPIs.
+Main smallsmoke:48samplecards; untouchedselectJava; immediateradioBeta feedback; nonsecretpasswordcharacter-count; title/reload; formnameAda; imageloaded/alt; audio/video ready4/noerror; documentwidth390. No all113typebaseline recapture onnewbinary: earlier fullcatalogcoverage remains associated withitsownbuild.
+
+Evidence precedence / sampling corrections:
+Some initial tree snapshots used80ms waitandcaptured beforequeuedselectioncompleted (Chrome narrow multiple-selected andoneSINGLEsnapshot). Theyarenotproductfailuresandnotpassingproof. Later selection-verified/mode-verified use actualfocus/ARIA/Javafeedbackconditions andsupersede thosevalues. Browser/serverwork isasynchronous; no timingbenchmarkwasperformed.
+Initial tabs-keyboard desktop shots showed selectedpanelbutnofocusoutline becauseentrysequencebeganonwrongcurrenttabstate. NativeResettable->Tab->ArrowRight sequence nowverified in tab-focus-verified.json andtabs-focus-verified.png; thesearefocusproof.
+
+Retained limitations:
+Firefoxnativepopupvisuals andDataListsuggestionpopupremainUNVERIFIED frompriornativewindowbindingfailure. Thispassdoesnotrepair/test OS/browserpopupcapture. No realphones,WebKit/Safari,screenreaderspeech,forcedcolors,allCSS/eventoverloads,optionaltypeahead/select-all,allmodifiercombinations orarbitrarymutationstates claimed. Table rowselection remainsunsupported anddisclosed; noMenucomponentexists. Prior broadreport limitationscarryforward except specificallyclosedstatesabove.
+Focused tree emptywidget keyboardfocusobserved asbluehorizontaloutline underitslabel; emptyrectanglehaszeroheight. No issueblockingtestednavigation found. Actualscreen-readeroutput notclaimedfromroles alone.
+
+Artifacts:
+build-identity.json; coverage.csv; select-results.json; tree-results.json; selection-verified.json; mode-verified.json; tabs-results.json; tab-focus-verified.json; split-lifecycle-results.json; final-lifecycle.json; smoke-results.json; browser/viewportPNGs andcontact sheets.
+Earlier FA9A9076 failureevidence isuntouched. Only visual-test-results filesauthored; no production/demo edits, commits, dependencies,serverrestarts, deploymentsorbenchmarks.
+

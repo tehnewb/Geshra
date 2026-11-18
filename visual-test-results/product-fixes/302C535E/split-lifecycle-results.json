@@ -1,0 +1,80 @@
+[
+  {
+    "engine": "chrome",
+    "states": [
+      {
+        "id": "split-select",
+        "state": "normalized",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/split-select-normalized.png",
+        "feedback": "Java value: ; callbacks: 0",
+        "value": ""
+      },
+      {
+        "id": "split-number",
+        "state": "normalized",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/split-number-normalized.png",
+        "feedback": "Java value: null; callbacks: 0",
+        "value": ""
+      },
+      {
+        "id": "split-select",
+        "state": "final",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/split-select-final.png",
+        "feedback": "Java value: javascript; callbacks: 0",
+        "value": "javascript"
+      },
+      {
+        "id": "split-number",
+        "state": "final",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/split-number-final.png",
+        "feedback": "Java value: 42.0; callbacks: 0",
+        "value": "42"
+      }
+    ],
+    "handoff": {
+      "name": "Project",
+      "role": "treeitem"
+    },
+    "disposed": 0,
+    "title": "Geshra UI regression fixtures"
+  },
+  {
+    "engine": "firefox",
+    "states": [
+      {
+        "id": "split-select",
+        "state": "normalized",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/split-select-normalized.png",
+        "feedback": "Java value: ; callbacks: 0",
+        "value": ""
+      },
+      {
+        "id": "split-number",
+        "state": "normalized",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/split-number-normalized.png",
+        "feedback": "Java value: null; callbacks: 0",
+        "value": ""
+      },
+      {
+        "id": "split-select",
+        "state": "final",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/split-select-final.png",
+        "feedback": "Java value: javascript; callbacks: 0",
+        "value": "javascript"
+      },
+      {
+        "id": "split-number",
+        "state": "final",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/split-number-final.png",
+        "feedback": "Java value: 42.0; callbacks: 0",
+        "value": "42"
+      }
+    ],
+    "handoff": {
+      "name": "Project",
+      "role": "treeitem"
+    },
+    "disposed": 0,
+    "title": "Geshra UI regression fixtures"
+  }
+]

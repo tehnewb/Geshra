@@ -1,0 +1,62 @@
+[
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/benchmark/BenchElement.class",
+    "Sha256": "FBFC1C6B5EA6F8CA618A67E795DD1E795BA0A34CB088D30A19806AA5B3A176F6"
+  },
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedApplication.class",
+    "Sha256": "6B61008CF1488E8266EDAF1BF556E9ACFDBC9B2E79F546CF3B20645D6D3B7A43"
+  },
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedRoute.class",
+    "Sha256": "BC77CFB908E2D5857E6EDDDAE186D3CA9A96F852D5E48028E929AEDB1C9174D3"
+  },
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedState.class",
+    "Sha256": "4FEC63D3B9A8C9A5BFA563E5D88A7CE66798F76727C73C72845FDD38A79CAC1F"
+  },
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/web/bench.css",
+    "Sha256": "B262C4A86CDA9ADD00967ED91FB93AD95F296D9CEB9B6EAEB415C00E0F2C8DF3"
+  },
+  {
+    "Version": "before",
+    "Entry": "BOOT-INF/classes/web/index.html",
+    "Sha256": "1F10777485C7CB1A6C671FBD0147EAEABB4E423D623060B5A7C74C2F34559B9A"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/benchmark/BenchElement.class",
+    "Sha256": "FBFC1C6B5EA6F8CA618A67E795DD1E795BA0A34CB088D30A19806AA5B3A176F6"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedApplication.class",
+    "Sha256": "6B61008CF1488E8266EDAF1BF556E9ACFDBC9B2E79F546CF3B20645D6D3B7A43"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedRoute.class",
+    "Sha256": "BC77CFB908E2D5857E6EDDDAE186D3CA9A96F852D5E48028E929AEDB1C9174D3"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/benchmark/MatchedState.class",
+    "Sha256": "4FEC63D3B9A8C9A5BFA563E5D88A7CE66798F76727C73C72845FDD38A79CAC1F"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/web/bench.css",
+    "Sha256": "B262C4A86CDA9ADD00967ED91FB93AD95F296D9CEB9B6EAEB415C00E0F2C8DF3"
+  },
+  {
+    "Version": "after",
+    "Entry": "BOOT-INF/classes/web/index.html",
+    "Sha256": "1F10777485C7CB1A6C671FBD0147EAEABB4E423D623060B5A7C74C2F34559B9A"
+  }
+]

@@ -8,6 +8,8 @@ The library includes Java UI components, typed events, routing, sessions, authen
 
 Shared browser resources remain in `src/main/resources/web`: the HTML shell, runtime, chat and grid styles, chart and grid scripts, and generic demo resources. The library packages these assets and serves them from the classpath. Optional Highcharts assets retain their separate vendor licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+The browser runtime is maintained as focused JavaScript modules under `web/js/runtime/` and shipped as one reproducibly bundled `runtime.js`. Library contributors run `npm ci` and `npm run build:runtime` from `browser-tests` after source edits; consuming applications need no browser build. [PERFORMANCE.md](PERFORMANCE.md) documents the negotiated compact protocol, JMH/browser benchmarks, recorded measurements, and their limits.
+
 ## Add the dependency
 
 The release coordinates below become available after the first Maven Central release. This checkout builds `1.0.0-SNAPSHOT` by default; see the local development instructions below to try it before publication.

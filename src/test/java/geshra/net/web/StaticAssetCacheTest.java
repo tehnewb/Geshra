@@ -115,6 +115,86 @@ class StaticAssetCacheTest {
     }
 
     /**
+     * Browser validation reuses packaged bodies without stale deployment bytes, including weak
+     * tag lists, gzip negotiation and bodyless HEAD/304 responses.
+     * @param directory isolated temporary archive location
+     * @throws Exception when temporary archive IO fails
+     */
+    @Test
+    void validatesPackagedAssetsWithoutCachingLiveOrHtmlResponses(@TempDir Path directory) throws Exception {
+        Path archive = directory.resolve("validators.jar");
+        byte[] original = "const immutable = true;\n".repeat(100)
+                .getBytes(StandardCharsets.UTF_8);
+        try (OutputStream file = Files.newOutputStream(archive); ZipOutputStream zip = new ZipOutputStream(file)) {
+            zip.putNextEntry(new ZipEntry("web/js/example.js"));
+            zip.write(original);
+            zip.closeEntry();
+            zip.putNextEntry(new ZipEntry("web/index.html"));
+            zip.write("<html></html>".getBytes(StandardCharsets.UTF_8));
+            zip.closeEntry();
+        }
+        try (URLClassLoader loader = new URLClassLoader(new URL[]{archive.toUri().toURL()}, null)) {
+            EmbeddedChannel channel = new EmbeddedChannel(new StaticFileHandler(new DefaultResourceLoader(loader), "classpath:/web/", 16384));
+            try {
+                FullHttpResponse first = request(channel, "gzip");
+                String tag = first.headers()
+                        .get(HttpHeaderNames.ETAG);
+                assertThat(tag)
+                        .startsWith("W/\"");
+                assertThat(first.headers().get(HttpHeaderNames.CACHE_CONTROL))
+                        .isEqualTo("private, no-cache");
+                first.release();
+                for (String validator : new String[]{tag, tag.substring(2), "\"other,tag\", " + tag, "*"}) {
+                    DefaultFullHttpRequest conditional = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/js/example.js");
+                    conditional.headers()
+                            .set(HttpHeaderNames.IF_NONE_MATCH, validator);
+                    conditional.headers()
+                            .set(HttpHeaderNames.ACCEPT_ENCODING, "gzip");
+                    channel.writeInbound(conditional);
+                    FullHttpResponse response = channel.readOutbound();
+                    assertThat(response.status().code())
+                            .isEqualTo(304);
+                    assertThat(response.content().readableBytes())
+                            .isZero();
+                    assertThat(response.headers().get(HttpHeaderNames.VARY))
+                            .isEqualTo("accept-encoding");
+                    response.release();
+                }
+                DefaultFullHttpRequest head = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.HEAD, "/js/example.js");
+                head.headers()
+                        .set(HttpHeaderNames.IF_NONE_MATCH, tag);
+                channel.writeInbound(head);
+                FullHttpResponse unchangedHead = channel.readOutbound();
+                assertThat(unchangedHead.status().code())
+                        .isEqualTo(304);
+                assertThat(unchangedHead.content().readableBytes())
+                        .isZero();
+                unchangedHead.release();
+                DefaultFullHttpRequest stale = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/js/example.js");
+                stale.headers()
+                        .set(HttpHeaderNames.IF_NONE_MATCH, "W/\"old-deployment\"");
+                channel.writeInbound(stale);
+                FullHttpResponse changed = channel.readOutbound();
+                assertThat(changed.status().code())
+                        .isEqualTo(200);
+                assertThat(ByteBufUtil.getBytes(changed.content()))
+                        .isEqualTo(original);
+                changed.release();
+                channel.writeInbound(new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/index.html"));
+                FullHttpResponse html = channel.readOutbound();
+                assertThat(html.headers().get(HttpHeaderNames.ETAG))
+                        .isNull();
+                assertThat(html.headers().get(HttpHeaderNames.CACHE_CONTROL))
+                        .isEqualTo("no-store");
+                html.release();
+            } finally {channel.finishAndReleaseAll();}
+        }
+        StaticAssetCache replacement = new StaticAssetCache(16384);
+        assertThat(replacement.put("same.js", original, WebFileType.JAVASCRIPT).entityTag())
+                .isNotEqualTo(replacement.put("different.js", "changed".getBytes(StandardCharsets.UTF_8), WebFileType.JAVASCRIPT).entityTag());
+    }
+
+    /**
      * Sends one ordinary asset request to the shared handler.
      * @param channel owned embedded transport
      * @param encoding accepted compression formats

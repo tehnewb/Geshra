@@ -7,12 +7,14 @@ import geshra.net.web.packets.ValueChangePacketHandler;
 import geshra.net.web.ui.UI;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.HttpHeaderNames;
 import io.netty.handler.codec.http.HttpHeaders;
 
 
 import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 
 import geshra.net.web.ui.BrowserJson;
@@ -33,6 +35,11 @@ import org.slf4j.LoggerFactory;
  * <p>
  * This handler also ensures the thread-local {@link SessionContext} is cleared after every packet so
  * Netty event-loop threads cannot accidentally reuse the previous packet's session.
+ * <p>
+ * Explicit initial-route requests can render during upgrade when the exact built-in route handler
+ * is installed. Compact output still requires an explicit client capability and registry support.
+ * State acknowledges bootstrap before DOM output. Rendering failures send the reserved 1011
+ * bootstrap-failure close so the browser discards stale IDs and rebuilds through normal routing.
  *
  * @author Albert
  * @version 1.0
@@ -142,6 +149,15 @@ public class WebSocketHandler extends SimpleChannelInboundHandler<BinaryWebSocke
         }
 
         int packetID = buffer.readUnsignedByte();
+        boolean compact = packetID == Wire.CLIENT_COMPACT && packetHandlerRegistry.supportsCompactInput();
+        if (compact) {
+            if (!buffer.isReadable()) { ctx.close(); return; }
+            packetID = buffer.readUnsignedByte();
+            if (packetID > 11) { ctx.close(); return; }
+            ctx.channel()
+                    .attr(Wire.COMPACT)
+                    .set(true);
+        }
         PacketHandler handler = packetHandlerRegistry.getHandler(packetID);
 
         if (handler == null) {
@@ -159,12 +175,14 @@ public class WebSocketHandler extends SimpleChannelInboundHandler<BinaryWebSocke
         UI ui = context.getUI();
         try {
             context.touch();
+            context.compactInput(compact);
             SessionContext.set(context);
             ui.beginUpdate();
             handler.handlePacket(context, buffer);
         } catch (RuntimeException exception) {
             Log.error("Packet {} failed: {}", packetID, exception.getMessage(), exception);
         } finally {
+            context.compactInput(false);
             try {
                 SessionContext.set(context);
                 ui.endUpdate();
@@ -201,9 +219,37 @@ public class WebSocketHandler extends SimpleChannelInboundHandler<BinaryWebSocke
             }
 
             SessionContext.register(ctx.channel(), session);
-            session.send(TextPacketEncoder.encode(ctx.channel(), 6, BrowserJson.encode(Map.of("action", "state", "csrfToken", session.csrfToken(), "cookieMaxAge", session.getCookieMaxAge()))));
-            session.flushCookies();
-            SessionContext.clear();
+            String initialRoute = ctx.channel()
+                    .attr(Wire.BOOTSTRAP_ROUTE)
+                    .getAndSet(null);
+            boolean clientCompact = Boolean.TRUE.equals(ctx.channel().attr(Wire.BOOTSTRAP_COMPACT).getAndSet(null));
+            PacketHandler routeHandler = packetHandlerRegistry.getHandler(0);
+            boolean bootstrap = initialRoute != null && routeHandler != null && routeHandler.getClass() == RoutePacketHandler.class;
+            boolean compact = packetHandlerRegistry.supportsCompactInput();
+            if (bootstrap && compact && clientCompact) ctx.channel()
+                    .attr(Wire.COMPACT)
+                    .set(true);
+            try {
+                session.send(TextPacketEncoder.encode(ctx.channel(), 6, BrowserJson.encode(Map.of("action", "state", "csrfToken", session.csrfToken(), "cookieMaxAge", session.getCookieMaxAge(), "protocol", compact ? 2 : 1, "bootstrap", bootstrap))));
+                session.flushCookies();
+                if (bootstrap) {
+                    SessionContext.set(session);
+                    UI ui = session.getUI();
+                    ui.beginUpdate();
+                    try {
+                        session.handleRoute(initialRoute);
+                    } finally {
+                        ui.endUpdate();
+                    }
+                }
+            } catch (RuntimeException | Error renderFailure) {
+                if (!bootstrap) throw renderFailure;
+                Log.error("Initial route rendering failed", renderFailure);
+                ctx.writeAndFlush(new CloseWebSocketFrame(1011, "bootstrap failed"))
+                        .addListener(ChannelFutureListener.CLOSE);
+            } finally {
+                SessionContext.clear();
+            }
             return;
         }
 

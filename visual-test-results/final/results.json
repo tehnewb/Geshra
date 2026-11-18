@@ -1,0 +1,87 @@
+{
+  "build": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+  "pid": 8004,
+  "route": "http://localhost:4050/showcase",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "results": [
+    {
+      "engine": "chrome",
+      "version": "157.0.8103.80",
+      "initial": {
+        "title": "Geshra UI showcase",
+        "select": "java",
+        "feedback": "Edit this control to see its Java value",
+        "cards": 48,
+        "overflow": {
+          "viewport": 390,
+          "width": 390
+        }
+      },
+      "changed": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nPassword updated (18 characters)",
+      "empty": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nPassword updated (0 characters)",
+      "media": [
+        {
+          "tag": "audio",
+          "playing": {
+            "paused": false,
+            "time": 0.190968,
+            "duration": 2
+          },
+          "paused": true,
+          "feedback": "Audio paused"
+        },
+        {
+          "tag": "video",
+          "playing": {
+            "paused": false,
+            "time": 0.2322,
+            "duration": 2.37229
+          },
+          "paused": true,
+          "feedback": "Video paused"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initial": {
+        "title": "Geshra UI showcase",
+        "select": "java",
+        "feedback": "Edit this control to see its Java value",
+        "cards": 48,
+        "overflow": {
+          "viewport": 390,
+          "width": 390
+        }
+      },
+      "changed": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nPassword updated (18 characters)",
+      "empty": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nPassword updated (0 characters)",
+      "media": [
+        {
+          "tag": "audio",
+          "playing": {
+            "paused": false,
+            "time": 0.13575,
+            "duration": 2
+          },
+          "paused": true,
+          "feedback": "Audio paused"
+        },
+        {
+          "tag": "video",
+          "playing": {
+            "paused": false,
+            "time": 0.203274,
+            "duration": 2.37229
+          },
+          "paused": true,
+          "feedback": "Video paused"
+        }
+      ]
+    }
+  ]
+}

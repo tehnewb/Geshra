@@ -1,0 +1,1219 @@
+{
+  "build": "14C7C97554C00BA1A73C1B2178A092E2935FFFE48057132CF55B5EE285BEDA41",
+  "pid": 41068,
+  "route": "http://localhost:4050/showcase",
+  "inventories": [
+    {
+      "engine": "chrome",
+      "size": "desktop",
+      "version": "157.0.8103.80",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": {
+        "width": 1440,
+        "document": 1440
+      },
+      "samples": [
+        {
+          "index": 0,
+          "id": "TextField",
+          "types": "TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/00-TextField.png"
+        },
+        {
+          "index": 1,
+          "id": "NativeTextField",
+          "types": "NativeTextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/01-NativeTextField.png"
+        },
+        {
+          "index": 2,
+          "id": "InputField",
+          "types": "InputField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/02-InputField.png"
+        },
+        {
+          "index": 3,
+          "id": "SearchField",
+          "types": "SearchField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/03-SearchField.png"
+        },
+        {
+          "index": 4,
+          "id": "EmailField",
+          "types": "EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/04-EmailField.png"
+        },
+        {
+          "index": 5,
+          "id": "PasswordField",
+          "types": "PasswordField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/05-PasswordField.png"
+        },
+        {
+          "index": 6,
+          "id": "UrlField",
+          "types": "UrlField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/06-UrlField.png"
+        },
+        {
+          "index": 7,
+          "id": "TelephoneField",
+          "types": "TelephoneField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/07-TelephoneField.png"
+        },
+        {
+          "index": 8,
+          "id": "DateField",
+          "types": "DateField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/08-DateField.png"
+        },
+        {
+          "index": 9,
+          "id": "DateTimeField",
+          "types": "DateTimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/09-DateTimeField.png"
+        },
+        {
+          "index": 10,
+          "id": "TimeField",
+          "types": "TimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/10-TimeField.png"
+        },
+        {
+          "index": 11,
+          "id": "MonthField",
+          "types": "MonthField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/11-MonthField.png"
+        },
+        {
+          "index": 12,
+          "id": "WeekField",
+          "types": "WeekField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/12-WeekField.png"
+        },
+        {
+          "index": 13,
+          "id": "ColorField",
+          "types": "ColorField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/13-ColorField.png"
+        },
+        {
+          "index": 14,
+          "id": "NumberField",
+          "types": "NumberField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/14-NumberField.png"
+        },
+        {
+          "index": 15,
+          "id": "RangeField",
+          "types": "RangeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/15-RangeField.png"
+        },
+        {
+          "index": 16,
+          "id": "TextArea",
+          "types": "TextArea",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/16-TextArea.png"
+        },
+        {
+          "index": 17,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/17-Checkbox.png"
+        },
+        {
+          "index": 18,
+          "id": "Switch",
+          "types": "Switch",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/18-Switch.png"
+        },
+        {
+          "index": 19,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/19-Checkbox.png"
+        },
+        {
+          "index": 20,
+          "id": "RadioButton",
+          "types": "RadioButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/20-RadioButton.png"
+        },
+        {
+          "index": 21,
+          "id": "Select",
+          "types": "Select,Option,OptionGroup",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/21-Select.png"
+        },
+        {
+          "index": 22,
+          "id": "MultiSelect",
+          "types": "MultiSelect",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/22-MultiSelect.png"
+        },
+        {
+          "index": 23,
+          "id": "DataList",
+          "types": "DataList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/23-DataList.png"
+        },
+        {
+          "index": 24,
+          "id": "HiddenField",
+          "types": "HiddenField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/24-HiddenField.png"
+        },
+        {
+          "index": 25,
+          "id": "TextField",
+          "types": "TextField,NativeTextField,EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/25-TextField.png"
+        },
+        {
+          "index": 26,
+          "id": "Form",
+          "types": "Form,Fieldset,Legend,Output,Label",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/26-Form.png"
+        },
+        {
+          "index": 27,
+          "id": "FileUploader",
+          "types": "FileUploader",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/27-FileUploader.png"
+        },
+        {
+          "index": 28,
+          "id": "H1",
+          "types": "H1,H2,H3,H4,H5,H6",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/28-H1.png"
+        },
+        {
+          "index": 29,
+          "id": "Paragraph",
+          "types": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/29-Paragraph.png"
+        },
+        {
+          "index": 30,
+          "id": "Hyperlink",
+          "types": "Hyperlink",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/30-Hyperlink.png"
+        },
+        {
+          "index": 31,
+          "id": "DefinitionList",
+          "types": "DefinitionList,DescriptionTerm,DescriptionDetail",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/31-DefinitionList.png"
+        },
+        {
+          "index": 32,
+          "id": "OrderedList",
+          "types": "OrderedList,UnorderedList,ListItem",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/32-OrderedList.png"
+        },
+        {
+          "index": 33,
+          "id": "Main",
+          "types": "Main,Header,Navigation,Article,Section,Aside,Footer,Div",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/33-Main.png"
+        },
+        {
+          "index": 34,
+          "id": "HorizontalLayout",
+          "types": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/34-HorizontalLayout.png"
+        },
+        {
+          "index": 35,
+          "id": "Badge",
+          "types": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/35-Badge.png"
+        },
+        {
+          "index": 36,
+          "id": "Table",
+          "types": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/36-Table.png"
+        },
+        {
+          "index": 37,
+          "id": "Tabbed",
+          "types": "Tabbed,TabButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/37-Tabbed.png"
+        },
+        {
+          "index": 38,
+          "id": "Tree",
+          "types": "Tree,TreeNode",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/38-Tree.png"
+        },
+        {
+          "index": 39,
+          "id": "Details",
+          "types": "Details,Summary,Accordion,Dialog,Popover",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/39-Details.png"
+        },
+        {
+          "index": 40,
+          "id": "Tooltip",
+          "types": "Tooltip",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/40-Tooltip.png"
+        },
+        {
+          "index": 41,
+          "id": "VirtualList",
+          "types": "VirtualList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/41-VirtualList.png"
+        },
+        {
+          "index": 42,
+          "id": "Image",
+          "types": "Image,Figure",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/42-Image.png"
+        },
+        {
+          "index": 43,
+          "id": "Audio",
+          "types": "Audio,Video",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/43-Audio.png"
+        },
+        {
+          "index": 44,
+          "id": "Canvas",
+          "types": "Canvas",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/44-Canvas.png"
+        },
+        {
+          "index": 45,
+          "id": "Svg",
+          "types": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/45-Svg.png"
+        },
+        {
+          "index": 46,
+          "id": "Script",
+          "types": "Script,Link",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/46-Script.png"
+        },
+        {
+          "index": 47,
+          "id": "Button",
+          "types": "Button,TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-desktop/47-Button.png"
+        }
+      ]
+    },
+    {
+      "engine": "chrome",
+      "size": "narrow",
+      "version": "157.0.8103.80",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "width": 390,
+        "document": 390
+      },
+      "samples": [
+        {
+          "index": 0,
+          "id": "TextField",
+          "types": "TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/00-TextField.png"
+        },
+        {
+          "index": 1,
+          "id": "NativeTextField",
+          "types": "NativeTextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/01-NativeTextField.png"
+        },
+        {
+          "index": 2,
+          "id": "InputField",
+          "types": "InputField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/02-InputField.png"
+        },
+        {
+          "index": 3,
+          "id": "SearchField",
+          "types": "SearchField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/03-SearchField.png"
+        },
+        {
+          "index": 4,
+          "id": "EmailField",
+          "types": "EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/04-EmailField.png"
+        },
+        {
+          "index": 5,
+          "id": "PasswordField",
+          "types": "PasswordField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/05-PasswordField.png"
+        },
+        {
+          "index": 6,
+          "id": "UrlField",
+          "types": "UrlField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/06-UrlField.png"
+        },
+        {
+          "index": 7,
+          "id": "TelephoneField",
+          "types": "TelephoneField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/07-TelephoneField.png"
+        },
+        {
+          "index": 8,
+          "id": "DateField",
+          "types": "DateField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/08-DateField.png"
+        },
+        {
+          "index": 9,
+          "id": "DateTimeField",
+          "types": "DateTimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/09-DateTimeField.png"
+        },
+        {
+          "index": 10,
+          "id": "TimeField",
+          "types": "TimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/10-TimeField.png"
+        },
+        {
+          "index": 11,
+          "id": "MonthField",
+          "types": "MonthField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/11-MonthField.png"
+        },
+        {
+          "index": 12,
+          "id": "WeekField",
+          "types": "WeekField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/12-WeekField.png"
+        },
+        {
+          "index": 13,
+          "id": "ColorField",
+          "types": "ColorField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/13-ColorField.png"
+        },
+        {
+          "index": 14,
+          "id": "NumberField",
+          "types": "NumberField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/14-NumberField.png"
+        },
+        {
+          "index": 15,
+          "id": "RangeField",
+          "types": "RangeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/15-RangeField.png"
+        },
+        {
+          "index": 16,
+          "id": "TextArea",
+          "types": "TextArea",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/16-TextArea.png"
+        },
+        {
+          "index": 17,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/17-Checkbox.png"
+        },
+        {
+          "index": 18,
+          "id": "Switch",
+          "types": "Switch",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/18-Switch.png"
+        },
+        {
+          "index": 19,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/19-Checkbox.png"
+        },
+        {
+          "index": 20,
+          "id": "RadioButton",
+          "types": "RadioButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/20-RadioButton.png"
+        },
+        {
+          "index": 21,
+          "id": "Select",
+          "types": "Select,Option,OptionGroup",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/21-Select.png"
+        },
+        {
+          "index": 22,
+          "id": "MultiSelect",
+          "types": "MultiSelect",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/22-MultiSelect.png"
+        },
+        {
+          "index": 23,
+          "id": "DataList",
+          "types": "DataList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/23-DataList.png"
+        },
+        {
+          "index": 24,
+          "id": "HiddenField",
+          "types": "HiddenField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/24-HiddenField.png"
+        },
+        {
+          "index": 25,
+          "id": "TextField",
+          "types": "TextField,NativeTextField,EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/25-TextField.png"
+        },
+        {
+          "index": 26,
+          "id": "Form",
+          "types": "Form,Fieldset,Legend,Output,Label",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/26-Form.png"
+        },
+        {
+          "index": 27,
+          "id": "FileUploader",
+          "types": "FileUploader",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/27-FileUploader.png"
+        },
+        {
+          "index": 28,
+          "id": "H1",
+          "types": "H1,H2,H3,H4,H5,H6",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/28-H1.png"
+        },
+        {
+          "index": 29,
+          "id": "Paragraph",
+          "types": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/29-Paragraph.png"
+        },
+        {
+          "index": 30,
+          "id": "Hyperlink",
+          "types": "Hyperlink",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/30-Hyperlink.png"
+        },
+        {
+          "index": 31,
+          "id": "DefinitionList",
+          "types": "DefinitionList,DescriptionTerm,DescriptionDetail",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/31-DefinitionList.png"
+        },
+        {
+          "index": 32,
+          "id": "OrderedList",
+          "types": "OrderedList,UnorderedList,ListItem",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/32-OrderedList.png"
+        },
+        {
+          "index": 33,
+          "id": "Main",
+          "types": "Main,Header,Navigation,Article,Section,Aside,Footer,Div",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/33-Main.png"
+        },
+        {
+          "index": 34,
+          "id": "HorizontalLayout",
+          "types": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/34-HorizontalLayout.png"
+        },
+        {
+          "index": 35,
+          "id": "Badge",
+          "types": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/35-Badge.png"
+        },
+        {
+          "index": 36,
+          "id": "Table",
+          "types": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/36-Table.png"
+        },
+        {
+          "index": 37,
+          "id": "Tabbed",
+          "types": "Tabbed,TabButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/37-Tabbed.png"
+        },
+        {
+          "index": 38,
+          "id": "Tree",
+          "types": "Tree,TreeNode",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/38-Tree.png"
+        },
+        {
+          "index": 39,
+          "id": "Details",
+          "types": "Details,Summary,Accordion,Dialog,Popover",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/39-Details.png"
+        },
+        {
+          "index": 40,
+          "id": "Tooltip",
+          "types": "Tooltip",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/40-Tooltip.png"
+        },
+        {
+          "index": 41,
+          "id": "VirtualList",
+          "types": "VirtualList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/41-VirtualList.png"
+        },
+        {
+          "index": 42,
+          "id": "Image",
+          "types": "Image,Figure",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/42-Image.png"
+        },
+        {
+          "index": 43,
+          "id": "Audio",
+          "types": "Audio,Video",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/43-Audio.png"
+        },
+        {
+          "index": 44,
+          "id": "Canvas",
+          "types": "Canvas",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/44-Canvas.png"
+        },
+        {
+          "index": 45,
+          "id": "Svg",
+          "types": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/45-Svg.png"
+        },
+        {
+          "index": 46,
+          "id": "Script",
+          "types": "Script,Link",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/46-Script.png"
+        },
+        {
+          "index": 47,
+          "id": "Button",
+          "types": "Button,TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-narrow/47-Button.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "size": "desktop",
+      "version": "157.0",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": {
+        "width": 1440,
+        "document": 1440
+      },
+      "samples": [
+        {
+          "index": 0,
+          "id": "TextField",
+          "types": "TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/00-TextField.png"
+        },
+        {
+          "index": 1,
+          "id": "NativeTextField",
+          "types": "NativeTextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/01-NativeTextField.png"
+        },
+        {
+          "index": 2,
+          "id": "InputField",
+          "types": "InputField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/02-InputField.png"
+        },
+        {
+          "index": 3,
+          "id": "SearchField",
+          "types": "SearchField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/03-SearchField.png"
+        },
+        {
+          "index": 4,
+          "id": "EmailField",
+          "types": "EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/04-EmailField.png"
+        },
+        {
+          "index": 5,
+          "id": "PasswordField",
+          "types": "PasswordField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/05-PasswordField.png"
+        },
+        {
+          "index": 6,
+          "id": "UrlField",
+          "types": "UrlField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/06-UrlField.png"
+        },
+        {
+          "index": 7,
+          "id": "TelephoneField",
+          "types": "TelephoneField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/07-TelephoneField.png"
+        },
+        {
+          "index": 8,
+          "id": "DateField",
+          "types": "DateField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/08-DateField.png"
+        },
+        {
+          "index": 9,
+          "id": "DateTimeField",
+          "types": "DateTimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/09-DateTimeField.png"
+        },
+        {
+          "index": 10,
+          "id": "TimeField",
+          "types": "TimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/10-TimeField.png"
+        },
+        {
+          "index": 11,
+          "id": "MonthField",
+          "types": "MonthField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/11-MonthField.png"
+        },
+        {
+          "index": 12,
+          "id": "WeekField",
+          "types": "WeekField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/12-WeekField.png"
+        },
+        {
+          "index": 13,
+          "id": "ColorField",
+          "types": "ColorField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/13-ColorField.png"
+        },
+        {
+          "index": 14,
+          "id": "NumberField",
+          "types": "NumberField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/14-NumberField.png"
+        },
+        {
+          "index": 15,
+          "id": "RangeField",
+          "types": "RangeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/15-RangeField.png"
+        },
+        {
+          "index": 16,
+          "id": "TextArea",
+          "types": "TextArea",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/16-TextArea.png"
+        },
+        {
+          "index": 17,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/17-Checkbox.png"
+        },
+        {
+          "index": 18,
+          "id": "Switch",
+          "types": "Switch",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/18-Switch.png"
+        },
+        {
+          "index": 19,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/19-Checkbox.png"
+        },
+        {
+          "index": 20,
+          "id": "RadioButton",
+          "types": "RadioButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/20-RadioButton.png"
+        },
+        {
+          "index": 21,
+          "id": "Select",
+          "types": "Select,Option,OptionGroup",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/21-Select.png"
+        },
+        {
+          "index": 22,
+          "id": "MultiSelect",
+          "types": "MultiSelect",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/22-MultiSelect.png"
+        },
+        {
+          "index": 23,
+          "id": "DataList",
+          "types": "DataList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/23-DataList.png"
+        },
+        {
+          "index": 24,
+          "id": "HiddenField",
+          "types": "HiddenField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/24-HiddenField.png"
+        },
+        {
+          "index": 25,
+          "id": "TextField",
+          "types": "TextField,NativeTextField,EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/25-TextField.png"
+        },
+        {
+          "index": 26,
+          "id": "Form",
+          "types": "Form,Fieldset,Legend,Output,Label",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/26-Form.png"
+        },
+        {
+          "index": 27,
+          "id": "FileUploader",
+          "types": "FileUploader",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/27-FileUploader.png"
+        },
+        {
+          "index": 28,
+          "id": "H1",
+          "types": "H1,H2,H3,H4,H5,H6",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/28-H1.png"
+        },
+        {
+          "index": 29,
+          "id": "Paragraph",
+          "types": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/29-Paragraph.png"
+        },
+        {
+          "index": 30,
+          "id": "Hyperlink",
+          "types": "Hyperlink",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/30-Hyperlink.png"
+        },
+        {
+          "index": 31,
+          "id": "DefinitionList",
+          "types": "DefinitionList,DescriptionTerm,DescriptionDetail",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/31-DefinitionList.png"
+        },
+        {
+          "index": 32,
+          "id": "OrderedList",
+          "types": "OrderedList,UnorderedList,ListItem",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/32-OrderedList.png"
+        },
+        {
+          "index": 33,
+          "id": "Main",
+          "types": "Main,Header,Navigation,Article,Section,Aside,Footer,Div",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/33-Main.png"
+        },
+        {
+          "index": 34,
+          "id": "HorizontalLayout",
+          "types": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/34-HorizontalLayout.png"
+        },
+        {
+          "index": 35,
+          "id": "Badge",
+          "types": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/35-Badge.png"
+        },
+        {
+          "index": 36,
+          "id": "Table",
+          "types": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/36-Table.png"
+        },
+        {
+          "index": 37,
+          "id": "Tabbed",
+          "types": "Tabbed,TabButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/37-Tabbed.png"
+        },
+        {
+          "index": 38,
+          "id": "Tree",
+          "types": "Tree,TreeNode",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/38-Tree.png"
+        },
+        {
+          "index": 39,
+          "id": "Details",
+          "types": "Details,Summary,Accordion,Dialog,Popover",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/39-Details.png"
+        },
+        {
+          "index": 40,
+          "id": "Tooltip",
+          "types": "Tooltip",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/40-Tooltip.png"
+        },
+        {
+          "index": 41,
+          "id": "VirtualList",
+          "types": "VirtualList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/41-VirtualList.png"
+        },
+        {
+          "index": 42,
+          "id": "Image",
+          "types": "Image,Figure",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/42-Image.png"
+        },
+        {
+          "index": 43,
+          "id": "Audio",
+          "types": "Audio,Video",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/43-Audio.png"
+        },
+        {
+          "index": 44,
+          "id": "Canvas",
+          "types": "Canvas",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/44-Canvas.png"
+        },
+        {
+          "index": 45,
+          "id": "Svg",
+          "types": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/45-Svg.png"
+        },
+        {
+          "index": 46,
+          "id": "Script",
+          "types": "Script,Link",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/46-Script.png"
+        },
+        {
+          "index": 47,
+          "id": "Button",
+          "types": "Button,TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-desktop/47-Button.png"
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "size": "narrow",
+      "version": "157.0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "width": 390,
+        "document": 390
+      },
+      "samples": [
+        {
+          "index": 0,
+          "id": "TextField",
+          "types": "TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/00-TextField.png"
+        },
+        {
+          "index": 1,
+          "id": "NativeTextField",
+          "types": "NativeTextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/01-NativeTextField.png"
+        },
+        {
+          "index": 2,
+          "id": "InputField",
+          "types": "InputField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/02-InputField.png"
+        },
+        {
+          "index": 3,
+          "id": "SearchField",
+          "types": "SearchField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/03-SearchField.png"
+        },
+        {
+          "index": 4,
+          "id": "EmailField",
+          "types": "EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/04-EmailField.png"
+        },
+        {
+          "index": 5,
+          "id": "PasswordField",
+          "types": "PasswordField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/05-PasswordField.png"
+        },
+        {
+          "index": 6,
+          "id": "UrlField",
+          "types": "UrlField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/06-UrlField.png"
+        },
+        {
+          "index": 7,
+          "id": "TelephoneField",
+          "types": "TelephoneField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/07-TelephoneField.png"
+        },
+        {
+          "index": 8,
+          "id": "DateField",
+          "types": "DateField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/08-DateField.png"
+        },
+        {
+          "index": 9,
+          "id": "DateTimeField",
+          "types": "DateTimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/09-DateTimeField.png"
+        },
+        {
+          "index": 10,
+          "id": "TimeField",
+          "types": "TimeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/10-TimeField.png"
+        },
+        {
+          "index": 11,
+          "id": "MonthField",
+          "types": "MonthField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/11-MonthField.png"
+        },
+        {
+          "index": 12,
+          "id": "WeekField",
+          "types": "WeekField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/12-WeekField.png"
+        },
+        {
+          "index": 13,
+          "id": "ColorField",
+          "types": "ColorField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/13-ColorField.png"
+        },
+        {
+          "index": 14,
+          "id": "NumberField",
+          "types": "NumberField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/14-NumberField.png"
+        },
+        {
+          "index": 15,
+          "id": "RangeField",
+          "types": "RangeField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/15-RangeField.png"
+        },
+        {
+          "index": 16,
+          "id": "TextArea",
+          "types": "TextArea",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/16-TextArea.png"
+        },
+        {
+          "index": 17,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/17-Checkbox.png"
+        },
+        {
+          "index": 18,
+          "id": "Switch",
+          "types": "Switch",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/18-Switch.png"
+        },
+        {
+          "index": 19,
+          "id": "Checkbox",
+          "types": "Checkbox",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/19-Checkbox.png"
+        },
+        {
+          "index": 20,
+          "id": "RadioButton",
+          "types": "RadioButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/20-RadioButton.png"
+        },
+        {
+          "index": 21,
+          "id": "Select",
+          "types": "Select,Option,OptionGroup",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/21-Select.png"
+        },
+        {
+          "index": 22,
+          "id": "MultiSelect",
+          "types": "MultiSelect",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/22-MultiSelect.png"
+        },
+        {
+          "index": 23,
+          "id": "DataList",
+          "types": "DataList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/23-DataList.png"
+        },
+        {
+          "index": 24,
+          "id": "HiddenField",
+          "types": "HiddenField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/24-HiddenField.png"
+        },
+        {
+          "index": 25,
+          "id": "TextField",
+          "types": "TextField,NativeTextField,EmailField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/25-TextField.png"
+        },
+        {
+          "index": 26,
+          "id": "Form",
+          "types": "Form,Fieldset,Legend,Output,Label",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/26-Form.png"
+        },
+        {
+          "index": 27,
+          "id": "FileUploader",
+          "types": "FileUploader",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/27-FileUploader.png"
+        },
+        {
+          "index": 28,
+          "id": "H1",
+          "types": "H1,H2,H3,H4,H5,H6",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/28-H1.png"
+        },
+        {
+          "index": 29,
+          "id": "Paragraph",
+          "types": "Paragraph,Span,Strong,Emphasis,Small,Mark,Code,Preformatted,Blockquote,TextComponent",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/29-Paragraph.png"
+        },
+        {
+          "index": 30,
+          "id": "Hyperlink",
+          "types": "Hyperlink",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/30-Hyperlink.png"
+        },
+        {
+          "index": 31,
+          "id": "DefinitionList",
+          "types": "DefinitionList,DescriptionTerm,DescriptionDetail",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/31-DefinitionList.png"
+        },
+        {
+          "index": 32,
+          "id": "OrderedList",
+          "types": "OrderedList,UnorderedList,ListItem",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/32-OrderedList.png"
+        },
+        {
+          "index": 33,
+          "id": "Main",
+          "types": "Main,Header,Navigation,Article,Section,Aside,Footer,Div",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/33-Main.png"
+        },
+        {
+          "index": 34,
+          "id": "HorizontalLayout",
+          "types": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/34-HorizontalLayout.png"
+        },
+        {
+          "index": 35,
+          "id": "Badge",
+          "types": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/35-Badge.png"
+        },
+        {
+          "index": 36,
+          "id": "Table",
+          "types": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/36-Table.png"
+        },
+        {
+          "index": 37,
+          "id": "Tabbed",
+          "types": "Tabbed,TabButton",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/37-Tabbed.png"
+        },
+        {
+          "index": 38,
+          "id": "Tree",
+          "types": "Tree,TreeNode",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/38-Tree.png"
+        },
+        {
+          "index": 39,
+          "id": "Details",
+          "types": "Details,Summary,Accordion,Dialog,Popover",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/39-Details.png"
+        },
+        {
+          "index": 40,
+          "id": "Tooltip",
+          "types": "Tooltip",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/40-Tooltip.png"
+        },
+        {
+          "index": 41,
+          "id": "VirtualList",
+          "types": "VirtualList",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/41-VirtualList.png"
+        },
+        {
+          "index": 42,
+          "id": "Image",
+          "types": "Image,Figure",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/42-Image.png"
+        },
+        {
+          "index": 43,
+          "id": "Audio",
+          "types": "Audio,Video",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/43-Audio.png"
+        },
+        {
+          "index": 44,
+          "id": "Canvas",
+          "types": "Canvas",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/44-Canvas.png"
+        },
+        {
+          "index": 45,
+          "id": "Svg",
+          "types": "Svg,SvgGroup,SvgRectangle,SvgCircle,SvgLine,SvgPolyline,SvgPolygon,SvgPath,SvgText",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/45-Svg.png"
+        },
+        {
+          "index": 46,
+          "id": "Script",
+          "types": "Script,Link",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/46-Script.png"
+        },
+        {
+          "index": 47,
+          "id": "Button",
+          "types": "Button,TextField",
+          "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-narrow/47-Button.png"
+        }
+      ]
+    }
+  ]
+}

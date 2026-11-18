@@ -1,0 +1,1681 @@
+{
+  "recordedAt": "2026-11-18T00:02:00.370Z",
+  "browser": "157.0.8103.80",
+  "source": {
+    "head": "4cb01d23b71fac5a3c8a3c2c36d94256d0550361",
+    "sourceSha256": "be6287106b79fe8189651657381bd667abb590d0d6a4ebab726f792071592c7c",
+    "files": 295
+  },
+  "cases": [
+    {
+      "name": "websocketThrottle",
+      "status": "passed",
+      "result": [
+        {
+          "mode": "native-local",
+          "samples": [
+            {
+              "mutationMs": 6.600000023841858,
+              "visualProxyMs": 22.80000001192093
+            },
+            {
+              "mutationMs": 6.5,
+              "visualProxyMs": 23
+            },
+            {
+              "mutationMs": 6.900000035762787,
+              "visualProxyMs": 23.400000035762787
+            },
+            {
+              "mutationMs": 6.900000035762787,
+              "visualProxyMs": 23.30000001192093
+            },
+            {
+              "mutationMs": 6.899999976158142,
+              "visualProxyMs": 23.30000001192093
+            },
+            {
+              "mutationMs": 5,
+              "visualProxyMs": 21.5
+            },
+            {
+              "mutationMs": 6.699999988079071,
+              "visualProxyMs": 23.099999964237213
+            },
+            {
+              "mutationMs": 6.300000011920929,
+              "visualProxyMs": 22.599999964237213
+            },
+            {
+              "mutationMs": 6.5,
+              "visualProxyMs": 22.900000035762787
+            },
+            {
+              "mutationMs": 6.400000035762787,
+              "visualProxyMs": 22.900000035762787
+            }
+          ],
+          "mutationMs": {
+            "n": 10,
+            "median": 6.5,
+            "p95": 6.900000035762787
+          },
+          "visualProxyMs": {
+            "n": 10,
+            "median": 22.900000035762787,
+            "p95": 23.400000035762787
+          }
+        },
+        {
+          "mode": "native-http400ms",
+          "samples": [
+            {
+              "mutationMs": 6,
+              "visualProxyMs": 22.399999976158142
+            },
+            {
+              "mutationMs": 5.699999988079071,
+              "visualProxyMs": 22.100000023841858
+            },
+            {
+              "mutationMs": 5.800000011920929,
+              "visualProxyMs": 22.19999998807907
+            },
+            {
+              "mutationMs": 6.699999988079071,
+              "visualProxyMs": 23.099999964237213
+            },
+            {
+              "mutationMs": 7.100000023841858,
+              "visualProxyMs": 23.5
+            },
+            {
+              "mutationMs": 6.699999988079071,
+              "visualProxyMs": 23.19999998807907
+            },
+            {
+              "mutationMs": 7,
+              "visualProxyMs": 23.400000035762787
+            },
+            {
+              "mutationMs": 7,
+              "visualProxyMs": 23.399999976158142
+            },
+            {
+              "mutationMs": 6.899999976158142,
+              "visualProxyMs": 23.30000001192093
+            },
+            {
+              "mutationMs": 7.199999988079071,
+              "visualProxyMs": 23.69999998807907
+            }
+          ],
+          "mutationMs": {
+            "n": 10,
+            "median": 6.699999988079071,
+            "p95": 7.199999988079071
+          },
+          "visualProxyMs": {
+            "n": 10,
+            "median": 23.19999998807907,
+            "p95": 23.69999998807907
+          }
+        },
+        {
+          "mode": "relay-75ms-each-way",
+          "samples": [
+            {
+              "mutationMs": 162.69999998807907,
+              "visualProxyMs": 164.69999998807907
+            },
+            {
+              "mutationMs": 165.80000001192093,
+              "visualProxyMs": 173.30000001192093
+            },
+            {
+              "mutationMs": 160.29999995231628,
+              "visualProxyMs": 165.0999999642372
+            },
+            {
+              "mutationMs": 164.80000001192093,
+              "visualProxyMs": 174.30000001192093
+            },
+            {
+              "mutationMs": 159.29999995231628,
+              "visualProxyMs": 165.19999998807907
+            },
+            {
+              "mutationMs": 163.20000004768372,
+              "visualProxyMs": 165.20000004768372
+            },
+            {
+              "mutationMs": 169.19999998807907,
+              "visualProxyMs": 173
+            },
+            {
+              "mutationMs": 168,
+              "visualProxyMs": 173.39999997615814
+            },
+            {
+              "mutationMs": 163.30000001192093,
+              "visualProxyMs": 164.80000001192093
+            },
+            {
+              "mutationMs": 167.69999998807907,
+              "visualProxyMs": 173.4000000357628
+            }
+          ],
+          "mutationMs": {
+            "n": 10,
+            "median": 163.30000001192093,
+            "p95": 169.19999998807907
+          },
+          "visualProxyMs": {
+            "n": 10,
+            "median": 165.20000004768372,
+            "p95": 174.30000001192093
+          }
+        }
+      ]
+    },
+    {
+      "name": "recovery",
+      "status": "passed",
+      "result": {
+        "reconnect": {
+          "mutationMs": 6.300000011920929,
+          "visualProxyMs": 22.900000035762787
+        },
+        "offlineQueuedCallbackReplayed": true,
+        "online": {
+          "mutationMs": 7.099999964237213,
+          "visualProxyMs": 23.599999964237213
+        },
+        "resume": {
+          "mutationMs": 6.699999988079071,
+          "visualProxyMs": 23.19999998807907
+        },
+        "visibilityState": "visible",
+        "backgroundVisibility": "not simulated; renderer frozen/active was tested, OS sleep and real background scheduling remain untested"
+      }
+    },
+    {
+      "name": "memory",
+      "status": "passed",
+      "result": {
+        "snapshots": [
+          {
+            "cycle": 0,
+            "heap": {
+              "usedSize": 2440140,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1039984,
+              "backingStorageSize": 21792
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 1,
+            "heap": {
+              "usedSize": 2512440,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1056760,
+              "backingStorageSize": 21801
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 2,
+            "heap": {
+              "usedSize": 2540360,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1059224,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 3,
+            "heap": {
+              "usedSize": 2573252,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1059224,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 4,
+            "heap": {
+              "usedSize": 2602892,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1059544,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 5,
+            "heap": {
+              "usedSize": 2624012,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1059224,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 6,
+            "heap": {
+              "usedSize": 2628356,
+              "totalSize": 3284992,
+              "embedderHeapUsedSize": 1057864,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 7,
+            "heap": {
+              "usedSize": 2634044,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1075856,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 8,
+            "heap": {
+              "usedSize": 2646208,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1059376,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 9,
+            "heap": {
+              "usedSize": 2646940,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1059376,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 10,
+            "heap": {
+              "usedSize": 2647256,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1059328,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 11,
+            "heap": {
+              "usedSize": 2651656,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1076168,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          },
+          {
+            "cycle": 12,
+            "heap": {
+              "usedSize": 2655088,
+              "totalSize": 3547136,
+              "embedderHeapUsedSize": 1059232,
+              "backingStorageSize": 21827
+            },
+            "dom": {
+              "documents": 3,
+              "nodes": 411,
+              "jsEventListeners": 74
+            },
+            "liveNodes": 140
+          }
+        ],
+        "lifecycle": {
+          "detachedConnected": false,
+          "restoredIdentity": true,
+          "restoredValue": "retained lab value",
+          "staleSends": 0,
+          "disposedWeakReferenceCollected": true
+        },
+        "limitations": "Twelve cycles and forced GC do not prove absence of leaks; DOM counters include renderer-owned nodes."
+      }
+    },
+    {
+      "name": "rendering",
+      "status": "passed",
+      "result": {
+        "scrolling": {
+          "frameIntervalsMs": [
+            2.8999999880790597,
+            8.300000000000011,
+            8.300000000000011,
+            8.299999999999983,
+            8.400000000000006,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.300000000000011,
+            8.399999999999977,
+            8.300000000000011,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.5,
+            8.099999999999909,
+            8.400000000000091,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.399999999999977,
+            8.299999999999955,
+            8.200000000000045,
+            8.399999999999977,
+            8.399999999999977,
+            8.300000000000068,
+            8.399999999999977,
+            8.199999999999932,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.399999999999977,
+            8.199999999999932,
+            8.400000000000091,
+            8.399999999999977,
+            8.299999999999955,
+            8.399999999999977,
+            8.200000000000045,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999977,
+            8.300000000000068,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182,
+            8.399999999999864,
+            8.299999999999955,
+            8.300000000000182,
+            8.399999999999864,
+            8.200000000000045,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.399999999999864,
+            8.200000000000045,
+            8.400000000000091,
+            8.299999999999955,
+            8.299999999999955,
+            8.400000000000091,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182,
+            8.299999999999955,
+            8.399999999999864,
+            8.300000000000182
+          ],
+          "rows": 17,
+          "first": "622",
+          "scrollTop": 5000,
+          "frameIntervals": {
+            "n": 144,
+            "median": 8.300000000000011,
+            "p95": 8.400000000000091
+          }
+        },
+        "audit": {
+          "title": "Geshra",
+          "language": "en",
+          "missingControlNames": [
+            {
+              "tag": "INPUT",
+              "type": "checkbox"
+            },
+            {
+              "tag": "INPUT",
+              "type": "number"
+            },
+            {
+              "tag": "INPUT",
+              "type": "search"
+            },
+            {
+              "tag": "INPUT",
+              "type": "url"
+            },
+            {
+              "tag": "INPUT",
+              "type": "tel"
+            },
+            {
+              "tag": "INPUT",
+              "type": "time"
+            },
+            {
+              "tag": "INPUT",
+              "type": "datetime-local"
+            },
+            {
+              "tag": "INPUT",
+              "type": "month"
+            },
+            {
+              "tag": "INPUT",
+              "type": "week"
+            },
+            {
+              "tag": "INPUT",
+              "type": "email"
+            },
+            {
+              "tag": "INPUT",
+              "type": "password"
+            },
+            {
+              "tag": "TEXTAREA",
+              "type": "textarea"
+            }
+          ],
+          "overflow": false,
+          "keyboardFocus": {
+            "tag": "INPUT",
+            "name": "Checkbox"
+          }
+        },
+        "accessibility": {
+          "nodes": 393,
+          "ignored": 25,
+          "namedRoles": [
+            {
+              "role": "RootWebArea",
+              "name": "Geshra"
+            },
+            {
+              "role": "heading",
+              "name": "Component gallery"
+            },
+            {
+              "role": "StaticText",
+              "name": "Component gallery"
+            },
+            {
+              "role": "StaticText",
+              "name": "Native controls and Java callbacks. Each section demonstrates one part of Geshra."
+            },
+            {
+              "role": "heading",
+              "name": "Form controls"
+            },
+            {
+              "role": "paragraph",
+              "name": "Java values"
+            },
+            {
+              "role": "heading",
+              "name": "Disclosure and overlays"
+            },
+            {
+              "role": "heading",
+              "name": "Status and layout"
+            },
+            {
+              "role": "heading",
+              "name": "Retained nodes"
+            },
+            {
+              "role": "heading",
+              "name": "Virtual list"
+            },
+            {
+              "role": "list",
+              "name": "Virtual dataset"
+            },
+            {
+              "role": "heading",
+              "name": "Native graphics"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Component gallery"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Native controls and Java callbacks. Each section "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "demonstrates one part of Geshra."
+            },
+            {
+              "role": "StaticText",
+              "name": "Form controls"
+            },
+            {
+              "role": "StaticText",
+              "name": "Change the controls, then read their Java values. Assign values demonstrates silent updates and native browser normalization."
+            },
+            {
+              "role": "checkbox",
+              "name": "Checkbox"
+            },
+            {
+              "role": "slider",
+              "name": "Range"
+            },
+            {
+              "role": "Date",
+              "name": "Date"
+            },
+            {
+              "role": "ColorWell",
+              "name": "Color"
+            },
+            {
+              "role": "combobox",
+              "name": "Select"
+            },
+            {
+              "role": "listbox",
+              "name": "Multiple"
+            },
+            {
+              "role": "radio",
+              "name": "First radio"
+            },
+            {
+              "role": "radio",
+              "name": "Second radio"
+            },
+            {
+              "role": "button",
+              "name": "Read Java values"
+            },
+            {
+              "role": "button",
+              "name": "Assign values"
+            },
+            {
+              "role": "StaticText",
+              "name": "Changes: 0"
+            },
+            {
+              "role": "StaticText",
+              "name": "Read the browser-synchronized Java values"
+            },
+            {
+              "role": "StaticText",
+              "name": "Disclosure and overlays"
+            },
+            {
+              "role": "StaticText",
+              "name": "Open the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover."
+            },
+            {
+              "role": "DisclosureTriangle",
+              "name": "Disclosure"
+            },
+            {
+              "role": "StaticText",
+              "name": "Disclosure closed"
+            },
+            {
+              "role": "button",
+              "name": "Open dialog"
+            },
+            {
+              "role": "button",
+              "name": "Show popover"
+            },
+            {
+              "role": "StaticText",
+              "name": "No dialog result"
+            },
+            {
+              "role": "StaticText",
+              "name": "Status and layout"
+            },
+            {
+              "role": "StaticText",
+              "name": "Compose status indicators and containers with ordinary Java components."
+            },
+            {
+              "role": "status",
+              "name": "Loading"
+            },
+            {
+              "role": "StaticText",
+              "name": "Accessible alert"
+            },
+            {
+              "role": "heading",
+              "name": "Card"
+            },
+            {
+              "role": "StaticText",
+              "name": "Retained nodes"
+            },
+            {
+              "role": "StaticText",
+              "name": "Move or detach the input, then restore it. Dispose permanently releases it. The listener buttons demonstrate unsubscribing the same callback."
+            },
+            {
+              "role": "button",
+              "name": "Move input"
+            },
+            {
+              "role": "button",
+              "name": "Detach input"
+            },
+            {
+              "role": "button",
+              "name": "Restore input"
+            },
+            {
+              "role": "button",
+              "name": "Dispose input"
+            },
+            {
+              "role": "button",
+              "name": "Removable listener"
+            },
+            {
+              "role": "button",
+              "name": "Remove listener"
+            },
+            {
+              "role": "StaticText",
+              "name": "Native calls: 0"
+            },
+            {
+              "role": "StaticText",
+              "name": "Virtual list"
+            },
+            {
+              "role": "StaticText",
+              "name": "A million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components."
+            },
+            {
+              "role": "button",
+              "name": "Jump to last item"
+            },
+            {
+              "role": "button",
+              "name": "Refresh virtual list"
+            },
+            {
+              "role": "StaticText",
+              "name": "Native graphics"
+            },
+            {
+              "role": "StaticText",
+              "name": "The rectangle uses the canvas 2D context; the circle is an SVG element with native attributes."
+            },
+            {
+              "role": "Canvas",
+              "name": "Canvas example"
+            },
+            {
+              "role": "image",
+              "name": "SVG example"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Form controls"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Change the controls, then read their Java values. "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Assign values demonstrates silent updates and "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "native browser normalization."
+            },
+            {
+              "role": "button",
+              "name": "Show date picker Show date picker"
+            },
+            {
+              "role": "option",
+              "name": "Comma"
+            },
+            {
+              "role": "option",
+              "name": "Plus"
+            },
+            {
+              "role": "option",
+              "name": "Empty"
+            },
+            {
+              "role": "option",
+              "name": "Unicode"
+            },
+            {
+              "role": "button",
+              "name": "Show time picker"
+            },
+            {
+              "role": "button",
+              "name": "Show local date and time picker"
+            },
+            {
+              "role": "button",
+              "name": "Show month picker"
+            },
+            {
+              "role": "button",
+              "name": "Show week picker"
+            },
+            {
+              "role": "StaticText",
+              "name": "Read Java values"
+            },
+            {
+              "role": "StaticText",
+              "name": "Assign values"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Changes: 0"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Read the browser-synchronized Java values"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Disclosure and overlays"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Open the disclosure or dialog. Escape closes the "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "native modal; clicking outside dismisses the "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "popover."
+            },
+            {
+              "role": "StaticText",
+              "name": "Disclosure"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Disclosure closed"
+            },
+            {
+              "role": "DisclosureTriangle",
+              "name": "First section"
+            },
+            {
+              "role": "DisclosureTriangle",
+              "name": "Second section"
+            },
+            {
+              "role": "StaticText",
+              "name": "Open dialog"
+            },
+            {
+              "role": "StaticText",
+              "name": "Show popover"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "No dialog result"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Status and layout"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Compose status indicators and containers with "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "ordinary Java components."
+            },
+            {
+              "role": "StaticText",
+              "name": "New"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Accessible alert"
+            },
+            {
+              "role": "StaticText",
+              "name": "Card"
+            },
+            {
+              "role": "StaticText",
+              "name": "Retained content"
+            },
+            {
+              "role": "StaticText",
+              "name": "Panel"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Retained nodes"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Move or detach the input, then restore it. Dispose "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "permanently releases it. The listener buttons "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "demonstrate unsubscribing the same callback."
+            },
+            {
+              "role": "textbox",
+              "name": "Retained input"
+            },
+            {
+              "role": "StaticText",
+              "name": "Move input"
+            },
+            {
+              "role": "StaticText",
+              "name": "Detach input"
+            },
+            {
+              "role": "StaticText",
+              "name": "Restore input"
+            },
+            {
+              "role": "StaticText",
+              "name": "Dispose input"
+            },
+            {
+              "role": "StaticText",
+              "name": "Removable listener"
+            },
+            {
+              "role": "StaticText",
+              "name": "Remove listener"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Native calls: 0"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Virtual list"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "A million logical rows are generated on demand. "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Scroll or jump to the last item; only the visible "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "window and overscan need UI components."
+            },
+            {
+              "role": "StaticText",
+              "name": "Jump to last item"
+            },
+            {
+              "role": "StaticText",
+              "name": "Refresh virtual list"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Native graphics"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "The rectangle uses the canvas 2D context; the "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "circle is an SVG element with native attributes."
+            },
+            {
+              "role": "option",
+              "name": "Alpha"
+            },
+            {
+              "role": "option",
+              "name": "Beta"
+            },
+            {
+              "role": "StaticText",
+              "name": "3.5"
+            },
+            {
+              "role": "StaticText",
+              "name": "Multiline"
+            },
+            {
+              "role": "LineBreak",
+              "name": "\n"
+            },
+            {
+              "role": "StaticText",
+              "name": "text"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Read Java values"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Assign values"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Disclosure"
+            },
+            {
+              "role": "StaticText",
+              "name": "First section"
+            },
+            {
+              "role": "StaticText",
+              "name": "Second section"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Open dialog"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Show popover"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "New"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Card"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Retained content"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Panel"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Move "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "input"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Detach "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "input"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Restore "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "input"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Dispose "
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "input"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Removable listener"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Remove listener"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Jump to last item"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Refresh virtual list"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Month Month"
+            },
+            {
+              "role": "StaticText",
+              "name": "/"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Day Day"
+            },
+            {
+              "role": "StaticText",
+              "name": "/"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Year Year"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "3.5"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Hours"
+            },
+            {
+              "role": "StaticText",
+              "name": ":"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Minutes"
+            },
+            {
+              "role": "StaticText",
+              "name": " "
+            },
+            {
+              "role": "spinbutton",
+              "name": "AM/PM"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Month"
+            },
+            {
+              "role": "StaticText",
+              "name": "/"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Day"
+            },
+            {
+              "role": "StaticText",
+              "name": "/"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Year"
+            },
+            {
+              "role": "StaticText",
+              "name": " "
+            },
+            {
+              "role": "spinbutton",
+              "name": "Hours"
+            },
+            {
+              "role": "StaticText",
+              "name": ":"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Minutes"
+            },
+            {
+              "role": "StaticText",
+              "name": " "
+            },
+            {
+              "role": "spinbutton",
+              "name": "AM/PM"
+            },
+            {
+              "role": "spinbutton",
+              "name": "Month"
+            },
+            {
+              "role": "StaticText",
+              "name": " "
+            },
+            {
+              "role": "spinbutton",
+              "name": "Year"
+            },
+            {
+              "role": "StaticText",
+              "name": "Week "
+            },
+            {
+              "role": "spinbutton",
+              "name": "Week"
+            },
+            {
+              "role": "StaticText",
+              "name": ", "
+            },
+            {
+              "role": "spinbutton",
+              "name": "Year"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Multiline"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "\n"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "text"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "First section"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Second section"
+            },
+            {
+              "role": "StaticText",
+              "name": "retained"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 621"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 622"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 623"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 624"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 625"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 626"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 627"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 628"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 629"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 630"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 631"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 632"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 633"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 634"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 635"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 636"
+            },
+            {
+              "role": "StaticText",
+              "name": "Item 637"
+            },
+            {
+              "role": "StaticText",
+              "name": "mm"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "/"
+            },
+            {
+              "role": "StaticText",
+              "name": "dd"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "/"
+            },
+            {
+              "role": "StaticText",
+              "name": "yyyy"
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": ":"
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": " "
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "StaticText",
+              "name": "mm"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "/"
+            },
+            {
+              "role": "StaticText",
+              "name": "dd"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "/"
+            },
+            {
+              "role": "StaticText",
+              "name": "yyyy"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": " "
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": ":"
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": " "
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "StaticText",
+              "name": "---------"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": " "
+            },
+            {
+              "role": "StaticText",
+              "name": "----"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Week "
+            },
+            {
+              "role": "StaticText",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": ", "
+            },
+            {
+              "role": "StaticText",
+              "name": "----"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "retained"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 621"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 622"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 623"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 624"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 625"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 626"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 627"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 628"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 629"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 630"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 631"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 632"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 633"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 634"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 635"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 636"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "Item 637"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "mm"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "dd"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "yyyy"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "mm"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "dd"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "yyyy"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "---------"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "----"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "--"
+            },
+            {
+              "role": "InlineTextBox",
+              "name": "----"
+            }
+          ]
+        },
+        "traceTotalsMs": {
+          "UpdateLayoutTree": 15.556999999999999,
+          "Layout": 14.263,
+          "Paint": 4.809,
+          "EvaluateScript": 1.686,
+          "FunctionCall": 35.063000000000024
+        },
+        "note": "Trace category durations can nest; never sum them as exclusive CPU time. Name audit is a heuristic, not WCAG certification."
+      }
+    }
+  ]
+}

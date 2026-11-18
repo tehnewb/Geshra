@@ -1,0 +1,219 @@
+[
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-0.png",
+    "files": [
+      "audio-paused.png",
+      "audio-playing.png",
+      "Badge-complete.png",
+      "Badge-dark-reduced.png",
+      "Badge-reset.png",
+      "Canvas-redrawn.png",
+      "Checkbox-mixed-chosen.png",
+      "Checkbox-unchecked.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-1.png",
+    "files": [
+      "ColorField-changed.png",
+      "DateField-changed.png",
+      "DateTimeField-changed.png",
+      "Details-first-open.png",
+      "Details-second-open.png",
+      "EmailField-changed.png",
+      "FileUploader-uploaded.png",
+      "Form-dark.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-2.png",
+    "files": [
+      "Form-required.png",
+      "Form-submitted.png",
+      "HiddenField-read.png",
+      "HorizontalLayout-buttonbar.png",
+      "HorizontalLayout-toolbar.png",
+      "Hyperlink-hover.png",
+      "InputField-changed.png",
+      "lifecycle-0.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-3.png",
+    "files": [
+      "lifecycle-1.png",
+      "lifecycle-2.png",
+      "lifecycle-3.png",
+      "lifecycle-4.png",
+      "lifecycle-5.png",
+      "lifecycle-6.png",
+      "MonthField-changed.png",
+      "MultiSelect-selected.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-4.png",
+    "files": [
+      "NativeTextField-changed.png",
+      "NumberField-changed.png",
+      "PasswordField-changed.png",
+      "RadioButton-beta.png",
+      "SearchField-changed.png",
+      "Select-selected.png",
+      "Switch-unchecked.png",
+      "Tabbed-overview.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-5.png",
+    "files": [
+      "Tabbed-settings.png",
+      "Table-empty.png",
+      "Table-reset.png",
+      "TelephoneField-changed.png",
+      "TextArea-changed.png",
+      "TextField-changed.png",
+      "TimeField-changed.png",
+      "Tooltip-hidden.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-6.png",
+    "files": [
+      "Tooltip-shown.png",
+      "Tree-expanded.png",
+      "Tree-MULTIPLE.png",
+      "Tree-NONE.png",
+      "Tree-renamed.png",
+      "Tree-SINGLE.png",
+      "UrlField-changed.png",
+      "video-paused.png"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-state-sheet-7.png",
+    "files": [
+      "video-playing-retry.png",
+      "video-playing.png",
+      "VirtualList-last.png",
+      "VirtualList-refresh.png",
+      "WeekField-changed.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-0.png",
+    "files": [
+      "audio-paused.png",
+      "audio-playing.png",
+      "Badge-complete.png",
+      "Badge-dark-reduced.png",
+      "Badge-reset.png",
+      "Canvas-redrawn.png",
+      "Checkbox-mixed-chosen.png",
+      "Checkbox-unchecked.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-1.png",
+    "files": [
+      "ColorField-changed.png",
+      "DateField-changed.png",
+      "DateTimeField-changed.png",
+      "Details-first-open.png",
+      "Details-second-open.png",
+      "EmailField-changed.png",
+      "FileUploader-uploaded.png",
+      "Form-dark.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-2.png",
+    "files": [
+      "Form-required.png",
+      "Form-submitted.png",
+      "HiddenField-read.png",
+      "HorizontalLayout-buttonbar.png",
+      "HorizontalLayout-toolbar.png",
+      "Hyperlink-hover.png",
+      "InputField-changed.png",
+      "lifecycle-0.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-3.png",
+    "files": [
+      "lifecycle-1.png",
+      "lifecycle-2.png",
+      "lifecycle-3.png",
+      "lifecycle-4.png",
+      "lifecycle-5.png",
+      "lifecycle-6.png",
+      "MonthField-changed.png",
+      "MultiSelect-selected.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-4.png",
+    "files": [
+      "NativeTextField-changed.png",
+      "NumberField-changed.png",
+      "PasswordField-changed.png",
+      "RadioButton-beta.png",
+      "SearchField-changed.png",
+      "Select-selected.png",
+      "Switch-unchecked.png",
+      "Tabbed-overview.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-5.png",
+    "files": [
+      "Tabbed-settings.png",
+      "Table-empty.png",
+      "Table-reset.png",
+      "TelephoneField-changed.png",
+      "TextArea-changed.png",
+      "TextField-changed.png",
+      "TimeField-changed.png",
+      "Tooltip-hidden.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-6.png",
+    "files": [
+      "Tooltip-shown.png",
+      "Tree-expanded.png",
+      "Tree-MULTIPLE.png",
+      "Tree-NONE.png",
+      "Tree-renamed.png",
+      "Tree-SINGLE.png",
+      "UrlField-changed.png",
+      "video-paused.png"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-state-sheet-7.png",
+    "files": [
+      "video-playing.png",
+      "VirtualList-last.png",
+      "VirtualList-refresh.png",
+      "WeekField-changed.png"
+    ]
+  }
+]

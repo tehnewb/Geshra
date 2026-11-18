@@ -1,0 +1,45 @@
+FINAL TARGETED VISUAL REPORT — 2026-11-18
+
+Actual tested build:
+http://localhost:4050/showcase; PID8004
+JAR SHA256 6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608
+Identity cross-checked against build/showcase-build.json.
+Chrome157.0.8103.80 and Firefox157.0 on Windows; headless desktop engines. Targeted changes inspected390x844; small smoke1440x1000. No real mobile device claim.
+
+RESULT: targeted final patch PASS in tested states, with known open product issues and explicit coverage limitations carried forward. Visual testing evidence is saved and sessions closed. Shared server remains running. No further active visual captures. Ready for final AUDITOR review; root controls shutdown.
+
+Final changed behavior:
+- V007 RESOLVED: PasswordField displays masked native input and Password updated (18 characters) after synthetic input, then Password updated (0 characters) when emptied. No entered text echoed in feedback. Screenshots chrome/firefox-password-changed.png and password-empty.png directly inspected.
+- Explicit configured Select value PASS: untouched new page displays Java, input valuejava, callback feedback still Edit this control to see its Java value in both engines. This confirms the DEMO calls setValue('java'); it DOES NOT fix general grouped-native-default ordering. Evidence chrome/firefox-explicit-java.png and results.json. Assertion deliberately named explicit configured value.
+- MIME change PASS: saved HTTP check reports audio/wav32044bytes and video/webm5418bytes. Native controls show ready media; both audio and video play (paused=false,currentTime>0) after direct control click and pause through Java buttons (paused=true, matching status). Playing/paused screenshots directly inspected both engines. Chrome initial media-ready frame can show transient native loading spinner; subsequent video-playing/paused captures verify loaded frames and actual progression. No media load failure observed.
+
+Small smoke PASS:
+-48 sample cards assembled, correct Geshra UI showcase title.
+-390px document width remains390;1440px document width remains1440.
+-Tree Project/Sources labels initially correct; expanded branch rename retains caret and Main.java/README.md. Final desktop before/after behavior screenshot tree-smoke.png inspected both engines.
+-RadioBeta click feedback Alpha=false; Beta=true.
+-Image loaded, native alt Blue Geshra sample illustration.
+-Desktop modal renders above complete backdrop with readable content/Close button; Escape closes it. Final dialog-smoke.png inspected both engines.
+
+Carried resolved findings from previous full sweep:
+V001 resource routing/CSS/media load; V002 initial null tree labels; V003 destructive tree rename; V004 missing Image alt; V005 radio peer-state feedback; V006 generic InputField feedback; V008 title; V009 narrow heading overflow. Retained coverage remains attributable to previous binary14C7C97554C00BA1A73C1B2178A092E2935FFFE48057132CF55B5EE285BEDA41; final small smoke verifies representative unchanged features without pretending all192 baseline captures were repeated.
+
+OPEN PRODUCT ISSUES (not silently waived):
+1. General untouched grouped Select native-default ordering: explicitJava in showcase masks it only in this configured sample. Preserve original first-build/corrected initial Select evidence, including corrected/chrome-narrow/21-Select.png and firefox-narrow/21-Select.png showing Empty value; functional tester owns detailed general-product reproduction. No native-default-fixed claim.
+2. V010 tree keyboard accessibility: node labels/expansion controls skipped byTab. Prior evidence corrected/*-states/Tree-keyboard-skipped.png and extra-results.json. No keyboard fix in final patch.
+
+UNVERIFIED / DEMO GAPS:
+Firefox native popup appearance remains UNVERIFIED after headed-window binding failed twice; DataList suggestions popup also not verified in either browser. No pass inferred from absent popup. Chrome date/select popup appearance was inspected in prior sweep.
+All remaining explicit gaps in corrected/report.txt carry forward: Table selection unsupported; nonvisual/inertScript effects; virtual-list empty/replacement/height variants absent from demo; tab insertion/empty, nonmodalDialog, Popover toggle, arbitrary CSS/event overloads not exhaustively tested; real phones/Safari/WebKit/OS dialogs/screen-reader output not covered. Prior coverage records distinguish initial render, interactive states and indirect nonvisual effects; they are not all-API approval.
+
+Evidence index:
+final/results.json exact build/version/initial values/password/media observations.
+final/smoke.json small smoke results.
+final/*.png final targeted and smoke renders, directly inspected.
+corrected/report.txt previous full-sweep methods/results/limitations.
+corrected/type-coverage.csv all113 concrete source types mapped to four-engine/viewport initial captures.
+corrected/state-coverage.csv94 explicit state records, plus reviewed extras and contact sheets.
+coverage.csv original114-type planning matrix includes abstractValueComponent explicitly; no independent visual rectangle claimed.
+First-build findings.txt and original PNGs preserved unchanged.
+
+No production/demo edits, server restarts, commits, pushes, deployments, dependencies or benchmarks by VISUAL TESTER. Only visual-test-results evidence authored. No maintained test scripts added.

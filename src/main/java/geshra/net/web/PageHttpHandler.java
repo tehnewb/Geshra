@@ -157,6 +157,8 @@ final class PageHttpHandler extends SimpleChannelInboundHandler<FullHttpRequest>
                         .replaceFirst(Matcher.quoteReplacement("<meta data-geshra-seo name=\"robots\" content=\"noindex,nofollow\"></head>"));
         if (!allowed || missing) html = BODY_END.matcher(html)
                 .replaceFirst(Matcher.quoteReplacement("<main><h1>" + status.code() + " " + SeoPage.escape(status.reasonPhrase()) + "</h1></main></body>"));
+        html = HEAD_END.matcher(html)
+                .replaceFirst("<meta name=\"geshra-bootstrap\" content=\"2\"></head>");
         FullHttpResponse response = HttpResponses.create(request, status, "text/html", html);
         if (!allowed || missing || protectedPage || page != null && !page.isIndexed()) response.headers()
                 .set("X-Robots-Tag", "noindex,nofollow");

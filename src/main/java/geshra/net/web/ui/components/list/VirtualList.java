@@ -12,6 +12,7 @@ import geshra.net.web.ui.event.ViewportEvent;
 import java.util.ArrayDeque;
 import java.util.List;
 import java.util.Map;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.function.IntFunction;
@@ -26,18 +27,39 @@ import java.util.function.IntFunction;
  * height; variable-height measurement is intentionally not implied. Changes to a retained List
  * require refresh. Very large extents use browser-side scaled scrolling rather than overflowing
  * native CSS height limits. All server mutations belong to the session dispatch thread.</p>
+ *
+ * <p>At most 32 browser range requests are outstanding per connection; newer scroll positions
+ * replace pending desired state. The configurable one-request policy favors lower traffic.
+ * Rows are never reassigned to another logical item. Overlap preserves
+ * native selection and focus; eviction hands focus to the list root after preceding native input
+ * events. Keep durable edits and selection in the application model, since off-window rows are
+ * disposed. Refresh rebuilds content and callbacks even when a logical key remains unchanged.</p>
+ *
+ * <pre>{@code
+ * VirtualList<Record> list = new VirtualList<>(count, repository::get, this::renderRecord)
+ *         .setKeyProvider(record -> record.id())
+ *         .setRowHeight(32)
+ *         .setOverscan(4);
+ * }</pre>
+ * @param <T> indexed dataset value type
  */
 public class VirtualList<T> extends Div {
     /**
      * Bound on live rendered rows and untrusted viewport requests.
      */
     public static final int MAX_WINDOW_ITEMS = 4096;
+    /**
+     * Maximum browser request pipeline depth; independent of dataset size and mounted row count.
+     */
+    public static final int MAX_PENDING_REQUESTS = 32;
     private final Div spacer = new Div(); // Native physical scroll extent.
     private final Div layer = new Div(); // Positioned rendered rows.
-    private final ArrayDeque<Component> rows = new ArrayDeque<>(); // Only live window row wrappers.
+    private final ArrayDeque<VirtualRow> rows = new ArrayDeque<>(); // Only live window row wrappers.
+    private HashSet<String> keys; // Custom live-window keys only; null avoids a set for unique index keys.
     private final Function<? super T, ? extends Component> renderer; // Fresh row content factory.
     private IntFunction<? extends T> source; // Lazy indexed provider.
     private List<? extends T> items; // Optional retained list, never copied.
+    private Function<? super T, String> keyProvider; // Optional application identity; null uses the dataset index.
     private int count; // Logical dataset size.
     private int first; // Inclusive rendered window start.
     private int end; // Exclusive rendered window end.
@@ -45,6 +67,7 @@ public class VirtualList<T> extends Div {
     private double rowHeight = 32; // Fixed row height in CSS pixels.
     private double viewportHeight = 320; // Initial viewport height in CSS pixels.
     private int overscan = 4; // Extra rows on each side of the viewport.
+    private int maximumPendingRequests = MAX_PENDING_REQUESTS; // Latency-first pipeline depth; lower values trade waiting for less work.
 
     /**
      * Creates a virtual list retaining an indexed List without copying its values.
@@ -115,6 +138,21 @@ public class VirtualList<T> extends Div {
     }
 
     /**
+     * Bounds outstanding browser range requests. The default 32 sends changed ranges immediately
+     * until this ceiling is reached, then retains only the latest desired range. Smaller values
+     * reduce intermediate work but may add waiting after a jump. This per-list client bound does
+     * not establish a server-work bound under arbitrary network or concurrent-user conditions.
+     * @param maximum one through 32 outstanding requests
+     * @return this list
+     */
+    public VirtualList<T> setMaximumPendingRequests(int maximum) {
+        if (maximum < 1 || maximum > MAX_PENDING_REQUESTS) throw new IllegalArgumentException("Maximum pending requests must be between one and 32");
+        maximumPendingRequests = maximum;
+        if (isAttached()) refresh();
+        return this;
+    }
+
+    /**
      * Replaces the retained List and refreshes the visible window.
      * @param items new indexed dataset
      * @return this list
@@ -123,6 +161,35 @@ public class VirtualList<T> extends Div {
         this.items = Objects.requireNonNull(items, "items");
         source = items::get;
         count = items.size();
+        if (isAttached()) refresh();
+        return this;
+    }
+
+    /**
+     * Sets stable application keys; only live-window keys are checked for nulls and duplicates.
+     * Keys do not preserve stale components across refresh or reorder. The renderer still creates
+     * fresh components, with listeners bound to the current record. Default keys are item indices.
+     * @param provider non-null provider of non-null keys, at most 1024 characters each
+     * @return this list
+     */
+    public VirtualList<T> setKeyProvider(Function<? super T, String> provider) {
+        keyProvider = Objects.requireNonNull(provider, "provider");
+        if (keys == null) keys = new HashSet<>();
+        if (isAttached()) refresh();
+        return this;
+    }
+
+    /**
+     * Replaces a lazy indexed dataset without materializing or copying its values.
+     * @param count non-negative logical size
+     * @param source lazy indexed provider
+     * @return this list
+     */
+    public VirtualList<T> setDataProvider(int count, IntFunction<? extends T> source) {
+        if (count < 0) throw new IllegalArgumentException("Item count cannot be negative");
+        this.source = Objects.requireNonNull(source, "source");
+        this.count = count;
+        items = null;
         if (isAttached()) refresh();
         return this;
     }
@@ -138,11 +205,14 @@ public class VirtualList<T> extends Div {
             revision++;
             layer.clear();
             rows.clear();
-            first = 0;
-            end = 0;
-            String configuration = BrowserJson.encode(Map.of("count", count, "rowHeight", rowHeight, "overscan", overscan, "revision", revision, "spacer", spacer.getComponentID(), "layer", layer.getComponentID()));
+            if (keys != null) keys.clear();
+            int windowSize = (int) Math.min(MAX_WINDOW_ITEMS, Math.ceil(viewportHeight / rowHeight) + overscan);
+            first = Math.min(first, Math.max(0, count - windowSize));
+            end = first;
+            int initialEnd = Math.min(count, first + windowSize);
+            String configuration = BrowserJson.encode(Map.of("count", count, "rowHeight", rowHeight, "overscan", overscan, "revision", revision, "spacer", spacer.getComponentID(), "layer", layer.getComponentID(), "first", first, "end", initialEnd, "requestAware", true, "maxPending", maximumPendingRequests));
             queueForDispatch(DOMUpdateType.VIRTUAL_CONFIG, DOMUpdateParam.VALUE, configuration);
-            renderWindow(0, Math.min(count, (int) Math.min(MAX_WINDOW_ITEMS, Math.ceil(viewportHeight / rowHeight) + overscan)));
+            renderWindow(first, initialEnd, false, 0);
             push();
         } finally {
             owner.endUpdate();
@@ -180,43 +250,53 @@ public class VirtualList<T> extends Div {
         if (event.getRevision() != revision) return;
         int start = event.getFirst();
         int finish = event.getEnd();
-        if (start < 0 || finish < start || finish > count || finish - start > MAX_WINDOW_ITEMS) return;
-        renderWindow(start, finish);
+        if (start < 0 || finish < start || finish > count || finish - start > MAX_WINDOW_ITEMS) {
+            acknowledgeWindow(start, finish, true, true, event.getToken());
+            return;
+        }
+        renderWindow(start, finish, true, event.getToken());
     }
 
     /**
      * Diffs overlapping indexed windows, retaining unchanged row components.
      * @param start inclusive start
      * @param finish exclusive end
+     * @param requested whether this acknowledges a browser request rather than initial configuration
+     * @param token browser request identity, or zero for initial/older-client windows
      */
-    private void renderWindow(int start, int finish) {
+    private void renderWindow(int start, int finish, boolean requested, int token) {
         UI owner = getUI();
         owner.beginUpdate();
+        boolean completed = false;
         try {
             if (finish <= first || start >= end) {
                 layer.clear();
                 rows.clear();
+                if (keys != null) keys.clear();
                 first = start;
                 end = start;
             }
-            while (first < start && !rows.isEmpty()) { layer.remove(rows.removeFirst()); first++; }
-            while (end > finish && !rows.isEmpty()) { layer.remove(rows.removeLast()); end--; }
+            while (first < start && !rows.isEmpty()) { removeRow(rows.removeFirst()); first++; }
+            while (end > finish && !rows.isEmpty()) { removeRow(rows.removeLast()); end--; }
             while (first > start) {
-                Component row = renderRow(first - 1);
-                if (rows.isEmpty()) layer.add(row);
-                else layer.insertBefore(rows.peekFirst(), row);
+                VirtualRow row = renderRow(first - 1);
+                attachRow(row, rows.peekFirst());
                 rows.addFirst(row);
                 first--;
             }
             while (end < finish) {
-                Component row = renderRow(end++);
+                VirtualRow row = renderRow(end);
+                attachRow(row, null);
                 rows.addLast(row);
-                layer.add(row);
+                end++;
             }
-            queueForDispatch(DOMUpdateType.VIRTUAL_WINDOW, DOMUpdateParam.VALUE, BrowserJson.encode(Map.of("revision", revision, "first", first, "end", end)));
-            push();
+            completed = true;
         } finally {
-            owner.endUpdate();
+            try {
+                acknowledgeWindow(start, finish, requested, !completed, token);
+            } finally {
+                owner.endUpdate();
+            }
         }
     }
 
@@ -225,22 +305,85 @@ public class VirtualList<T> extends Div {
      * @param index dataset index
      * @return fresh row wrapper
      */
-    private Component renderRow(int index) {
-        Div row = new Div();
+    private VirtualRow renderRow(int index) {
+        T item = source.apply(index);
+        String key = keyProvider == null ? Integer.toString(index) : Objects.requireNonNull(keyProvider.apply(item), "row key");
+        if (key.length() > 1024 || (keys != null && keys.contains(key))) throw new IllegalArgumentException("Invalid or duplicate live row key");
+        Component content = Objects.requireNonNull(renderer.apply(item), "renderer result");
+        if (content.getParent() != null || content.isAttached()) throw new IllegalArgumentException("The renderer must return a fresh unattached component");
+        VirtualRow row = new VirtualRow(key);
         row.attribute("class", "geshra-virtual-row");
         row.attribute("style", "height:" + rowHeight + "px");
         row.attribute("role", "listitem");
         row.attribute("aria-posinset", Integer.toString(index + 1));
         row.attribute("aria-setsize", Integer.toString(count));
-        Component content = Objects.requireNonNull(renderer.apply(source.apply(index)), "renderer result");
-        if (content.getParent() != null || content.isAttached()) throw new IllegalArgumentException("The renderer must return a fresh unattached component");
-        row.add(content);
+        row.attribute("data-geshra-key", key);
+        try {
+            row.add(content);
+        } catch (RuntimeException failure) {
+            disposeFailedRow(row, failure);
+            throw failure;
+        }
+        if (keys != null) keys.add(key);
         return row;
+    }
+
+    /**
+     * Disposes an evicted row and releases its bounded logical-key entry.
+     * @param row live wrapper being evicted
+     */
+    private void removeRow(VirtualRow row) {
+        if (keys != null) keys.remove(row.key());
+        layer.remove(row);
+    }
+
+    /**
+     * Attaches a fully constructed row before committing its deque/index bookkeeping.
+     * @param row fresh wrapper
+     * @param before insertion reference, or null to append
+     */
+    private void attachRow(VirtualRow row, VirtualRow before) {
+        try {
+            if (before == null) layer.add(row);
+            else layer.insertBefore(before, row);
+        } catch (RuntimeException failure) {
+            if (keys != null) keys.remove(row.key());
+            disposeFailedRow(row, failure);
+            throw failure;
+        }
+    }
+
+    /**
+     * Releases a failed construction while preserving both the original and cleanup failures.
+     * @param row wrapper with possibly partially registered content
+     * @param failure original application failure
+     */
+    private void disposeFailedRow(VirtualRow row, RuntimeException failure) {
+        try {
+            row.dispose();
+        } catch (RuntimeException cleanupFailure) {
+            failure.addSuppressed(cleanupFailure);
+        }
+    }
+
+    /**
+     * Reports the actual committed range, including after a rejected request or renderer failure.
+     * The browser may then send a newer desired range without replaying stale structural changes.
+     * @param requestFirst requested inclusive start
+     * @param requestEnd requested exclusive end
+     * @param requested whether this is a browser request acknowledgment
+     * @param failed whether validation or rendering failed
+     * @param token browser request identity, or zero for initial/older-client windows
+     */
+    private void acknowledgeWindow(int requestFirst, int requestEnd, boolean requested, boolean failed, int token) {
+        Map<String, Object> window = Map.of("revision", revision, "first", first, "end", end, "requestFirst", requestFirst, "requestEnd", requestEnd, "failed", failed, "requested", requested, "token", token);
+        queueForDispatch(DOMUpdateType.VIRTUAL_WINDOW, DOMUpdateParam.VALUE, BrowserJson.encode(window));
+        push();
     }
 
     @Override
     protected void create() { refresh(); }
 
     @Override
-    protected void destroy() { rows.clear(); }
+    protected void destroy() { rows.clear(); if (keys != null) keys.clear(); }
 }

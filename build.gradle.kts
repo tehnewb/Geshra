@@ -39,6 +39,32 @@ tasks.jar {
 }
 tasks.test { useJUnitPlatform() }
 
+// Benchmark dependencies never enter the published library or its consumer classpath.
+val jmh by sourceSets.creating {
+    compileClasspath += sourceSets.main.get().output
+    runtimeClasspath += sourceSets.main.get().output
+}
+configurations[jmh.implementationConfigurationName].extendsFrom(configurations.implementation.get())
+configurations[jmh.runtimeOnlyConfigurationName].extendsFrom(configurations.runtimeOnly.get())
+dependencies {
+    add(jmh.implementationConfigurationName, "org.openjdk.jmh:jmh-core:1.37")
+    add(jmh.annotationProcessorConfigurationName, "org.openjdk.jmh:jmh-generator-annprocess:1.37")
+}
+tasks.register<JavaExec>("benchmark") {
+    group = "verification"
+    description = "Runs warmed JVM benchmarks with allocation profiling and JSON results."
+    classpath = jmh.runtimeClasspath
+    mainClass.set("org.openjdk.jmh.Main")
+    javaLauncher.set(javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) })
+    val smoke = providers.gradleProperty("benchmarkSmoke").isPresent
+    val resultPath = providers.gradleProperty("benchmarkOutput").getOrElse("build/reports/benchmarks/jvm.json")
+    val include = providers.gradleProperty("benchmarkInclude").getOrElse("geshra.benchmark.*")
+    args(include, "-wi", if (smoke) "1" else "3", "-i", if (smoke) "1" else "5",
+        "-w", if (smoke) "100ms" else "500ms", "-r", if (smoke) "100ms" else "500ms",
+        "-f", if (smoke) "1" else "2", "-foe", "true", "-prof", "gc", "-rf", "json", "-rff", resultPath)
+    doFirst { file(resultPath).parentFile?.mkdirs() }
+}
+
 val releaseSigning = providers.gradleProperty("releaseSigning").map(String::toBoolean).getOrElse(false)
 
 mavenPublishing {

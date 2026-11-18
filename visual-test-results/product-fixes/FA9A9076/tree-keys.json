@@ -1,0 +1,830 @@
+[
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-0-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Project"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-1-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-2-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-3-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Space",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-4-Space.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowDown",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-5-ArrowDown.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Space",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-6-Space.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Home",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-7-Home.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Project"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "End",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-8-End.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowUp",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-9-ArrowUp.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-10-ArrowLeft.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tree-key-11-ArrowLeft.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-0-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Project"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-1-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-2-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-3-ArrowRight.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Space",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-4-Space.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowDown",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-5-ArrowDown.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": null,
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Space",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-6-Space.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Home",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-7-Home.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Project"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "End",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-8-End.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "README.md"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowUp",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-9-ArrowUp.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Main.java"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "-1"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-10-ArrowLeft.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "true",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "Main.java",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tree-key-11-ArrowLeft.png",
+    "focus": {
+      "role": "treeitem",
+      "name": "Sources"
+    },
+    "tabStops": 1,
+    "items": [
+      {
+        "name": "Project",
+        "expanded": "true",
+        "selected": "true",
+        "tab": "-1"
+      },
+      {
+        "name": "Sources",
+        "expanded": "false",
+        "selected": null,
+        "tab": "0"
+      },
+      {
+        "name": "README.md",
+        "expanded": null,
+        "selected": "true",
+        "tab": "-1"
+      }
+    ]
+  }
+]

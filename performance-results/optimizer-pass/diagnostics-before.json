@@ -1,0 +1,574 @@
+{
+  "recordedAt": "2026-11-18T00:49:34.735Z",
+  "samples": [
+    {
+      "implementation": "geshra",
+      "status": "passed",
+      "layout": {
+        "title": "Matched benchmark",
+        "children": [
+          "H1",
+          "DIV",
+          "P",
+          "P",
+          "P",
+          "TABLE"
+        ],
+        "buttons": [
+          "Increment",
+          "Echo",
+          "Create 1000",
+          "Update tenth",
+          "Select 500",
+          "Remove 500",
+          "Clear"
+        ],
+        "mainBounds": {
+          "x": 254,
+          "y": 20,
+          "width": 932,
+          "height": 160
+        },
+        "font": "14px Arial, sans-serif",
+        "inputType": "text",
+        "overflow": false
+      },
+      "snapshots": [
+        {
+          "cycle": 0,
+          "heap": {
+            "usedSize": 1574236,
+            "totalSize": 2428928,
+            "embedderHeapUsedSize": 400784,
+            "backingStorageSize": 21461
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 48,
+            "jsEventListeners": 30
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 1,
+          "heap": {
+            "usedSize": 2355840,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 845960,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 2,
+          "heap": {
+            "usedSize": 2399772,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 845952,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 3,
+          "heap": {
+            "usedSize": 2435160,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 845952,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 4,
+          "heap": {
+            "usedSize": 2449680,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 845952,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 5,
+          "heap": {
+            "usedSize": 2492140,
+            "totalSize": 3284992,
+            "embedderHeapUsedSize": 845952,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        },
+        {
+          "cycle": 6,
+          "heap": {
+            "usedSize": 2497576,
+            "totalSize": 3284992,
+            "embedderHeapUsedSize": 845952,
+            "backingStorageSize": 21898
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 50,
+            "jsEventListeners": 43
+          },
+          "attached": 30
+        }
+      ],
+      "websocketExtensions": [
+        "none"
+      ]
+    },
+    {
+      "implementation": "vaadin",
+      "status": "passed",
+      "layout": {
+        "title": "Matched benchmark",
+        "children": [
+          "H1",
+          "DIV",
+          "P",
+          "P",
+          "P",
+          "TABLE"
+        ],
+        "buttons": [
+          "Increment",
+          "Echo",
+          "Create 1000",
+          "Update tenth",
+          "Select 500",
+          "Remove 500",
+          "Clear"
+        ],
+        "mainBounds": {
+          "x": 254,
+          "y": 20,
+          "width": 932,
+          "height": 160
+        },
+        "font": "14px Arial, sans-serif",
+        "inputType": "text",
+        "overflow": false
+      },
+      "snapshots": [
+        {
+          "cycle": 0,
+          "heap": {
+            "usedSize": 3530380,
+            "totalSize": 4263936,
+            "embedderHeapUsedSize": 534760,
+            "backingStorageSize": 571869
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 211
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 1,
+          "heap": {
+            "usedSize": 4575248,
+            "totalSize": 7217152,
+            "embedderHeapUsedSize": 981728,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 2,
+          "heap": {
+            "usedSize": 4676908,
+            "totalSize": 7217152,
+            "embedderHeapUsedSize": 982216,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 3,
+          "heap": {
+            "usedSize": 4734048,
+            "totalSize": 6955008,
+            "embedderHeapUsedSize": 982344,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 4,
+          "heap": {
+            "usedSize": 4837620,
+            "totalSize": 7217152,
+            "embedderHeapUsedSize": 983064,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 5,
+          "heap": {
+            "usedSize": 4907984,
+            "totalSize": 6955008,
+            "embedderHeapUsedSize": 983912,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        },
+        {
+          "cycle": 6,
+          "heap": {
+            "usedSize": 5008936,
+            "totalSize": 6955008,
+            "embedderHeapUsedSize": 984224,
+            "backingStorageSize": 572325
+          },
+          "dom": {
+            "documents": 2,
+            "nodes": 115,
+            "jsEventListeners": 224
+          },
+          "attached": 49
+        }
+      ],
+      "websocketExtensions": [
+        "permessage-deflate;client_max_window_bits=15"
+      ]
+    },
+    {
+      "implementation": "react",
+      "status": "passed",
+      "layout": {
+        "title": "Matched benchmark",
+        "children": [
+          "H1",
+          "DIV",
+          "P",
+          "P",
+          "P",
+          "TABLE"
+        ],
+        "buttons": [
+          "Increment",
+          "Echo",
+          "Create 1000",
+          "Update tenth",
+          "Select 500",
+          "Remove 500",
+          "Clear"
+        ],
+        "mainBounds": {
+          "x": 254,
+          "y": 20,
+          "width": 932,
+          "height": 160
+        },
+        "font": "14px Arial, sans-serif",
+        "inputType": "text",
+        "overflow": false
+      },
+      "snapshots": [
+        {
+          "cycle": 0,
+          "heap": {
+            "usedSize": 2023340,
+            "totalSize": 2953216,
+            "embedderHeapUsedSize": 400616,
+            "backingStorageSize": 225836
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 166
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 1,
+          "heap": {
+            "usedSize": 3298184,
+            "totalSize": 3809280,
+            "embedderHeapUsedSize": 901240,
+            "backingStorageSize": 233220
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 2,
+          "heap": {
+            "usedSize": 3366484,
+            "totalSize": 3809280,
+            "embedderHeapUsedSize": 903304,
+            "backingStorageSize": 233217
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 3,
+          "heap": {
+            "usedSize": 3423588,
+            "totalSize": 3809280,
+            "embedderHeapUsedSize": 905640,
+            "backingStorageSize": 233217
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 4,
+          "heap": {
+            "usedSize": 3482064,
+            "totalSize": 4071424,
+            "embedderHeapUsedSize": 907728,
+            "backingStorageSize": 233217
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 5,
+          "heap": {
+            "usedSize": 3548364,
+            "totalSize": 4071424,
+            "embedderHeapUsedSize": 909552,
+            "backingStorageSize": 233217
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 6,
+          "heap": {
+            "usedSize": 3549880,
+            "totalSize": 4071424,
+            "embedderHeapUsedSize": 911504,
+            "backingStorageSize": 233217
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 43,
+            "jsEventListeners": 179
+          },
+          "attached": 26
+        }
+      ],
+      "websocketExtensions": []
+    },
+    {
+      "implementation": "dom",
+      "status": "passed",
+      "layout": {
+        "title": "Matched benchmark",
+        "children": [
+          "H1",
+          "DIV",
+          "P",
+          "P",
+          "P",
+          "TABLE"
+        ],
+        "buttons": [
+          "Increment",
+          "Echo",
+          "Create 1000",
+          "Update tenth",
+          "Select 500",
+          "Remove 500",
+          "Clear"
+        ],
+        "mainBounds": {
+          "x": 254,
+          "y": 20,
+          "width": 932,
+          "height": 160
+        },
+        "font": "14px Arial, sans-serif",
+        "inputType": "text",
+        "overflow": false
+      },
+      "snapshots": [
+        {
+          "cycle": 0,
+          "heap": {
+            "usedSize": 1477972,
+            "totalSize": 2428928,
+            "embedderHeapUsedSize": 382424,
+            "backingStorageSize": 2132
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 20
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 1,
+          "heap": {
+            "usedSize": 2180692,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 884328,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 2,
+          "heap": {
+            "usedSize": 2215708,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 886392,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 3,
+          "heap": {
+            "usedSize": 2234276,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 888728,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 4,
+          "heap": {
+            "usedSize": 2245592,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 890816,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 5,
+          "heap": {
+            "usedSize": 2277312,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 892640,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        },
+        {
+          "cycle": 6,
+          "heap": {
+            "usedSize": 2282784,
+            "totalSize": 3022848,
+            "embedderHeapUsedSize": 894592,
+            "backingStorageSize": 2620
+          },
+          "dom": {
+            "documents": 1,
+            "nodes": 42,
+            "jsEventListeners": 33
+          },
+          "attached": 26
+        }
+      ],
+      "websocketExtensions": []
+    }
+  ],
+  "browser": "157.0.8103.80"
+}

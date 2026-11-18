@@ -2,8 +2,6 @@
 build/
 target/
 node_modules/
-/benchmarks/
-/src/jmh/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/

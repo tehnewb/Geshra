@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import io.netty.buffer.ByteBuf;
 import java.nio.charset.StandardCharsets;
@@ -14,12 +15,14 @@ public class RoutePacketHandler implements PacketHandler {
 
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        short length = packet.readShort();
+        int length = PacketInput.length(context, packet);
         String path = packet.readCharSequence(length, StandardCharsets.UTF_8)
-                .toString()
-                .substring(1);
+                .toString();
         context.handleRoute(path);
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == RoutePacketHandler.class; }
 
     @Override
     public int getID() {

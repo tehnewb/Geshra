@@ -9,6 +9,13 @@ import io.netty.buffer.ByteBuf;
 public interface PacketHandler {
 
     /**
+     * Opts a handler into the compact built-in action grammar. Replacements default to legacy
+     * decoding so existing custom handlers never receive a different payload unexpectedly.
+     * @return whether this implementation accepts compact fields
+     */
+    default boolean supportsCompactInput() { return false; }
+
+    /**
      * Consumes this opcode payload and applies it to the supplied session. The caller retains ownership of the buffer.
      *
      * @param context context supplied to this operation

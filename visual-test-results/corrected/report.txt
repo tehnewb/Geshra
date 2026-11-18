@@ -1,0 +1,42 @@
+CORRECTED BUILD VISUAL REPORT — 2026-11-18
+Route http://localhost:4050/showcase
+Build SHA256 14C7C97554C00BA1A73C1B2178A092E2935FFFE48057132CF55B5EE285BEDA41; server PID41068.
+Chrome157.0.8103.80 and Firefox157.0, Windows headless. Initial matrix1440x1000 and390x844. Narrow means desktop engine with resized viewport, not real phone approval.
+
+Disposition: first corrected sweep COMPLETE WITH OPEN ISSUE AND COVERAGE LIMITATIONS. Ready for targeted password-fix rebuild. Browser sessions closed after saving report. No full all-state approval, no shutdown authorization.
+
+Known issue dispositions:
+V001 FIXED: stylesheet, SVG, WAV and WebM load; inspected styled cards and loaded media. Native audio play/Java pause works both engines. Video play/Java pause works Firefox; Chrome video play passed after accurate control click (video-playing-retry.png). First Chrome video attempt was a missed native control click, not product failure. media-results.json original Chrome video entry is superseded by retry capture and observed paused=false,time0.2484.
+V002 FIXED: Project, Sources, Main.java, README.md labels render.
+V003 FIXED: rename preserves caret and Main.java descendant in both engines. Evidence *-states/Tree-expanded.png and Tree-renamed.png.
+V004 FIXED: native alt='Blue Geshra sample illustration'; image naturalWidth240 and complete=true. Loaded Figure inspected both engines.
+V005 FIXED: Beta native selected; feedback Alpha=false/Beta=true in both engines.
+V006 FIXED: InputField native-event feedback changes after text entry.
+V007 OPEN DEMO P2: password sample still echoes entered synthetic text verbatim in both engines. Evidence *-states/PasswordField-changed.png. Root has arranged a targeted non-secret-feedback patch; retest pending.
+V008 FIXED: document.title Geshra UI showcase.
+V009 FIXED: no document overflow at390px in either engine; long type headings wrap and all initial narrow cards directly inspected.
+V010 OPEN PRODUCT P2 ACCESSIBILITY: tree nodes/carets skipped by keyboard. Repro load route, focus Tree selection mode, pressTab. Actual focus is Read tree selection; none of the Project/Sources/leaf labels or carets receives focus. Expected keyboard-reachable expansion/selection controls with visible focus. Evidence *-states/Tree-keyboard-skipped.png; extra-results.json. Existing pointer selection/expansion is usable. Not fixed or approved by this report.
+
+Coverage:
+- type-coverage.csv maps all113 public concrete source classes to the actual sample screenshot indexes for each engine/viewport. ValueComponent abstract base is not an independent visual widget; original coverage.csv114 includes it. Concrete resource/native subnodes are mapped explicitly rather than counted as extra standalone widgets.
+- All48 initial sample screenshots from each of four browser/viewport combinations captured and inspected (narrow cards at readable size, desktop sheets for broad alignment/containment). Desktop-sheet text is reduced; native-size originals remain available. No baseline clipping/overlap found after resource fix.
+- state-coverage.csv records94 explicit form/interactive/lifecycle state captures. All state-sheet0..7 for each engine directly inspected. Overlay/focus/native menu/media/dark/middle extras also reviewed as noted below. Not every state was repeated at every viewport.
+- Forms: initial values; changed native text/search/email/password/URL/tel/date/datetime/time/month/week/color/number/textarea; long Unicode and literal markup feedback; checkbox/switch checked/unchecked; mixed checkbox chosen; radioBeta; selectJavaScript and multiselectAlpha+Japanese; required empty form and valid submission; labels; file upload synthetic19byte text. Feedback images readable/contained. Password open issue remains.
+- Disabled/read-only/invalid fixture inspected initially; native focus outline visible afterTab. Required validation prevents submission. Invalid-email validation bubble from first build only; corrected native email reportValidity popup not separately recaptured.
+- Table populated/empty/reset, tabsOverview/Settings, treeexpanded/renamed and three selection modes, tooltipshown/hidden, status40/100/reset, Canvas rectangle+circle, all SVG primitives, toolbar/buttonbar callbacks, hidden-value read, lifecyclemove/detach/restore/dispose/unsubscribe inspected in both engines.
+- Tree NONE preserves prior selection/highlight in tested mode-change sequence; this report does not claim it clears selection. MULTIPLE sequence toggled a previously selected label, leaving1; not a two-simultaneous-selection proof. Functional tester owns stronger policy checks.
+- VirtualList top/end/refreshed-end and verifiedmiddle (~Item500012) inspected without blank visible rows. VirtualList-middle.png was an incorrectly requested out-of-range scroll clamped to end; superseded by VirtualList-middle-verified.png. No benchmark run.
+- Modal desktop/narrow backdrop, content/close, Escape and focus-cycle capture; popover narrow+Firefoxdesktop show/Escape/light dismiss. Chrome desktop-popover.png captured before async appearance and is NOT valid open-state evidence; narrow popover-final.png is valid. Dialog single Close button has initial focus but Tab moves to document focus, so no focus-visible outline in that one screenshot; ordinary NativeTextField focus outline verified.
+- Image loaded; Audio/Video ready, nativeplaying and Java pause verified; actual audio heard, mute, seek, fullscreen and ended-feedback not claimed. ColorScheme dark+reduced-motion applied to status/form examples; showcase intentionally remains a readable light surface, no separate dark theme advertised. Spinner animation disabled by reduced-motion CSS; still image alone does not prove motion timing.
+
+Explicit gaps/unsupported cases:
+- Table selection is not implemented and disclosed in demo. No Menu component exists. Native Firefox month/week text fallback expected. Firefox native select/date popup not captured in page screenshot after click; these popup visuals NOT VERIFIED. Chrome date and select popup screenshots inspected, including OptionGroup label.
+- DataList input/list relationship and typedJ visible, but native suggestions popup not captured in either engine; suggestion popup NOT VERIFIED.
+- No showcase controls for VirtualList empty dataset, row-height/height changes, replacement dataset/key changes; Tabbedinsert/empty; Tree empty/long labels; nonmodalDialog; Popover toggle API; arbitrary style/lifecycle insertion/HTML APIs. These are DEMO GAPS, not passing coverage. Current route supports representative lifecycle/value/style behavior only.
+- No dedicated disabled version of every control or every possible error/loading state. Native OS color/file picker chrome, actual phones/touch Safari/WebKit, high-contrast/forcedcolors, screen reader output not tested. No claim of exhaustive browser/platform/CSSsetter/event-overload coverage.
+- HiddenField absence/readout, Link styling effect and inertScript observed. Script is intentionally empty, so execution behavior is not demonstrated. DataList/OptionGroup/Option only meaningful within owning inputs/selects.
+
+Artifacts: captures.json exact build/browser/viewport/routes; type-coverage.csv; state-coverage.csv; interactive-results.json; form-results.json; lifecycle-results.json; media-results.json; extra-results.json; state-sheets.json; all PNGs under corrected/. First-build evidence remains outside corrected/.
+No production/demo changes or server restart by VISUAL TESTER. Only visual-test-results artifacts authored; no maintained test code added.
+
+Native Firefox popup follow-up: headed Firefox157 launched successfully and appeared in sky.list_windows as Geshra UI showcase — Nightly, window526488. Both initial get_window and one refreshed retry failed with: window id526488 no longer belongs to308046B0AF4A39CB; current owner is308046B0AF4A39CB. Computer-use recovery limit reached; no native screenshot obtained. Firefox popup appearance remains UNVERIFIED due native window binding failure. Test-created headed browser and both headless sessions closed; shared server untouched.

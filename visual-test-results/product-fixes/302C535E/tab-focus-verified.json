@@ -1,0 +1,38 @@
+[
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tabs-focus-verified.png",
+    "focus": {
+      "text": "Settings",
+      "visible": true
+    }
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tabs-focus-verified.png",
+    "focus": {
+      "text": "Overview",
+      "visible": true
+    }
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tabs-focus-verified.png",
+    "focus": {
+      "text": "Settings",
+      "visible": true
+    }
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tabs-focus-verified.png",
+    "focus": {
+      "text": "Overview",
+      "visible": true
+    }
+  }
+]

@@ -1,5 +1,6 @@
 package geshra.net.web.ui;
 
+import geshra.net.web.Wire;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
@@ -35,6 +36,7 @@ public class DOMDispatcher {
     private ArrayList<DOMUpdate> updates; // Lazily allocated ordered pending mutations.
     private boolean needsSorting; // Whether queued priorities are out of order.
     private int lastPriority; // Priority of the last inserted mutation.
+    private boolean compactSafe = true; // Whether every queued mutation uses the built-in encoder contract.
 
     /**
      * Creates an empty standalone dispatcher without allocating queue storage.
@@ -59,6 +61,7 @@ public class DOMDispatcher {
         if (!updates.isEmpty() && priority < lastPriority) needsSorting = true;
         lastPriority = priority;
         updates.add(update);
+        if (update.getClass() != DOMUpdate.class) compactSafe = false;
         if (owner != null) owner.updatesQueued();
         return this;
     }
@@ -111,6 +114,7 @@ public class DOMDispatcher {
         }
         needsSorting = false;
         lastPriority = 0;
+        compactSafe = true;
     }
 
     /**
@@ -123,6 +127,7 @@ public class DOMDispatcher {
         if (needsSorting) updates.sort(PRIORITY_ORDER);
         int sent = 0;
         int size = updates.size();
+        boolean compact = compactSafe && Boolean.TRUE.equals(channel.attr(Wire.COMPACT).get());
         try {
             while (sent < size && channel.isWritable()) {
                 int count = Math.min(MAX_PACKET_UPDATES, size - sent);
@@ -130,12 +135,13 @@ public class DOMDispatcher {
                         .buffer(Math.min(TARGET_PACKET_BYTES, 3 + count * 32));
                 boolean transferred = false;
                 try {
-                    packet.writeByte(1);
+                    packet.writeByte(compact ? Wire.SERVER_COMPACT : 1);
                     packet.writeShort(0);
                     int encoded = 0;
                     while (encoded < count && packet.writerIndex() < TARGET_PACKET_BYTES) {
                         DOMUpdate update = updates.get(sent + encoded);
-                        update.writeTo(packet);
+                        if (compact) update.writeCompactTo(packet);
+                        else update.writeTo(packet);
                         encoded++;
                     }
                     packet.setShort(1, encoded);

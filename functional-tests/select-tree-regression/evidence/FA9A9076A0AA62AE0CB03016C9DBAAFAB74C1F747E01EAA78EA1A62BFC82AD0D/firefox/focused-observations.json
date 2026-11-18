@@ -1,0 +1,178 @@
+{
+  "identity": {
+    "pid": 19636,
+    "sha256": "FA9A9076A0AA62AE0CB03016C9DBAAFAB74C1F747E01EAA78EA1A62BFC82AD0D",
+    "url": "http://localhost:4050/showcase",
+    "jar": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\examples\\spring-app\\build\\libs\\geshra-spring-example.jar"
+  },
+  "engine": "firefox",
+  "initial": {
+    "selects": [
+      {
+        "name": "grouped-default",
+        "value": "java",
+        "index": 0,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "java"
+        ],
+        "java": "Value not read"
+      },
+      {
+        "name": "explicit-existing",
+        "value": "javascript",
+        "index": 1,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "javascript"
+        ],
+        "java": "Java value: ; callbacks: 0"
+      },
+      {
+        "name": "explicit-missing",
+        "value": "",
+        "index": -1,
+        "size": 0,
+        "multiple": false,
+        "selected": [],
+        "java": "Value not read"
+      },
+      {
+        "name": "explicit-empty",
+        "value": "",
+        "index": 2,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          ""
+        ],
+        "java": "Java value: java; callbacks: 0"
+      },
+      {
+        "name": "selected-option",
+        "value": "javascript",
+        "index": 1,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "javascript"
+        ],
+        "java": "Value not read"
+      },
+      {
+        "name": "disabled-first",
+        "value": "enabled",
+        "index": 1,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "enabled"
+        ],
+        "java": "Value not read"
+      },
+      {
+        "name": "disabled-group",
+        "value": "enabled",
+        "index": 1,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "enabled"
+        ],
+        "java": "Value not read"
+      },
+      {
+        "name": "all-disabled",
+        "value": "",
+        "index": -1,
+        "size": 0,
+        "multiple": false,
+        "selected": [],
+        "java": "Java value: disabled; callbacks: 0"
+      },
+      {
+        "name": "listbox-default",
+        "value": "",
+        "index": 2,
+        "size": 4,
+        "multiple": false,
+        "selected": [
+          ""
+        ],
+        "java": "Java value: ; callbacks: 0"
+      },
+      {
+        "name": "multiple-default",
+        "value": "",
+        "index": 2,
+        "size": 0,
+        "multiple": true,
+        "selected": [
+          ""
+        ],
+        "java": "Java value: v; callbacks: 0"
+      },
+      {
+        "name": "explicit-property",
+        "value": "",
+        "index": -1,
+        "size": 0,
+        "multiple": false,
+        "selected": [],
+        "java": "Java value: ; callbacks: 0"
+      },
+      {
+        "name": "empty-then-insert",
+        "value": "",
+        "index": -1,
+        "size": 0,
+        "multiple": false,
+        "selected": [],
+        "java": "Value not read"
+      },
+      {
+        "name": "later-insertion",
+        "value": "java",
+        "index": 0,
+        "size": 0,
+        "multiple": false,
+        "selected": [
+          "java"
+        ],
+        "java": "Value not read"
+      }
+    ],
+    "focus": {
+      "tag": "BUTTON",
+      "text": "Read tree selection",
+      "role": null
+    },
+    "treeStops": [
+      {
+        "name": "Project",
+        "tabIndex": -1
+      },
+      {
+        "name": "Sources",
+        "tabIndex": -1
+      },
+      {
+        "name": "Main.java",
+        "tabIndex": -1
+      },
+      {
+        "name": "README.md",
+        "tabIndex": -1
+      }
+    ]
+  },
+  "pointerCollapse": {
+    "active": "Sources",
+    "stops": [
+      "Sources"
+    ]
+  },
+  "pointerCollapseAssertion": "PASS after asynchronous focus and roving state settle"
+}

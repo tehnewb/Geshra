@@ -1,0 +1,26 @@
+[
+  {
+    "engine": "chrome",
+    "title": "Geshra UI showcase",
+    "tree": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet",
+    "radio": "RadioButton\n\nOne radio remains checked in the shared native group.\n\nAlphaBeta\n\nAlpha=false; Beta=true",
+    "dialogClosed": true,
+    "image": {
+      "loaded": true,
+      "alt": "Blue Geshra sample illustration"
+    },
+    "width": 1440
+  },
+  {
+    "engine": "firefox",
+    "title": "Geshra UI showcase",
+    "tree": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet",
+    "radio": "RadioButton\n\nOne radio remains checked in the shared native group.\n\nAlphaBeta\n\nAlpha=false; Beta=true",
+    "dialogClosed": true,
+    "image": {
+      "loaded": true,
+      "alt": "Blue Geshra sample illustration"
+    },
+    "width": 1440
+  }
+]

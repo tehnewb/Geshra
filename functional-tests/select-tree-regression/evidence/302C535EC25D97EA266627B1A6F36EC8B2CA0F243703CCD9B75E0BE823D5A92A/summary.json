@@ -1,0 +1,22 @@
+[
+  {
+    "Engine": "chromium",
+    "PID": 20008,
+    "SHA256": "302C535EC25D97EA266627B1A6F36EC8B2CA0F243703CCD9B75E0BE823D5A92A",
+    "Pass": 33,
+    "Fail": 0,
+    "Diagnostics": 0,
+    "ComponentsExit": 0,
+    "ProtocolExit": 0
+  },
+  {
+    "Engine": "firefox",
+    "PID": 20008,
+    "SHA256": "302C535EC25D97EA266627B1A6F36EC8B2CA0F243703CCD9B75E0BE823D5A92A",
+    "Pass": 33,
+    "Fail": 0,
+    "Diagnostics": 0,
+    "ComponentsExit": 0,
+    "ProtocolExit": 0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "/showcase/showcase.css",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 355
+  },
+  {
+    "url": "/showcase/sample.svg",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 355
+  },
+  {
+    "url": "/showcase/sample.wav",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 355
+  },
+  {
+    "url": "/showcase/sample.webm",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 355
+  }
+]

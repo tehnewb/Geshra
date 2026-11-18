@@ -25,6 +25,15 @@ public class TabButton extends Button {
         super.create();
 
         this.addClassName("tab-button");
-        this.addClickListener(ignored -> tabbed.selectTab(index));
+        attribute("data-geshra-keyboard", "tabs");
+        this.addClickListener(ignored -> { if (tabbed != null) tabbed.selectTab(index); });
+        this.addKeyDownListener(event -> { if (tabbed != null) tabbed.keyDown(this, event); });
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+        attribute("aria-disabled", String.valueOf(!enabled));
+        if (tabbed != null) tabbed.updateTabStops();
     }
 }

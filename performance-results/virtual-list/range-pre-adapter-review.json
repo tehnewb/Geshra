@@ -1,0 +1,1365 @@
+{
+  "recordedAt": "2026-11-18T02:43:48.659Z",
+  "package": "@tanstack/virtual-core@3.19.11",
+  "kind": "range-subsystem-only",
+  "candidates": [
+    {
+      "name": "fixed",
+      "bytes": 678,
+      "gzipBytes": 392,
+      "sha256": "41652a7b459ca7f477b2aec59faf85153f297f934cbd4dba055e2a60cc7ed961"
+    },
+    {
+      "name": "tanstack",
+      "bytes": 32297,
+      "gzipBytes": 9705,
+      "sha256": "9a02e1f77dc5f8024794fab57971f3fe18f3d1d378af3cf8952209329ce703a1"
+    }
+  ],
+  "samples": [
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.599999964237213,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 299272,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 299272,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.6000000238418579,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.6000000238418579,
+        "loopMs": 355.89999997615814,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 826248,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.5,
+        "loopMs": 0.10000002384185791,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 352.60000002384186,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 702904,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.399999976158142,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221196,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7084,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.700000047683716,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.5999999642372131,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 371.69999998807907,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.5,
+        "loopMs": 0.10000002384185791,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 358.5,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.10000002384185791,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.400000035762787,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.699999988079071,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.5,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.5,
+        "loopMs": 355,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 2166784,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 2166784,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0.6000000238418579,
+        "loopMs": 0.09999996423721313,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0.3999999761581421,
+        "loopMs": 355.5,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1359680,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 192496
+      },
+      "retainedHeapDelta": 78312,
+      "retainedBackingDelta": 160000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 5.5,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.5,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.5999999642372131,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 3.399999976158142,
+        "loopMs": 489.9000000357628,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720452,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439084,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 0.09999996423721313,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.5,
+        "loopMs": 430.19999998807907,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720452,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439084,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.5,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0.09999996423721313,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.399999976158142,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.699999988079071,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.5,
+        "loopMs": 430.4000000357628,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720452,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439084,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.5,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.5,
+        "loopMs": 429.7000000476837,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720452,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439084,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.5,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.300000011920929,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.800000011920929,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.300000011920929,
+        "loopMs": 431.69999998807907,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304648,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720928,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439560,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1.699999988079071,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1.600000023841858,
+        "loopMs": 436.69999998807907,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1281368,
+        "totalSize": 1904640,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 32496
+      },
+      "heapAfter": {
+        "usedSize": 1720452,
+        "totalSize": 2306048,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 1632496
+      },
+      "retainedHeapDelta": 439084,
+      "retainedBackingDelta": 1600000
+    },
+    {
+      "engine": "chrome",
+      "browser": "157.0.8103.80",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 4.400000035762787,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": {
+        "usedSize": 1214112,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "heapAfter": {
+        "usedSize": 1221120,
+        "totalSize": 1642496,
+        "embedderHeapUsedSize": 304800,
+        "backingStorageSize": 877
+      },
+      "retainedHeapDelta": 7008,
+      "retainedBackingDelta": 0
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 234,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 217,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 2,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 216,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 215,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 2,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 225,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 213,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 10000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 1999800064
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 0,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 298,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 330,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 1,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 2,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 2,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 345,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 1,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 343,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 3,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 3,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 4,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 307,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "tanstack",
+      "cold": {
+        "initializationMs": 2,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 1,
+        "loopMs": 325,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    },
+    {
+      "engine": "firefox",
+      "browser": "157.0",
+      "count": 100000,
+      "repeat": 5,
+      "candidate": "fixed",
+      "cold": {
+        "initializationMs": 0,
+        "loopMs": 0,
+        "iterations": 1,
+        "checksum": 15
+      },
+      "measured": {
+        "initializationMs": 0,
+        "loopMs": 2,
+        "iterations": 200000,
+        "checksum": 19998048484
+      },
+      "heapBefore": null,
+      "heapAfter": null,
+      "retainedHeapDelta": null,
+      "retainedBackingDelta": null
+    }
+  ]
+}

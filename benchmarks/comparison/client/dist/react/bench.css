@@ -1,0 +1,9 @@
+body { margin: 0; font: 14px Arial, sans-serif; color: #222; background: #fff; }
+main { display: block; max-width: 900px; margin: 20px auto; padding: 0 16px; }
+h1 { font-size: 24px; margin: 0 0 16px; }
+button, input { font: inherit; margin: 0 8px 8px 0; padding: 4px 8px; }
+p { margin: 8px 0; }
+table { width: 100%; border-collapse: collapse; }
+td { border-bottom: 1px solid #ddd; padding: 4px 8px; }
+td:first-child { width: 90px; }
+tr.selected { background: #ffe6a0; }

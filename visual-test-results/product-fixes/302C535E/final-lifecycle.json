@@ -1,0 +1,26 @@
+[
+  {
+    "engine": "chrome",
+    "label": "Dispose Sources branch",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/Dispose-Sources-branch.png",
+    "trees": 1
+  },
+  {
+    "engine": "chrome",
+    "label": "Dispose tree",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/Dispose-tree.png",
+    "trees": 0
+  },
+  {
+    "engine": "firefox",
+    "label": "Dispose Sources branch",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/Dispose-Sources-branch.png",
+    "trees": 1
+  },
+  {
+    "engine": "firefox",
+    "label": "Dispose tree",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/Dispose-tree.png",
+    "trees": 0
+  }
+]

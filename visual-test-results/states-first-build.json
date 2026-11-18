@@ -1,0 +1,86 @@
+[
+  {
+    "label": "Settings",
+    "id": "Tabbed",
+    "state": "settings",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Tabbed-settings.png",
+    "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nSettings tab content"
+  },
+  {
+    "label": "Clear table",
+    "id": "Table",
+    "state": "empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Table-empty.png",
+    "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nClear table\nReset table\n\nEmpty table"
+  },
+  {
+    "label": "Reset table",
+    "id": "Table",
+    "state": "reset",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Table-reset.png",
+    "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nAda\tJava\nLin\tJavaScript\nClear table\nReset table\n\n2 rows restored"
+  },
+  {
+    "label": "Complete progress",
+    "id": "Badge",
+    "state": "complete",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Badge-complete.png",
+    "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nComplete: 100 percent"
+  },
+  {
+    "label": "Reset progress",
+    "id": "Badge",
+    "state": "reset",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Badge-reset.png",
+    "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nReady: 40 percent"
+  },
+  {
+    "label": "Toolbar action",
+    "id": "HorizontalLayout",
+    "state": "toolbar",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/HorizontalLayout-toolbar.png",
+    "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nToolbar clicked"
+  },
+  {
+    "label": "Button bar action",
+    "id": "HorizontalLayout",
+    "state": "buttonbar",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/HorizontalLayout-buttonbar.png",
+    "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nButton bar clicked"
+  },
+  {
+    "label": "Show tooltip",
+    "id": "Tooltip",
+    "state": "shown",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Tooltip-shown.png",
+    "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHelpful tooltip textHide tooltip"
+  },
+  {
+    "label": "Hide tooltip",
+    "id": "Tooltip",
+    "state": "hidden",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Tooltip-hidden.png",
+    "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHide tooltip"
+  },
+  {
+    "label": "Draw canvas circle",
+    "id": "Canvas",
+    "state": "redrawn",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/Canvas-redrawn.png",
+    "text": "Canvas\n\nBlue rectangle is drawn through Canvas 2D commands; add a green circle or reload to reset.\n\nDraw canvas circle"
+  },
+  {
+    "label": "Jump to last item",
+    "id": "VirtualList",
+    "state": "last",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/VirtualList-last.png",
+    "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+  },
+  {
+    "label": "Refresh virtual list",
+    "id": "VirtualList",
+    "state": "refresh",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/chrome-states/VirtualList-refresh.png",
+    "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+  }
+]

@@ -1,0 +1,13 @@
+# Vaadin regenerates these third-party frontend sources during its production build.
+/vaadin/src/main/frontend/generated/
+/vaadin/src/main/frontend/index.html
+/vaadin/package.json
+/vaadin/package-lock.json
+/vaadin/pnpm-lock.yaml
+/vaadin/types.d.ts
+/vaadin/tsconfig.json
+/vaadin/vite.config.ts
+/vaadin/vite.generated.ts
+/tools/gradle/
+/tools/gradlew
+/tools/gradlew.bat

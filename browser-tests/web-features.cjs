@@ -9,10 +9,12 @@ const {chromium, firefox, webkit} = require('playwright');
     const page = await context.newPage();
     page.setDefaultTimeout(10000);
     const errors = [];
-    page.on('pageerror', error => errors.push(error.message));
-    page.on('console', message => {if (message.type() === 'error') errors.push(message.text());});
-    await context.route('**/favicon.ico', route => route.fulfill({status: 204}));
-    const cookie = async name => (await context.cookies()).find(value => value.name === name);
+    page.on('pageerror', (error) => errors.push(error.message));
+    page.on('console', (message) => {
+        if (message.type() === 'error') errors.push(message.text());
+    });
+    await context.route('**/favicon.ico', (route) => route.fulfill({status: 204}));
+    const cookie = async (name) => (await context.cookies()).find((value) => value.name === name);
     try {
         const initial = await context.request.get(base + '/');
         assert.match(await initial.text(), /<title data-geshra-seo>Hello from Spring Boot/);
@@ -43,7 +45,7 @@ const {chromium, firefox, webkit} = require('playwright');
         assert.equal((await context.request.get(base + '/account')).status(), 200);
         assert.equal(await page.locator('meta[name="robots"][content="noindex,nofollow"]').count(), 1);
         await page.getByText('Session visits: 1', {exact: true}).waitFor();
-        const saved = page.waitForResponse(response => response.url().endsWith('/_geshra/cookies'));
+        const saved = page.waitForResponse((response) => response.url().endsWith('/_geshra/cookies'));
         await page.getByRole('button', {name: 'Save private preference', exact: true}).click();
         await saved;
         assert.equal((await cookie('privatePreference')).httpOnly, true);
@@ -64,9 +66,22 @@ const {chromium, firefox, webkit} = require('playwright');
         assert.equal(await page.locator('meta[name="robots"][content="noindex,nofollow"]').count(), 0);
         assert.equal(await page.title(), 'Hello from Spring Boot');
         assert.deepEqual(errors, []);
-        console.log(JSON.stringify({passed: true, browser: process.env.BROWSER || 'chromium', seoWithoutJavaScript: true, httpOnlyCookies: true, loginRotation: true, logoutRotation: true, sessionResume: true}));
+        console.log(
+            JSON.stringify({
+                passed: true,
+                browser: process.env.BROWSER || 'chromium',
+                seoWithoutJavaScript: true,
+                httpOnlyCookies: true,
+                loginRotation: true,
+                logoutRotation: true,
+                sessionResume: true
+            })
+        );
     } finally {
         await context.close();
         await browser.close();
     }
-})().catch(error => {console.error(error); process.exitCode = 1;});
+})().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

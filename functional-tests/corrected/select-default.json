@@ -1,0 +1,64 @@
+[
+  {
+    "engine": "chromium",
+    "browser": "157.0.8103.80",
+    "javaInitialValue": "NOT OBSERVABLE: no initial getter/read action in this sample",
+    "dom": {
+      "value": "",
+      "selectedIndex": 2,
+      "options": [
+        {
+          "value": "java",
+          "text": "Java",
+          "selected": false,
+          "parent": "OPTGROUP"
+        },
+        {
+          "value": "javascript",
+          "text": "JavaScript",
+          "selected": false,
+          "parent": "OPTGROUP"
+        },
+        {
+          "value": "",
+          "text": "Empty value",
+          "selected": true,
+          "parent": "SELECT"
+        }
+      ],
+      "outerHTML": "<select id=\"134\" aria-label=\"Select,Option,OptionGroup\"><optgroup id=\"137\" label=\"Languages\"><option id=\"135\" value=\"java\">Java</option><option id=\"136\" value=\"javascript\">JavaScript</option></optgroup><option id=\"138\" value=\"\">Empty value</option></select>"
+    },
+    "feedback": "Edit this control to see its Java value"
+  },
+  {
+    "engine": "firefox",
+    "browser": "157.0",
+    "javaInitialValue": "NOT OBSERVABLE: no initial getter/read action in this sample",
+    "dom": {
+      "value": "",
+      "selectedIndex": 2,
+      "options": [
+        {
+          "value": "java",
+          "text": "Java",
+          "selected": false,
+          "parent": "OPTGROUP"
+        },
+        {
+          "value": "javascript",
+          "text": "JavaScript",
+          "selected": false,
+          "parent": "OPTGROUP"
+        },
+        {
+          "value": "",
+          "text": "Empty value",
+          "selected": true,
+          "parent": "SELECT"
+        }
+      ],
+      "outerHTML": "<select id=\"134\" aria-label=\"Select,Option,OptionGroup\"><optgroup id=\"137\" label=\"Languages\"><option id=\"135\" value=\"java\">Java</option><option id=\"136\" value=\"javascript\">JavaScript</option></optgroup><option id=\"138\" value=\"\">Empty value</option></select>"
+    },
+    "feedback": "Edit this control to see its Java value"
+  }
+]

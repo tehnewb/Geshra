@@ -1,0 +1,7 @@
+{
+  "name": "geshra-virtual-list-evaluation",
+  "private": true,
+  "dependencies": {
+    "@tanstack/virtual-core": "3.19.11"
+  }
+}

@@ -17,6 +17,7 @@ import java.util.Map;
 @Component
 public class PacketHandlerRegistry {
     private final PacketHandler[] handlers; // Dense unsigned-byte opcode table.
+    private final boolean compactInput; // Whether every registered built-in action understands compact fields.
     private Map<Integer, PacketHandler> handlerView; // Lazily constructed diagnostics view, guarded by this registry.
 
     /**
@@ -32,12 +33,21 @@ public class PacketHandlerRegistry {
             highest = Math.max(highest, id);
         }
         handlers = new PacketHandler[highest + 1];
+        boolean compact = true;
         for (PacketHandler handler : allHandlers) {
             int id = handler.getID();
             if (handlers[id] != null) throw new IllegalStateException("Duplicate packet handler ID: " + id);
             handlers[id] = handler;
+            if (id <= 11 && !handler.supportsCompactInput()) compact = false;
         }
+        compactInput = compact && getHandler(Wire.CLIENT_COMPACT) == null;
     }
+
+    /**
+     * Reports whether compact negotiation preserves all registered handler contracts.
+     * @return whether built-in handlers opted in and the envelope opcode is unoccupied
+     */
+    public boolean supportsCompactInput() { return compactInput; }
 
     /**
      * Returns the indexed handler or null for an unknown opcode.

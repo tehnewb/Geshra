@@ -1,0 +1,647 @@
+{
+  "identity": {
+    "pid": 20008,
+    "sha256": "302C535EC25D97EA266627B1A6F36EC8B2CA0F243703CCD9B75E0BE823D5A92A",
+    "url": "http://localhost:4050/showcase",
+    "jar": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\examples\\spring-app\\build\\libs\\geshra-spring-example.jar"
+  },
+  "engine": "chromium",
+  "browser": "157.0.8103.80",
+  "results": [
+    {
+      "name": "split normalization followed by delayed INITIAL_VALUE synchronizes real Java silently",
+      "status": "PASS",
+      "observations": {
+        "initial": {
+          "selectJava": "javascript",
+          "numberJava": "42.0",
+          "selectDom": "javascript",
+          "numberDom": "42.0",
+          "domPacketCount": 5
+        },
+        "normalized": {
+          "selectJava": "",
+          "numberJava": "null",
+          "selectDom": "",
+          "numberDom": "",
+          "domPacketCount": 8
+        },
+        "final": {
+          "selectJava": "javascript",
+          "numberJava": "42.0",
+          "selectDom": "javascript",
+          "numberDom": "42",
+          "domPacketCount": 11
+        },
+        "normalizationFrames": [
+          {
+            "opcode": 10,
+            "id": 166,
+            "value": "",
+            "bytes": [
+              12,
+              10,
+              166,
+              1,
+              0
+            ]
+          },
+          {
+            "opcode": 10,
+            "id": 169,
+            "value": "",
+            "bytes": [
+              12,
+              10,
+              169,
+              1,
+              0
+            ]
+          }
+        ],
+        "finalFrames": [
+          {
+            "opcode": 10,
+            "id": 166,
+            "value": "javascript",
+            "bytes": [
+              12,
+              10,
+              166,
+              1,
+              10,
+              106,
+              97,
+              118,
+              97,
+              115,
+              99,
+              114,
+              105,
+              112,
+              116
+            ]
+          },
+          {
+            "opcode": 10,
+            "id": 169,
+            "value": "42",
+            "bytes": [
+              12,
+              10,
+              169,
+              1,
+              2,
+              52,
+              50
+            ]
+          }
+        ],
+        "scope": "Real server DOM batches and Java silent receiver; controlled replay of delayed initialization, not original creation scheduler"
+      }
+    },
+    {
+      "name": "UI.setTitle without SeoPage",
+      "status": "PASS"
+    },
+    {
+      "name": "Select initial grouped-default",
+      "status": "PASS",
+      "observations": {
+        "value": "java",
+        "selectedIndex": 0,
+        "options": [
+          {
+            "value": "java",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial explicit-existing",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial explicit-missing",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": -1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial explicit-empty",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": 2,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial selected-option",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial disabled-first",
+      "status": "PASS",
+      "observations": {
+        "value": "enabled",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "disabled",
+            "selected": false,
+            "disabled": true,
+            "groupDisabled": false
+          },
+          {
+            "value": "enabled",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial disabled-group",
+      "status": "PASS",
+      "observations": {
+        "value": "enabled",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "disabled",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": true
+          },
+          {
+            "value": "enabled",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial all-disabled",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": -1,
+        "options": [
+          {
+            "value": "disabled",
+            "selected": false,
+            "disabled": true,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial listbox-default",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": -1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial multiple-default",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": -1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial explicit-property",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial empty-then-insert",
+      "status": "PASS",
+      "observations": {
+        "value": "",
+        "selectedIndex": -1,
+        "options": []
+      }
+    },
+    {
+      "name": "Select initial later-insertion",
+      "status": "PASS",
+      "observations": {
+        "value": "java",
+        "selectedIndex": 0,
+        "options": [
+          {
+            "value": "java",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial multiple-property",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Select initial multiple-index",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "empty Select populated later through Java",
+      "status": "PASS",
+      "observations": {
+        "value": "java",
+        "selectedIndex": 0,
+        "options": [
+          {
+            "value": "java",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "silent assignment and later insertion preserve selection",
+      "status": "PASS",
+      "observations": {
+        "value": "javascript",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "java",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "javascript",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          },
+          {
+            "value": "later",
+            "selected": false,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "trusted Select keyboard callback and disabled skip",
+      "status": "PASS",
+      "observations": {
+        "value": "enabled",
+        "selectedIndex": 1,
+        "options": [
+          {
+            "value": "disabled",
+            "selected": false,
+            "disabled": true,
+            "groupDisabled": false
+          },
+          {
+            "value": "enabled",
+            "selected": true,
+            "disabled": false,
+            "groupDisabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tree ARIA and true Tab entry exit",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree arrows visible preorder Home End boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree keyboard selection independent focus and mode transitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree pointer ctrl shift and rename retain node identity",
+      "status": "PASS"
+    },
+    {
+      "name": "long Tree End and Home focus reveal the target label",
+      "status": "PASS",
+      "observations": {
+        "scrollTop": 0,
+        "scrollHeight": 2624,
+        "clientHeight": 140
+      }
+    },
+    {
+      "name": "Tabbed ARIA relationships and automatic keyboard activation",
+      "status": "PASS",
+      "observations": [
+        {
+          "tab": "Overview",
+          "role": "tabpanel",
+          "label": "198",
+          "tabId": "198"
+        },
+        {
+          "tab": "Settings",
+          "role": "tabpanel",
+          "label": "202",
+          "tabId": "202"
+        }
+      ]
+    },
+    {
+      "name": "Tabbed disabled selected all-disabled and enable cycle",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree detach restore retains identity selection cleanup and navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree disposed leaf and branch skipped by keyboard with clean selection",
+      "status": "PASS"
+    },
+    {
+      "name": "whole Tree disposal releases focused hierarchy and mutation controls",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree restored sibling retains identity and DOM keyboard order",
+      "status": "PASS"
+    },
+    {
+      "name": "empty Tree remains named keyboard stop",
+      "status": "PASS"
+    },
+    {
+      "name": "Tree pointer collapse restores visible focus from descendant",
+      "status": "PASS"
+    }
+  ],
+  "diagnostics": []
+}

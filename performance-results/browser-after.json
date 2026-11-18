@@ -1,0 +1,126 @@
+{
+  "revision": "compact-modules",
+  "recordedAt": "2026-11-17T23:37:57.760Z",
+  "environment": {
+    "node": "v24.14.0",
+    "browser": "157.0.8103.80",
+    "platform": "win32",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 9 7945HX with Radeon Graphics        "
+  },
+  "gallery": {
+    "serverBytes": 8487,
+    "clientBytes": 51,
+    "serverFrames": 4,
+    "clientFrames": 6
+  },
+  "callbacks": {
+    "samples": 50,
+    "medianMs": 0.3999999761581421,
+    "p95Ms": 0.5999999642372131,
+    "serverBytes": 7080,
+    "clientBytes": 600
+  },
+  "runtime": {
+    "bytes": 21204,
+    "gzipBytes": 7835
+  },
+  "dom": {
+    "legacy": {
+      "mutationsPerSample": 1000,
+      "samples": 100,
+      "payloadBytes": 18003,
+      "medianMs": 0.699999988079071,
+      "p95Ms": 0.9000000357627869
+    },
+    "compact": {
+      "mutationsPerSample": 1000,
+      "samples": 100,
+      "payloadBytes": 16003,
+      "medianMs": 0.7000000476837158,
+      "p95Ms": 1
+    }
+  },
+  "encoding": [
+    {
+      "name": "click",
+      "compact": false,
+      "iterations": 10000,
+      "medianNs": 280.0000011920929,
+      "p95Ns": 430.0000011920929,
+      "payloadBytes": 19,
+      "retainedBytes": 19,
+      "checksum": 4200000
+    },
+    {
+      "name": "click",
+      "compact": true,
+      "iterations": 10000,
+      "medianNs": 60.00000238418579,
+      "p95Ns": 160.0000023841858,
+      "payloadBytes": 10,
+      "retainedBytes": 10,
+      "checksum": 4620000
+    },
+    {
+      "name": "unicodeInput",
+      "compact": false,
+      "iterations": 10000,
+      "medianNs": 1080.000001192093,
+      "p95Ns": 2900,
+      "payloadBytes": 24,
+      "retainedBytes": 24,
+      "checksum": 32760000
+    },
+    {
+      "name": "unicodeInput",
+      "compact": true,
+      "iterations": 10000,
+      "medianNs": 709.9999964237213,
+      "p95Ns": 4969.999998807907,
+      "payloadBytes": 21,
+      "retainedBytes": 21,
+      "checksum": 33810000
+    },
+    {
+      "name": "viewport",
+      "compact": false,
+      "iterations": 10000,
+      "medianNs": 439.9999976158142,
+      "p95Ns": 3889.999997615814,
+      "payloadBytes": 17,
+      "retainedBytes": 17,
+      "checksum": 42210000
+    },
+    {
+      "name": "viewport",
+      "compact": true,
+      "iterations": 10000,
+      "medianNs": 89.99999761581421,
+      "p95Ns": 450,
+      "payloadBytes": 10,
+      "retainedBytes": 10,
+      "checksum": 15960000
+    },
+    {
+      "name": "largeAscii",
+      "compact": false,
+      "iterations": 100,
+      "medianNs": 160000,
+      "p95Ns": 730000,
+      "payloadBytes": 60007,
+      "retainedBytes": 60007,
+      "checksum": 126275100
+    },
+    {
+      "name": "largeAscii",
+      "compact": true,
+      "iterations": 100,
+      "medianNs": 151999.9998807907,
+      "p95Ns": 461000.0002384186,
+      "payloadBytes": 60006,
+      "retainedBytes": 60006,
+      "checksum": 126289800
+    }
+  ]
+}

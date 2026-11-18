@@ -1,0 +1,2270 @@
+[
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "records": [
+      {
+        "state": "entry",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-entry.png"
+      },
+      {
+        "state": "key-1-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-2-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-3-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-4-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "leaf-focused",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-leaf-focused.png"
+      },
+      {
+        "state": "leaf-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-leaf-selected.png"
+      },
+      {
+        "state": "multiple-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-multiple-selected.png"
+      },
+      {
+        "state": "end",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "branch-collapsed",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-branch-collapsed.png"
+      },
+      {
+        "state": "rename",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": null,
+          "role": null,
+          "visible": false
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-rename.png"
+      },
+      {
+        "state": "mode-SINGLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-SINGLE.png"
+      },
+      {
+        "state": "mode-NONE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-NONE.png"
+      },
+      {
+        "state": "mode-MULTIPLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-MULTIPLE.png"
+      }
+    ],
+    "longEnd": {
+      "name": "Row 99",
+      "focusVisible": true
+    },
+    "longHome": "Long root",
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "overflow": {
+      "viewport": 390,
+      "document": 390
+    }
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "records": [
+      {
+        "state": "entry",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-entry.png"
+      },
+      {
+        "state": "key-1-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-2-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-3-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-4-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "leaf-focused",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-leaf-focused.png"
+      },
+      {
+        "state": "leaf-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-leaf-selected.png"
+      },
+      {
+        "state": "multiple-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-multiple-selected.png"
+      },
+      {
+        "state": "end",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "branch-collapsed",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-branch-collapsed.png"
+      },
+      {
+        "state": "rename",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": null,
+          "role": null,
+          "visible": false
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-rename.png"
+      },
+      {
+        "state": "mode-SINGLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-mode-SINGLE.png"
+      },
+      {
+        "state": "mode-NONE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-mode-NONE.png"
+      },
+      {
+        "state": "mode-MULTIPLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-mode-MULTIPLE.png"
+      }
+    ],
+    "longEnd": {
+      "name": "Row 99",
+      "focusVisible": true
+    },
+    "longHome": "Long root",
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "overflow": {
+      "viewport": 1440,
+      "document": 1440
+    }
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "records": [
+      {
+        "state": "entry",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-entry.png"
+      },
+      {
+        "state": "key-1-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-2-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-3-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-4-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "leaf-focused",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-leaf-focused.png"
+      },
+      {
+        "state": "leaf-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-leaf-selected.png"
+      },
+      {
+        "state": "multiple-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-multiple-selected.png"
+      },
+      {
+        "state": "end",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "branch-collapsed",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-branch-collapsed.png"
+      },
+      {
+        "state": "rename",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": null,
+          "role": null,
+          "visible": false
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-rename.png"
+      },
+      {
+        "state": "mode-SINGLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-SINGLE.png"
+      },
+      {
+        "state": "mode-NONE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-NONE.png"
+      },
+      {
+        "state": "mode-MULTIPLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-MULTIPLE.png"
+      }
+    ],
+    "longEnd": {
+      "name": null,
+      "focusVisible": true
+    },
+    "longHome": null,
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "overflow": {
+      "viewport": 390,
+      "document": 390
+    }
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "records": [
+      {
+        "state": "entry",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-entry.png"
+      },
+      {
+        "state": "key-1-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Project",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-2-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-3-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "key-4-ArrowRight",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "leaf-focused",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-leaf-focused.png"
+      },
+      {
+        "state": "leaf-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Main.java",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-leaf-selected.png"
+      },
+      {
+        "state": "multiple-selected",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-multiple-selected.png"
+      },
+      {
+        "state": "end",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": null
+      },
+      {
+        "state": "branch-collapsed",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Sources",
+            "tab": 0,
+            "expanded": "false",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": false
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "Sources",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-branch-collapsed.png"
+      },
+      {
+        "state": "rename",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": -1,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": null,
+          "role": null,
+          "visible": false
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-rename.png"
+      },
+      {
+        "state": "mode-SINGLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-mode-SINGLE.png"
+      },
+      {
+        "state": "mode-NONE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": null,
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-mode-NONE.png"
+      },
+      {
+        "state": "mode-MULTIPLE",
+        "info": [
+          {
+            "name": "Project",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Renamed sources",
+            "tab": -1,
+            "expanded": "true",
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "Main.java",
+            "tab": -1,
+            "expanded": null,
+            "selected": "false",
+            "visible": true
+          },
+          {
+            "name": "README.md",
+            "tab": 0,
+            "expanded": null,
+            "selected": "true",
+            "visible": true
+          }
+        ],
+        "active": {
+          "name": "README.md",
+          "role": "treeitem",
+          "visible": true
+        },
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-mode-MULTIPLE.png"
+      }
+    ],
+    "longEnd": {
+      "name": null,
+      "focusVisible": true
+    },
+    "longHome": null,
+    "order": [
+      "-Sibling root A B C",
+      " A",
+      " B",
+      " C"
+    ],
+    "overflow": {
+      "viewport": 1440,
+      "document": 1440
+    }
+  }
+]

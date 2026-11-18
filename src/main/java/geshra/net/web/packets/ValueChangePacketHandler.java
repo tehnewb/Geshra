@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.ui.UI;
 import geshra.net.web.ui.components.ValueComponent;
@@ -16,19 +17,22 @@ import org.springframework.stereotype.Component;
 public class ValueChangePacketHandler implements PacketHandler {
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        int componentID = packet.readInt();
+        int componentID = PacketInput.integer(context, packet);
 
         SessionContext session = SessionContext.get();
         if (session == null) return;
         UI ui = session.getUI();
 
         if (ui.get(componentID) instanceof ValueComponent component) {
-            int valueLen = packet.readUnsignedShort();
+            int valueLen = PacketInput.length(context, packet);
             Object oldValue = component.getValue();
             Object newValue = component.deconstruct(packet.readCharSequence(valueLen, StandardCharsets.UTF_8).toString());
             component.publish(new ValueChangeEvent(component, oldValue, newValue));
         }
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == ValueChangePacketHandler.class; }
 
     @Override
     public int getID() {

@@ -55,6 +55,7 @@ import org.slf4j.LoggerFactory;
  * @author Albert Beaupre
  */
 public class SessionContext {
+    private boolean compactInput; // Encoding of the current dispatch, confined to its UI thread.
     /**
      * Reports authentication implementation failures without credentials or bearer tokens.
      */
@@ -840,6 +841,18 @@ public class SessionContext {
         touch();
         return ui;
     }
+
+    /**
+     * Reports the representation of the action currently being decoded.
+     * @return whether the dispatch boundary selected compact fields
+     */
+    public boolean isCompactInput() { return compactInput; }
+
+    /**
+     * Selects action field decoding for one dispatch; reset in the boundary's finally block.
+     * @param compact whether this action uses compact fields
+     */
+    void compactInput(boolean compact) { compactInput = compact; }
 
     /**
      * Renders a route into this session's UI.

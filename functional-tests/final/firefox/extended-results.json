@@ -1,0 +1,236 @@
+{
+  "engine": "firefox",
+  "browser": "157.0",
+  "identity": {
+    "pid": 8004,
+    "sha256": "6E16CCC113F6DA7891FF98A2E1CAE8C1AA095EFE2C40D7D4E89B5A2C85E85608",
+    "url": "http://localhost:4050/showcase",
+    "jar": "C:\\Users\\albert\\Documents\\GitHub\\Geshra\\examples\\spring-app\\build\\libs\\geshra-spring-example.jar"
+  },
+  "results": [
+    {
+      "name": "untouched form defaults and label checkbox activation",
+      "status": "PASS",
+      "observations": "Submitted: {name=Ada, updates=true}"
+    },
+    {
+      "name": "checkbox label mixed and numeric native default values",
+      "status": "PASS"
+    },
+    {
+      "name": "explicit configured Select Java value",
+      "status": "PASS",
+      "observations": {
+        "scope": "Showcase explicit setValue only; untouched grouped-native-default bug remains OPEN"
+      }
+    },
+    {
+      "name": "exact media response MIME and byte lengths",
+      "status": "PASS",
+      "observations": [
+        {
+          "file": "sample.wav",
+          "mime": "audio/wav",
+          "length": 32044
+        },
+        {
+          "file": "sample.webm",
+          "mime": "video/webm",
+          "length": 5418
+        }
+      ]
+    },
+    {
+      "name": "tree multiple ctrl shift single none and collapse after rename",
+      "status": "PASS"
+    },
+    {
+      "name": "datalist hidden resource and inert script",
+      "status": "PASS",
+      "observations": [
+        {
+          "href": "http://localhost:4050/css/components.css",
+          "loaded": true
+        },
+        {
+          "href": "http://localhost:4050/showcase-assets/showcase.css",
+          "loaded": true
+        },
+        {
+          "href": "http://localhost:4050/showcase-assets/showcase.css",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "native media trusted keyboard play and Java pause",
+      "status": "PASS",
+      "observations": [
+        {
+          "tag": "AUDIO",
+          "paused": true,
+          "time": 0.053708,
+          "duration": 2
+        },
+        {
+          "tag": "VIDEO",
+          "paused": true,
+          "time": 0.081807,
+          "duration": 2.37229
+        }
+      ]
+    },
+    {
+      "name": "all static semantic component samples",
+      "status": "PASS",
+      "observations": [
+        {
+          "demo": "H1",
+          "selectors": [
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6"
+          ]
+        },
+        {
+          "demo": "Paragraph",
+          "selectors": [
+            "p",
+            "span",
+            "strong",
+            "em",
+            "small",
+            "mark",
+            "code",
+            "pre",
+            "blockquote"
+          ]
+        },
+        {
+          "demo": "DefinitionList",
+          "selectors": [
+            "dl",
+            "dt",
+            "dd"
+          ]
+        },
+        {
+          "demo": "OrderedList",
+          "selectors": [
+            "ol",
+            "ul",
+            "li"
+          ]
+        },
+        {
+          "demo": "Main",
+          "selectors": [
+            "main",
+            "header",
+            "nav",
+            "article",
+            "section",
+            "aside",
+            "footer",
+            "div"
+          ]
+        },
+        {
+          "demo": "HorizontalLayout",
+          "selectors": [
+            ".geshra-horizontal",
+            ".geshra-grid",
+            ".geshra-stack",
+            ".geshra-spacer",
+            ".geshra-button-bar",
+            ".geshra-toolbar"
+          ]
+        },
+        {
+          "demo": "Badge",
+          "selectors": [
+            ".geshra-badge",
+            ".geshra-spinner",
+            "progress",
+            "meter",
+            "[role=\"alert\"]",
+            ".geshra-card",
+            ".geshra-panel",
+            "hr"
+          ]
+        },
+        {
+          "demo": "Table",
+          "selectors": [
+            "table",
+            "thead",
+            "tbody",
+            "tr",
+            "th",
+            "td",
+            "caption"
+          ]
+        },
+        {
+          "demo": "Form",
+          "selectors": [
+            "form",
+            "fieldset",
+            "legend",
+            "output",
+            "label"
+          ]
+        },
+        {
+          "demo": "Svg",
+          "selectors": [
+            "svg",
+            "g",
+            "rect",
+            "circle",
+            "line",
+            "polyline",
+            "polygon",
+            "path",
+            "text"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tab native keyboard activation and exposed semantics",
+      "status": "PASS",
+      "observations": [
+        {
+          "text": "Overview",
+          "role": null,
+          "selected": null,
+          "tabIndex": 0
+        },
+        {
+          "text": "Settings",
+          "role": null,
+          "selected": null,
+          "tabIndex": 0
+        }
+      ]
+    },
+    {
+      "name": "native disclosure accordion keyboard and listener removal",
+      "status": "PASS"
+    },
+    {
+      "name": "390 pixel mobile overflow and reachable actions",
+      "status": "PASS",
+      "observations": {
+        "viewport": 390,
+        "width": 390,
+        "overflowing": []
+      }
+    }
+  ],
+  "errors": []
+}

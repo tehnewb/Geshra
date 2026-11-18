@@ -2,6 +2,12 @@
 
 This document defines mandatory development, documentation, architecture, performance, formatting, and code-organization rules for agents working on this project.
 
+## Scope Across Languages
+
+These requirements apply to all maintained project code, including JavaScript, benchmark code, tests, build scripts, and configuration. Apply the same responsibility boundaries, resource ownership, documentation quality, compact parenthesized expressions, and performance discipline using each language's supported syntax. Java-specific requirements such as imports, annotations, and Javadoc map to their language equivalents where applicable. JavaScript module constants use multi-line JSDoc; mutable module state and instance fields use concise right-side comments. Every named function and class method requires useful multi-line documentation. Keep named types in separate files.
+
+Generated artifacts such as the bundled `runtime.js` are maintained through their documented source and reproducible generator. Do not hand-edit generated output. Third-party vendor files retain their upstream structure and notices; do not reformat them to satisfy local style. These exceptions do not relax the rules for maintained source code.
+
 These rules apply across the entire codebase unless a rule is genuinely impossible to follow because of a language, platform, framework, JVM, generated-code requirement, or third-party API requirement.
 
 Code quality, simplicity, organization, maintainability, documentation, formatting consistency, memory efficiency, CPU efficiency, allocation behavior, API clarity, and runtime performance are mandatory requirements rather than optional preferences.
@@ -891,6 +897,10 @@ Use primitives instead of wrappers when object semantics are unnecessary.
 
 Prefer explicit loops when they are cheaper and clearer.
 
+## Autocloseable
+
+The Autocloseable interface should NOT be used unless specifically stated to be used or if there are actual resources needing handled.
+
 ## Prefer Arrays When Appropriate
 
 Use arrays when:
@@ -1469,7 +1479,6 @@ Do not write empty documentation that merely repeats the method name.
 Every static method requires:
 
 1. Multi-line Javadoc above the method.
-2. A meaningful multi-line block comment inside the method body.
 
 ### Correct
 
@@ -1481,10 +1490,6 @@ Every static method requires:
  * @return equivalent duration in nanoseconds
  */
 public static long secondsToNanos(long seconds) {
-    /*
-     * Use direct integer multiplication to avoid temporary duration objects
-     * and unnecessary floating-point conversion.
-     */
     return seconds * 1_000_000_000L;
 }
 ```

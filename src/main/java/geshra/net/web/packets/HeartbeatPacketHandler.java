@@ -22,6 +22,9 @@ public class HeartbeatPacketHandler implements PacketHandler {
     }
 
     @Override
+    public boolean supportsCompactInput() { return getClass() == HeartbeatPacketHandler.class; }
+
+    @Override
     public int getID() {
         return 7;
     }

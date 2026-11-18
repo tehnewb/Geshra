@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.TextPacketEncoder;
 import geshra.net.web.ui.BrowserJson;
@@ -14,10 +15,13 @@ import java.util.Map;
 public final class AuthenticationPacketHandler implements PacketHandler {
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        int nonce = packet.readInt();
+        int nonce = PacketInput.integer(context, packet);
         context.send(TextPacketEncoder.encode(context.getChannel(), 6, BrowserJson.encode(Map.of("action", "ack", "request", nonce))));
         context.completeAuthentication(nonce);
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == AuthenticationPacketHandler.class; }
 
     @Override
     public int getID() { return 11; }

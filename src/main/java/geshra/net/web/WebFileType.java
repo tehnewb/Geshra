@@ -42,6 +42,14 @@ public enum WebFileType {
      */
     JPEG(".jpeg", "image/jpeg"),
     /**
+     * PCM/WAVE audio used by native media elements.
+     */
+    WAV(".wav", "audio/wav"),
+    /**
+     * WebM video used by native media elements.
+     */
+    WEBM(".webm", "video/webm"),
+    /**
      * Unknown file format.
      */
     OTHER("", "application/octet-stream");

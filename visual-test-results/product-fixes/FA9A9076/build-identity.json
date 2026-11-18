@@ -1,0 +1,8 @@
+{
+  "PID": 19636,
+  "Port": 4050,
+  "Session": 46654,
+  "SHA256": "FA9A9076A0AA62AE0CB03016C9DBAAFAB74C1F747E01EAA78EA1A62BFC82AD0D",
+  "URL": "http://localhost:4050/showcase",
+  "RegressionURL": "http://localhost:4050/showcase-regressions"
+}

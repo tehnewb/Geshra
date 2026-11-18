@@ -14,6 +14,8 @@ import geshra.net.web.ui.event.SubmitEvent;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Iterator;
+import java.lang.ref.WeakReference;
 
 /**
  * Form
@@ -29,6 +31,7 @@ import java.util.Map;
 public class Form extends Component {
 
     private final Map<String, Object> values = new LinkedHashMap<>(); // Stores the current values for each named form field. Keys are the "name" attribute of child components; values are their latest values.
+    private final Map<String, WeakReference<Component>> fields = new LinkedHashMap<>(); // Non-owning bindings; the component tree owns field lifetimes and the latest binding wins for duplicate names.
 
     /**
      * Creates a new Form component rendered as a {@code <form>} element.
@@ -62,7 +65,7 @@ public class Form extends Component {
         // Ensure the component has the proper name attribute in the rendered DOM
         component.queueForDispatch(DOMUpdateType.SET_ATTRIBUTE, DOMUpdateParam.KEY, "name", DOMUpdateParam.VALUE, name);
         // Listen for value-change events to keep values map up to date
-        component.addValueChangeListener(e -> values.put(name, e.getNewValue()));
+        bindField(name, component);
         this.add(component);
         return this;
     }
@@ -94,7 +97,7 @@ public class Form extends Component {
         // Set name attribute on the checkbox element
         checkbox.queueForDispatch(DOMUpdateType.SET_ATTRIBUTE, DOMUpdateParam.KEY, "name", DOMUpdateParam.VALUE, name);
         // Update values map when checkbox state changes
-        checkbox.addValueChangeListener(e -> values.put(name, e.getNewValue()));
+        bindField(name, checkbox);
 
         // Use Designer API to create a flex container with checkbox + label
         Designer.begin(this)
@@ -106,7 +109,7 @@ public class Form extends Component {
                 .alignItems(AlignItems.BASELINE)
                 .gap("0.5em")
                 .component(checkbox)
-                .label(text);
+                .component(new Label(text, checkbox));
         return this;
     }
 
@@ -134,12 +137,62 @@ public class Form extends Component {
     }
 
     /**
-     * Retrieves an unmodifiable view of the current form values.
+     * Retrieves an unmodifiable view of the current form values. Typed controls are read on each
+     * call so untouched initial values, silent assignments and browser normalization are included.
+     * Generic components retain their latest value-change callback payload. The returned map is
+     * backed by this form and is valid only on its owning session dispatch thread.
      *
      * @return Map of field names to their current values.
      */
     public Map<String, Object> getValues() {
+        Iterator<Map.Entry<String, WeakReference<Component>>> iterator = fields.entrySet()
+                .iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, WeakReference<Component>> entry = iterator.next();
+            Component component = entry.getValue()
+                    .get();
+            if (component == null) {
+                values.remove(entry.getKey());
+                iterator.remove();
+            } else if (!ownsField(component)) values.remove(entry.getKey());
+            else if (component instanceof ValueComponent<?> valueComponent) values.put(entry.getKey(), valueComponent.getValue());
+        }
         return Collections.unmodifiableMap(values);
+    }
+
+    /**
+     * Replaces a named binding without retaining removed controls or accepting obsolete callbacks.
+     * @param name submitted field name; the newest binding replaces an earlier binding with this name
+     * @param component control owned by this form's component tree
+     */
+    private void bindField(String name, Component component) {
+        WeakReference<Component> binding = new WeakReference<>(component);
+        fields.put(name, binding);
+        values.remove(name);
+        if (component instanceof ValueComponent<?> valueComponent) values.put(name, valueComponent.getValue());
+        component.addValueChangeListener(event -> {
+            if (fields.get(name) == binding && ownsField(component)) values.put(name, event.getNewValue());
+        });
+    }
+
+    /**
+     * Checks parent ownership without allocating IDs or retaining obsolete descendants.
+     * @param component candidate control; null means it has been collected
+     * @return whether this form still contains the candidate
+     */
+    private boolean ownsField(Component component) {
+        while (component != null) {
+            if (component == this) return true;
+            component = component.getParent();
+        }
+        return false;
+    }
+
+    @Override
+    public void clear() {
+        super.clear();
+        fields.clear();
+        values.clear();
     }
 
     /**
@@ -153,10 +206,11 @@ public class Form extends Component {
 
     /**
      * Lifecycle hook invoked when the component is destroyed.
-     * Forms do not require cleanup beyond base Component destruction.
+     * Releases non-owning field bindings and cached values when this form is disposed.
      */
     @Override
     protected void destroy() {
-        // No cleanup required
+        fields.clear();
+        values.clear();
     }
 }

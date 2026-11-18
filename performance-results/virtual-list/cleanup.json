@@ -1,0 +1,50 @@
+{
+  "taskPortsClear": true,
+  "processes": [
+    {
+      "status": "already-stopped",
+      "port": 4301,
+      "id": 29460
+    },
+    {
+      "status": "already-stopped",
+      "port": 4302,
+      "id": 40144
+    },
+    {
+      "status": "already-stopped",
+      "port": 4401,
+      "id": 27264
+    },
+    {
+      "status": "already-stopped",
+      "port": 4402,
+      "id": 13588
+    },
+    {
+      "status": "already-stopped",
+      "port": 4199,
+      "id": 35228
+    },
+    {
+      "status": "already-stopped",
+      "port": 4502,
+      "id": 25220
+    },
+    {
+      "status": "already-stopped",
+      "port": 4602,
+      "id": 14628
+    },
+    {
+      "status": "already-stopped",
+      "port": 4702,
+      "id": 39928
+    },
+    {
+      "status": "stopped",
+      "port": 4040,
+      "id": 14832
+    }
+  ]
+}

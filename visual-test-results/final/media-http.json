@@ -1,0 +1,16 @@
+[
+  {
+    "Path": "/showcase-assets/sample.wav",
+    "Type": [
+      "audio/wav"
+    ],
+    "Bytes": 32044
+  },
+  {
+    "Path": "/showcase-assets/sample.webm",
+    "Type": [
+      "video/webm"
+    ],
+    "Bytes": 5418
+  }
+]

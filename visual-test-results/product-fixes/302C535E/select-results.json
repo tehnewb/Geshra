@@ -1,0 +1,858 @@
+[
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "grouped-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-grouped-default.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-explicit-existing.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "explicit-missing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-explicit-missing.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-explicit-empty.png",
+    "value": {
+      "value": "",
+      "index": 2,
+      "selected": [
+        ""
+      ]
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "selected-option",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-selected-option.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "disabled-first",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-disabled-first.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "disabled-group",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-disabled-group.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-all-disabled.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "listbox-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-listbox-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "multiple-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-multiple-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-explicit-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "multiple-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-multiple-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "multiple-index",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-multiple-index.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "empty-then-insert",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-empty-then-insert.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "later-insertion",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-later-insertion.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "id": "split-select",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/select-split-select.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "grouped-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-grouped-default.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-explicit-existing.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "explicit-missing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-explicit-missing.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-explicit-empty.png",
+    "value": {
+      "value": "",
+      "index": 2,
+      "selected": [
+        ""
+      ]
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "selected-option",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-selected-option.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "disabled-first",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-disabled-first.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "disabled-group",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-disabled-group.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-all-disabled.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "listbox-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-listbox-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "multiple-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-multiple-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-explicit-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "multiple-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-multiple-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "multiple-index",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-multiple-index.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "empty-then-insert",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-empty-then-insert.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "later-insertion",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-later-insertion.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "id": "split-select",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/select-split-select.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "grouped-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-grouped-default.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-explicit-existing.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "explicit-missing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-explicit-missing.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-explicit-empty.png",
+    "value": {
+      "value": "",
+      "index": 2,
+      "selected": [
+        ""
+      ]
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "selected-option",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-selected-option.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "disabled-first",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-disabled-first.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "disabled-group",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-disabled-group.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-all-disabled.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "listbox-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-listbox-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "multiple-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-multiple-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-explicit-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "multiple-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-multiple-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "multiple-index",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-multiple-index.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "empty-then-insert",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-empty-then-insert.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "later-insertion",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-later-insertion.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "id": "split-select",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/select-split-select.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "grouped-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-grouped-default.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "explicit-existing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-explicit-existing.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "explicit-missing",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-explicit-missing.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "explicit-empty",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-explicit-empty.png",
+    "value": {
+      "value": "",
+      "index": 2,
+      "selected": [
+        ""
+      ]
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "selected-option",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-selected-option.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "disabled-first",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-disabled-first.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "disabled-group",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-disabled-group.png",
+    "value": {
+      "value": "enabled",
+      "index": 1,
+      "selected": [
+        "enabled"
+      ]
+    },
+    "feedback": "Java value: enabled; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "all-disabled",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-all-disabled.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "listbox-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-listbox-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "multiple-default",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-multiple-default.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "explicit-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-explicit-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "multiple-property",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-multiple-property.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "multiple-index",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-multiple-index.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: vjavascript; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "empty-then-insert",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-empty-then-insert.png",
+    "value": {
+      "value": "",
+      "index": -1,
+      "selected": []
+    },
+    "feedback": "Java value: ; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "later-insertion",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-later-insertion.png",
+    "value": {
+      "value": "java",
+      "index": 0,
+      "selected": [
+        "java"
+      ]
+    },
+    "feedback": "Java value: java; callbacks: 0"
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "id": "split-select",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/select-split-select.png",
+    "value": {
+      "value": "javascript",
+      "index": 1,
+      "selected": [
+        "javascript"
+      ]
+    },
+    "feedback": "Java value: javascript; callbacks: 0"
+  }
+]

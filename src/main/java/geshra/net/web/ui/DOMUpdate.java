@@ -1,5 +1,6 @@
 package geshra.net.web.ui;
 
+import geshra.net.web.Wire;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.buffer.PooledByteBufAllocator;
@@ -160,6 +161,74 @@ public class DOMUpdate {
         int length = ByteBufUtil.writeUtf8(buffer, text);
         if (length > MAX_VALUE_BYTES) throw new IllegalArgumentException("DOM parameter exceeds 65535 UTF-8 bytes");
         buffer.setShort(lengthIndex, length);
+    }
+
+    /**
+     * Writes a compact mutation, rolling back the destination on any invalid parameter.
+     * Parameter headers pack a five-bit key and three-bit representation. Common booleans,
+     * empty strings, and child identifiers require no UTF-8 encoding.
+     * @param buffer caller-owned packet
+     */
+    public void writeCompactTo(ByteBuf buffer) {
+        int start = buffer.writerIndex();
+        try {
+            buffer.writeByte(type.getCode());
+            Wire.writeUnsigned(buffer, componentID);
+            buffer.writeByte(parameterCount);
+            if (parameterCount > 0) writeCompactParameter(buffer, firstKey, firstValue);
+            if (parameterCount > 1) writeCompactParameter(buffer, secondKey, secondValue);
+            for (int index = 0; index < parameterCount - 2; index++) writeCompactParameter(buffer, extraKeys[index], extraValues[index]);
+        } catch (RuntimeException | Error failure) {
+            buffer.writerIndex(start);
+            throw failure;
+        }
+    }
+
+    /**
+     * Encodes a lossless parameter representation with bounded UTF-8 length.
+     * @param buffer caller-owned packet
+     * @param key parameter identifier
+     * @param value retained application value
+     */
+    private void writeCompactParameter(ByteBuf buffer, DOMUpdateParam key, Object value) {
+        String text = String.valueOf(value);
+        int kind = text.isEmpty() ? 3 : text.equals("false") ? 1 : text.equals("true") ? 2 : 0;
+        int identifier = -1;
+        if (key == DOMUpdateParam.IDENTIFIER || key == DOMUpdateParam.INSERT_ID) identifier = compactIdentifier(text);
+        if (identifier >= 0) kind = 4;
+        buffer.writeByte(key.getCode() | kind << 5);
+        if (kind == 4) Wire.writeUnsigned(buffer, identifier);
+        else if (kind == 0) {
+            if (text.length() <= 42) {
+                int lengthIndex = buffer.writerIndex();
+                buffer.writeByte(0);
+                int length = ByteBufUtil.writeUtf8(buffer, text);
+                buffer.setByte(lengthIndex, length);
+                return;
+            }
+            if (text.length() > MAX_VALUE_BYTES) throw new IllegalArgumentException("DOM parameter exceeds 65535 UTF-8 bytes");
+            int length = ByteBufUtil.utf8Bytes(text);
+            if (length > MAX_VALUE_BYTES) throw new IllegalArgumentException("DOM parameter exceeds 65535 UTF-8 bytes");
+            Wire.writeUnsigned(buffer, length);
+            ByteBufUtil.writeUtf8(buffer, text);
+        }
+    }
+
+    /**
+     * Recognizes canonical non-negative decimal IDs without allocation or parsing exceptions.
+     * @param text candidate identifier
+     * @return identifier, or negative when the exact string must be preserved
+     */
+    private int compactIdentifier(String text) {
+        int length = text.length();
+        if (length == 0 || length > 10 || length > 1 && text.charAt(0) == '0') return -1;
+        long value = 0;
+        for (int index = 0; index < length; index++) {
+            int digit = text.charAt(index) - '0';
+            if (digit < 0 || digit > 9) return -1;
+            value = value * 10 + digit;
+        }
+        return value <= Integer.MAX_VALUE ? (int) value : -1;
     }
 
     /**

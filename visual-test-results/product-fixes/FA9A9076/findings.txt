@@ -1,0 +1,22 @@
+CONFIRMED SELECT DEFECTS — buildFA9A9076A0AA62AE0CB03016C9DBAAFAB74C1F747E01EAA78EA1A62BFC82AD0D PID19636
+Route /showcase-regressions; Chrome157.0.8103.80 andFirefox157.0;390x844 plus1440x1000 observations.
+
+P1 PRODUCT: explicit-existing visiblyJavaScript/nativevaluejavascript but Java feedbackempty; explicit-empty visiblyEmptyvalue/nativeempty but Java feedbackjava. Repro fresh route click Read explicit-existing or Read explicit-empty; repeatread after250ms. callbacks0. Expected retainedJava equals actualnative explicitassignment. Screenshots engine-narrow/repro-explicit-existing.png,repro-explicit-empty.png; select-confirmed-bugs.json.
+P2 PRODUCT: all-disabled nativeblank/index-1 but Java feedbackdisabled. Repro Read all-disabled. Expected synchronizedempty. Screenshot repro-all-disabled.png.
+P2 PRODUCT: explicit-property fixture uses setProperty(value,javascript) per actualJava source but nativeblank/index-1,Javaempty. Expected visibleJavaScript. Screenshot repro-explicit-property.png.
+Original grouped-default actualuntouched fixture PASSES nativeJava/index0,Javajava,callbacks0 bothengines. This closes original default-ordering behavior only, not above newvariants.
+FullSelectresults52case/browser/viewportrecords inselect-results.json; initial capturefiles not all inspectedyet. Defectscreenshots directlyinspected, secondreadconfirmed.
+Tree/tab/remainingvisuals ongoing; do not restart yet.
+
+P1 PRODUCT KEYBOARD ENTRY REGRESSION: fresh Project files tree has outertabindex-1 and allnode tabindex-1; no tabindex0 descendant. Focus Tree selection mode thenTab -> Read tree selection, skipping tree inbothChrome/Firefox. Evidence tree-entry-results.json and engine-narrow/tree-entry.png. AfterpointerclickProject, navigationcreatesone rovingtabstop andRight/Left/Up/Down/Home/End/Space work in24recordedsteps; thisdoesnotfixinitialkeyboardentry.
+
+SWEEP HANDOFF — ready for fixes/rebuild once sessions closed.
+Confirmed P1 initialtreeTabentry and Select readout/propertydefects above remainOPEN. All13Select narrowcasecaptures directly inspected in bothenginecontactsheets;52case/browser/viewportresults saved. No nativepopup claim. Actualuntouchedgroupeddefault PASSES vs oldworkaround; selected-option/disabled-first/disabled-group showexpectedlabels/readout; explicit-missing/emptyinitial/laterassignment distinguishcases. listbox/multiple currentlyselectEmptyvalue inbothengines; noequivalentnativecontrolcomparisonperformedyet, so not approvedasnative-defaultsemantics.
+
+Tree afterpointerentry:24keyboardsteps saved tree-keys.json. Right expand/enterchild, Leftparent/collapse, Up/Down/Home/End,SpaceMULTIPLEtoggle observed. Chrome focus outline and blue selectedhighlight visuallydistinct ininspectedcaptures. Firefox pointer-originprogrammaticfocus maynotmatchfocus-visible untilnativeShiftTabreentry; truekeyboardreentrycapture showsoutline onSources. Initialentry remainsFAIL.
+Longtree140px: End focusesRow99andscrollsintoview; Home focusesLongrootandscrollsintoview bothengines. Chromeoutlinevisible. Firefox :focus-visible true/computed3pxblueoutline and2pxlabeloutline, but capturedlongscrollimage lacksvisibleoutline evenaftersettling; FOCUSAPPEARANCEUNVERIFIED forFirefoxlongtree, notclaimedpassing. long-end-focus-settled.png preserved.
+Siblingretainrestore: DetachAthenRestoreAvisiblyrendersA,B,C inbothengines,extra-results.json andrestore-restored.png. DynamicemptyselectpopulateandJavaScriptsilentassignment+laterappend readexpectedJava/javascriptwithcallbacks0; screenshotsinspectedbothengines.
+Tabs:Left/Rightwrap/Home/EndactivateOverview/Settings, correctselectedhighlightandvisiblefocus,tabpaneltextswitches; aria-controls/labelledbyIDscheckedinsavedtabs-results.json. Selecteddisableleavespanelvisibleandmovestabstoptoenabledoverview; all-disablednotabstops; re-enable restoresselectedtabstop. Nativefocus/selected/disabledappearanceinspectedselectedscreenshots; noissuefoundintestedcycles. Bothenginesnarrow.
+Title regressionroutewithoutSeo correctlyGeshra UI regressionfixtures afterinitialassembly; reload/crossroutefinalsmokepending.
+Remainingbeforefinalapproval: fixconfirmedSelectandinitialtreeentry; retestfreshsessions; selectionmodes/emptytree/disposal/collapsehandoff; maintitle/reload/formmediasmoke; desktopkeyboardimages; Firefoxlongfocusappearance. Noallstateapproval orshutdown.
+Buildidentity matchesbuild/showcase-build.json PID19636 SHAFA9A9076A0AA62AE0CB03016C9DBAAFAB74C1F747E01EAA78EA1A62BFC82AD0D. No demo/productionwritesorserverrestart bytester. Onlyevidencefileswritten.

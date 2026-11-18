@@ -1,0 +1,20 @@
+[
+  {
+    "engine": "chrome",
+    "treeNextFocus": "<button id=\"343\">Read tree selection</button>"
+  },
+  {
+    "engine": "chrome",
+    "document": 390,
+    "imageAlt": "Blue Geshra sample illustration"
+  },
+  {
+    "engine": "firefox",
+    "treeNextFocus": "<button id=\"343\">Read tree selection</button>"
+  },
+  {
+    "engine": "firefox",
+    "document": 390,
+    "imageAlt": "Blue Geshra sample illustration"
+  }
+]

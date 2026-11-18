@@ -1,0 +1,46 @@
+[
+  {
+    "engine": "chrome",
+    "mode": "SINGLE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-SINGLE-verified.png",
+    "selection": [
+      "README.md"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "mode": "NONE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-NONE-verified.png",
+    "selection": []
+  },
+  {
+    "engine": "chrome",
+    "mode": "MULTIPLE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-mode-MULTIPLE-verified.png",
+    "selection": [
+      "README.md"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "mode": "SINGLE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-SINGLE-verified.png",
+    "selection": [
+      "README.md"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "mode": "NONE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-NONE-verified.png",
+    "selection": []
+  },
+  {
+    "engine": "firefox",
+    "mode": "MULTIPLE",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-mode-MULTIPLE-verified.png",
+    "selection": [
+      "README.md"
+    ]
+  }
+]

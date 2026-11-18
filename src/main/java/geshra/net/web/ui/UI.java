@@ -42,7 +42,9 @@ public class UI extends Component {
     public UI() { super("body"); }
 
     /**
-     * Sends a UTF-8 document title using a pooled control packet.
+     * Sends a UTF-8 document title after pending DOM/metadata mutations using a pooled control packet.
+     * Like script execution, this is an ordering barrier inside an update group: earlier SEO reset
+     * commands cannot overwrite this title when the group eventually flushes.
      * @param title document title
      */
     public void setTitle(String title) {
@@ -51,6 +53,12 @@ public class UI extends Component {
         if (context == null) {
             packet.release();
             throw new IllegalStateException("A session is required to set the title");
+        }
+        try {
+            flushUpdates();
+        } catch (RuntimeException | Error failure) {
+            packet.release();
+            throw failure;
         }
         context.send(packet);
     }

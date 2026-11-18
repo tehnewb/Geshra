@@ -1,6 +1,7 @@
 package geshra.net.web.packets;
 
 import geshra.net.web.PacketHandler;
+import geshra.net.web.PacketInput;
 import geshra.net.web.SessionContext;
 import geshra.net.web.ui.UI;
 import geshra.net.web.ui.components.Form;
@@ -16,7 +17,7 @@ public class SubmitPacketHandler implements PacketHandler {
 
     @Override
     public void handlePacket(SessionContext context, ByteBuf packet) {
-        int componentID = packet.readInt();
+        int componentID = PacketInput.integer(context, packet);
 
         if (context == null)
             return;
@@ -27,6 +28,9 @@ public class SubmitPacketHandler implements PacketHandler {
         }
 
     }
+
+    @Override
+    public boolean supportsCompactInput() { return getClass() == SubmitPacketHandler.class; }
 
     @Override
     public int getID() {

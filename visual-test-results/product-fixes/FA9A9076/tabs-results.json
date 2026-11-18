@@ -1,0 +1,466 @@
+[
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-0.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Home",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-1.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "160",
+        "active": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "164",
+        "active": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "block"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "End",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-2.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-3.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "160",
+        "active": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "164",
+        "active": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "block"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-4.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Disable selected tab",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-Disable-selected-tab.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Disable all tabs",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-Disable-all-tabs.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "key": "Enable all tabs",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/chrome-narrow/tabs-Enable-all-tabs.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-0.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Home",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-1.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "160",
+        "active": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "164",
+        "active": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "block"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "End",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-2.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowRight",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-3.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "160",
+        "active": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "164",
+        "active": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "block"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "ArrowLeft",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-4.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "160",
+        "active": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "164",
+        "active": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "160",
+        "label": "162",
+        "display": "none"
+      },
+      {
+        "id": "164",
+        "label": "166",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Disable selected tab",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-Disable-selected-tab.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Disable all tabs",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-Disable-all-tabs.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "key": "Enable all tabs",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/FA9A9076/firefox-narrow/tabs-Enable-all-tabs.png",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  }
+]

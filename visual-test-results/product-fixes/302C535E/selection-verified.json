@@ -1,0 +1,38 @@
+[
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-narrow/tree-multiple-verified.png",
+    "selected": [
+      "Main.java",
+      "README.md"
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/chrome-desktop/tree-multiple-verified.png",
+    "selected": [
+      "Main.java",
+      "README.md"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-narrow/tree-multiple-verified.png",
+    "selected": [
+      "Main.java",
+      "README.md"
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/product-fixes/302C535E/firefox-desktop/tree-multiple-verified.png",
+    "selected": [
+      "Main.java",
+      "README.md"
+    ]
+  }
+]

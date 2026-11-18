@@ -1,0 +1,300 @@
+[
+  {
+    "engine": "chrome",
+    "rows": [
+      {
+        "id": "RadioButton",
+        "state": "beta",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/RadioButton-beta.png",
+        "text": "RadioButton\n\nOne radio remains checked in the shared native group.\n\nAlphaBeta\n\nAlpha=false; Beta=true"
+      },
+      {
+        "id": "InputField",
+        "state": "changed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/InputField-changed.png",
+        "text": "InputField\n\nEditable native control with server callback feedback.\n\nInputField\n\nNative input event: Input callback verified"
+      },
+      {
+        "id": "PasswordField",
+        "state": "changed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/PasswordField-changed.png",
+        "text": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nJava value: synthetic-password"
+      },
+      {
+        "id": "Tree",
+        "state": "expanded",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tree-expanded.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nSources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet"
+      },
+      {
+        "id": "Tree",
+        "state": "renamed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tree-renamed.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet"
+      },
+      {
+        "id": "Tree",
+        "state": "SINGLE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tree-SINGLE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tree",
+        "state": "MULTIPLE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tree-MULTIPLE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tree",
+        "state": "NONE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tree-NONE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\nSingle selection\nMultiple selection\nNo selection\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tabbed",
+        "state": "settings",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tabbed-settings.png",
+        "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nSettings tab content"
+      },
+      {
+        "id": "Tabbed",
+        "state": "overview",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tabbed-overview.png",
+        "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nOverview tab content"
+      },
+      {
+        "id": "Table",
+        "state": "empty",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Table-empty.png",
+        "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nClear table\nReset table\n\nEmpty table"
+      },
+      {
+        "id": "Table",
+        "state": "reset",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Table-reset.png",
+        "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nAda\tJava\nLin\tJavaScript\nClear table\nReset table\n\n2 rows restored"
+      },
+      {
+        "id": "Badge",
+        "state": "complete",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Badge-complete.png",
+        "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nComplete: 100 percent"
+      },
+      {
+        "id": "Badge",
+        "state": "reset",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Badge-reset.png",
+        "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nReady: 40 percent"
+      },
+      {
+        "id": "Tooltip",
+        "state": "shown",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tooltip-shown.png",
+        "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHelpful tooltip textHide tooltip"
+      },
+      {
+        "id": "Tooltip",
+        "state": "hidden",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Tooltip-hidden.png",
+        "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHide tooltip"
+      },
+      {
+        "id": "Canvas",
+        "state": "redrawn",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Canvas-redrawn.png",
+        "text": "Canvas\n\nBlue rectangle is drawn through Canvas 2D commands; add a green circle or reload to reset.\n\nDraw canvas circle"
+      },
+      {
+        "id": "VirtualList",
+        "state": "last",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/VirtualList-last.png",
+        "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+      },
+      {
+        "id": "VirtualList",
+        "state": "refresh",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/VirtualList-refresh.png",
+        "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+      },
+      {
+        "id": "HorizontalLayout",
+        "state": "toolbar",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/HorizontalLayout-toolbar.png",
+        "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nToolbar clicked"
+      },
+      {
+        "id": "HorizontalLayout",
+        "state": "buttonbar",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/HorizontalLayout-buttonbar.png",
+        "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nButton bar clicked"
+      },
+      {
+        "id": "HiddenField",
+        "state": "read",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/HiddenField-read.png",
+        "text": "HiddenField\n\nA nonvisual native input. Read its Java value through the button.\n\nRead hidden value\n\nHiddenField value: hidden-token"
+      },
+      {
+        "id": "Details",
+        "state": "first-open",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Details-first-open.png",
+        "text": "Details,Summary,Accordion,Dialog,Popover\n\nNative disclosure and overlay actions with Java state feedback.\n\nDisclosure and overlays\n\nOpen the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover.\n\nDisclosure\n\nNative details content\n\nDisclosure open\n\nFirst section\n\nFirst\n\nSecond section\nOpen dialog\nShow popover\n\nNo dialog result"
+      },
+      {
+        "id": "Details",
+        "state": "second-open",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/chrome-states/Details-second-open.png",
+        "text": "Details,Summary,Accordion,Dialog,Popover\n\nNative disclosure and overlay actions with Java state feedback.\n\nDisclosure and overlays\n\nOpen the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover.\n\nDisclosure\n\nNative details content\n\nDisclosure open\n\nFirst section\n\nFirst\n\nSecond section\n\nSecond\n\nOpen dialog\nShow popover\n\nNo dialog result"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "rows": [
+      {
+        "id": "RadioButton",
+        "state": "beta",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/RadioButton-beta.png",
+        "text": "RadioButton\n\nOne radio remains checked in the shared native group.\n\nAlphaBeta\n\nAlpha=false; Beta=true"
+      },
+      {
+        "id": "InputField",
+        "state": "changed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/InputField-changed.png",
+        "text": "InputField\n\nEditable native control with server callback feedback.\n\nInputField\n\nNative input event: Input callback verified"
+      },
+      {
+        "id": "PasswordField",
+        "state": "changed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/PasswordField-changed.png",
+        "text": "PasswordField\n\nEditable native control with server callback feedback.\n\nPasswordField\n\nJava value: synthetic-password"
+      },
+      {
+        "id": "Tree",
+        "state": "expanded",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tree-expanded.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nSources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet"
+      },
+      {
+        "id": "Tree",
+        "state": "renamed",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tree-renamed.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nNo selection read yet"
+      },
+      {
+        "id": "Tree",
+        "state": "SINGLE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tree-SINGLE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tree",
+        "state": "MULTIPLE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tree-MULTIPLE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tree",
+        "state": "NONE",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tree-NONE.png",
+        "text": "Tree,TreeNode\n\nExpand Project and Sources, click labels, then read selection. Rename must preserve the branch and descendants.\n\n-\nProject\n-\nRenamed sources\nMain.java\nREADME.md\nRead tree selection\nRename tree branch\n\nSelected nodes: 1"
+      },
+      {
+        "id": "Tabbed",
+        "state": "settings",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tabbed-settings.png",
+        "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nSettings tab content"
+      },
+      {
+        "id": "Tabbed",
+        "state": "overview",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tabbed-overview.png",
+        "text": "Tabbed,TabButton\n\nClick Overview or Settings to change the selected tab and visible panel.\n\nOverview\nSettings\n\nOverview tab content"
+      },
+      {
+        "id": "Table",
+        "state": "empty",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Table-empty.png",
+        "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nClear table\nReset table\n\nEmpty table"
+      },
+      {
+        "id": "Table",
+        "state": "reset",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Table-reset.png",
+        "text": "Table,TableHead,TableBody,TableRow,TableColumn,TableCell,Caption\n\nReal table headers/cells. Clear demonstrates empty state; reset restores rows. Table selection currently has no interactive implementation.\n\nExample people\nName\tLanguage\nAda\tJava\nLin\tJavaScript\nClear table\nReset table\n\n2 rows restored"
+      },
+      {
+        "id": "Badge",
+        "state": "complete",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Badge-complete.png",
+        "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nComplete: 100 percent"
+      },
+      {
+        "id": "Badge",
+        "state": "reset",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Badge-reset.png",
+        "text": "Badge,Spinner,Progress,Meter,Alert,Card,Panel,Divider\n\nReady/loading/error states. Advance changes the native numeric indicators; reset restores 40 percent.\n\nReady\nExample error: this is a demonstration message\nCard content\n\nA reusable card\n\nPanel content\n\nComplete progress\nReset progress\n\nReady: 40 percent"
+      },
+      {
+        "id": "Tooltip",
+        "state": "shown",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tooltip-shown.png",
+        "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHelpful tooltip textHide tooltip"
+      },
+      {
+        "id": "Tooltip",
+        "state": "hidden",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Tooltip-hidden.png",
+        "text": "Tooltip\n\nShow and hide the tooltip. The library provides its semantic node; positioning is application-owned.\n\nShow tooltipHide tooltip"
+      },
+      {
+        "id": "Canvas",
+        "state": "redrawn",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Canvas-redrawn.png",
+        "text": "Canvas\n\nBlue rectangle is drawn through Canvas 2D commands; add a green circle or reload to reset.\n\nDraw canvas circle"
+      },
+      {
+        "id": "VirtualList",
+        "state": "last",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/VirtualList-last.png",
+        "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+      },
+      {
+        "id": "VirtualList",
+        "state": "refresh",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/VirtualList-refresh.png",
+        "text": "VirtualList\n\nA million lazy logical rows; fixed-height viewport and jump/refresh actions.\n\nVirtual list\n\nA million logical rows are generated on demand. Scroll or jump to the last item; only the visible window and overscan need UI components.\n\nJump to last item\nRefresh virtual list\nItem 999988\nItem 999989\nItem 999990\nItem 999991\nItem 999992\nItem 999993\nItem 999994\nItem 999995\nItem 999996\nItem 999997\nItem 999998\nItem 999999"
+      },
+      {
+        "id": "HorizontalLayout",
+        "state": "toolbar",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/HorizontalLayout-toolbar.png",
+        "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nToolbar clicked"
+      },
+      {
+        "id": "HorizontalLayout",
+        "state": "buttonbar",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/HorizontalLayout-buttonbar.png",
+        "text": "HorizontalLayout,VerticalLayout,GridLayout,StackLayout,Spacer,ButtonBar,Toolbar\n\nResize the window to inspect wrapping and grid containment. Toolbar actions update feedback.\n\nHorizontal A\nHorizontal B\nVertical A\nVertical B\nGrid A\nGrid B\nGrid C\n\nStack A\n\nStack B\n\nButton bar action\nToolbar action\n\nButton bar clicked"
+      },
+      {
+        "id": "HiddenField",
+        "state": "read",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/HiddenField-read.png",
+        "text": "HiddenField\n\nA nonvisual native input. Read its Java value through the button.\n\nRead hidden value\n\nHiddenField value: hidden-token"
+      },
+      {
+        "id": "Details",
+        "state": "first-open",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Details-first-open.png",
+        "text": "Details,Summary,Accordion,Dialog,Popover\n\nNative disclosure and overlay actions with Java state feedback.\n\nDisclosure and overlays\n\nOpen the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover.\n\nDisclosure\n\nNative details content\n\nDisclosure open\n\nFirst section\n\nFirst\n\nSecond section\nOpen dialog\nShow popover\n\nNo dialog result"
+      },
+      {
+        "id": "Details",
+        "state": "second-open",
+        "path": "C:/Users/albert/Documents/GitHub/Geshra/visual-test-results/corrected/firefox-states/Details-second-open.png",
+        "text": "Details,Summary,Accordion,Dialog,Popover\n\nNative disclosure and overlay actions with Java state feedback.\n\nDisclosure and overlays\n\nOpen the disclosure or dialog. Escape closes the native modal; clicking outside dismisses the popover.\n\nDisclosure\n\nNative details content\n\nDisclosure open\n\nFirst section\n\nFirst\n\nSecond section\n\nSecond\n\nOpen dialog\nShow popover\n\nNo dialog result"
+      }
+    ]
+  }
+]

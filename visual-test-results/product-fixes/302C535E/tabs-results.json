@@ -1,0 +1,930 @@
+[
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "Home",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "204",
+        "focus": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "block"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "End",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "204",
+        "focus": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "block"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "ArrowLeft",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "Disable selected tab",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "Disable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "narrow",
+    "key": "Enable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "Home",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "End",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "ArrowLeft",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "Disable selected tab",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "Disable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "chrome",
+    "size": "desktop",
+    "key": "Enable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "Home",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "204",
+        "focus": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "block"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "End",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "204",
+        "focus": true
+      },
+      {
+        "name": "Settings",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "block"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "none"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "ArrowLeft",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": true
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "Disable selected tab",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "Disable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "narrow",
+    "key": "Enable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "Home",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "End",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "ArrowRight",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "ArrowLeft",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false,
+        "controls": "204",
+        "focus": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false,
+        "controls": "217",
+        "focus": false
+      }
+    ],
+    "panels": [
+      {
+        "id": "204",
+        "label": "203",
+        "display": "none"
+      },
+      {
+        "id": "217",
+        "label": "218",
+        "display": "block"
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "Disable selected tab",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": 0,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "Disable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": true
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": -1,
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "size": "desktop",
+    "key": "Enable all tabs",
+    "tabs": [
+      {
+        "name": "Overview",
+        "selected": "false",
+        "tab": -1,
+        "disabled": false
+      },
+      {
+        "name": "Settings",
+        "selected": "true",
+        "tab": 0,
+        "disabled": false
+      }
+    ]
+  }
+]
