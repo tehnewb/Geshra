@@ -103,6 +103,15 @@ See [PERFORMANCE.md](PERFORMANCE.md) for memory usage, ownership rules, and serv
 
 The UI toolkit includes native form controls, layouts, dialogs, popovers, disclosures, status indicators, media, SVG/canvas, and a bounded virtual list for large datasets. See [UI_GUIDE.md](UI_GUIDE.md) for examples, browser semantics, lifecycle rules, and the full component catalog. The example Spring application includes a gallery at `/components`.
 
+## Export to Android
+
+Geshra applications can be packaged as an installable Android app connected to their existing
+server. `./gradlew exportAndroid -PandroidServerUrl=https://your-server.example/` writes a standalone
+Android Studio project to `build/exports/geshra-android.zip`, with configurable identity, APK/AAB
+builds, lifecycle/session recovery, native document selection and media support. Java application
+logic stays on the server. See [Android export instructions](android/README.md) for development,
+HTTPS deployment, release signing, app links, tests and explicit platform limits.
+
 Routes can provide server-delivered SEO content and metadata, with automatic sitemap and robots endpoints. Authentication uses hashed passwords, role checks, real HttpOnly cookies, CSRF-protected login/logout, and resumable typed sessions. [WEB_GUIDE.md](WEB_GUIDE.md) covers the simple APIs and deployment settings; the example includes `/login` and protected `/account` routes.
 
 ## Build and try locally

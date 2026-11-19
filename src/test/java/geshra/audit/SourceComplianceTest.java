@@ -38,7 +38,7 @@ class SourceComplianceTest {
                 .as("Source auditing requires a JDK")
                 .isNotNull();
         List<File> files = new ArrayList<>();
-        for (String directory : List.of("src", "examples/spring-app/src")) {
+        for (String directory : List.of("src", "examples/spring-app/src", "android/app/src")) {
             try (Stream<Path> paths = Files.walk(Path.of(directory))) {
                 paths.filter(path -> path.toString().endsWith(".java"))
                         .forEach(path -> files.add(path.toFile()));

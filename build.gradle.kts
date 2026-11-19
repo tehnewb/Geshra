@@ -3,6 +3,8 @@ plugins {
     id("com.vanniktech.maven.publish") version "0.35.0"
 }
 
+apply(from = "gradle/android-export.gradle.kts")
+
 group = providers.gradleProperty("libraryGroup").getOrElse("io.github.albertbeaupre")
 version = providers.gradleProperty("releaseVersion").getOrElse("1.0.0-SNAPSHOT")
 
@@ -37,7 +39,11 @@ tasks.jar {
     from("LICENSE") { into("META-INF") }
     from("THIRD_PARTY_NOTICES.md") { into("META-INF") }
 }
-tasks.test { useJUnitPlatform() }
+tasks.test {
+    useJUnitPlatform()
+    // SourceComplianceTest also reads maintained Android sources outside this Java source set.
+    inputs.files(fileTree("android/app/src") { include("**/*.java") })
+}
 
 // Benchmark dependencies never enter the published library or its consumer classpath.
 val jmh by sourceSets.creating {

@@ -60,6 +60,8 @@ application-local.properties
 application-local.yml
 application-local.yaml
 *.local.properties
+**/local.properties
+/android/export.properties
 *.key
 *.pem
 *.p12

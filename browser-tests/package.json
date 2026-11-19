@@ -11,7 +11,7 @@
     "lab:diagnostics": "node lab-diagnostics.cjs",
     "lab:firefox": "node lab-firefox.cjs",
     "lab:report": "node lab-report.cjs",
-    "test": "npm run check:source && node build-runtime.cjs --check && node protocol.cjs && node components.cjs && node web-features.cjs && node optimizer-protocol.cjs"
+    "test": "npm run check:source && node build-runtime.cjs --check && node protocol.cjs && node components.cjs && node web-features.cjs && node optimizer-protocol.cjs && node navigation.cjs"
   },
   "devDependencies": {
     "esbuild": "0.25.12",
