@@ -48,6 +48,7 @@ let reloadOnReady = true; // Whether the next session state must rebuild the rou
 let socketClosedAt = 0; // Last disconnect timestamp, or zero.
 let bootstrapEnabled = !!document.querySelector('meta[name="geshra-bootstrap"][content="2"]'); // HTTP-advertised initial-route support; disabled after an incompatible handshake.
 let bootstrapPath = ''; // Exact path requested by the current connection, or empty when not bootstrapping.
+let routedPath = location.pathname; // Last server route; native fragment history does not rebuild its DOM.
 /**
  * Reconnect payloads retained within the configured count and byte limits.
  */
@@ -284,6 +285,7 @@ function ensureSocket() {
  * @param {...*} args       - Arguments for the corresponding packets_out[op] serializer.
  */
 export function sendPacket(op, ...args) {
+    if (op === SEND_NAVIGATE) routedPath = args[0];
     const packet = encodePacket(op, args);
 
     if (!packet) {
@@ -334,11 +336,21 @@ export function startRuntime() {
 
     /**
      * Intercept in-page link clicks to drive client-side routing.
-     * Only handle same-origin <a> tags.
+     * Preserve downloads, new windows, modified clicks and fragment/query navigation so the
+     * browser or Android host can implement their native semantics. Only plain same-origin
+     * route links use the lightweight WebSocket navigation path.
      */
     document.body.addEventListener('click', (e) => {
-        const link = e.target.closest('a[href]');
-        if (link && link.origin === location.origin) {
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        const link = e.target instanceof Element ? e.target.closest('a[href]') : null;
+        if (
+            link &&
+            link.origin === location.origin &&
+            !link.hasAttribute('download') &&
+            (!link.target || link.target.toLowerCase() === '_self') &&
+            !link.href.includes('#') &&
+            !link.search
+        ) {
             e.preventDefault();
             history.pushState({}, '', link.pathname);
             sendPacket(SEND_NAVIGATE, link.pathname);
@@ -349,7 +361,7 @@ export function startRuntime() {
      * Listen for browser back/forward navigation and notify the server.
      */
     window.addEventListener('popstate', () => {
-        sendPacket(SEND_NAVIGATE, location.pathname);
+        if (location.pathname !== routedPath) sendPacket(SEND_NAVIGATE, location.pathname);
     });
 
     /**
